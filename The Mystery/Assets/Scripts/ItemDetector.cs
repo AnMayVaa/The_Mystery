@@ -1,14 +1,14 @@
 using UnityEngine;
-using TMPro; // ถ้าใช้ TextMeshPro
+using TMPro;
 
 public class ItemDetector : MonoBehaviour
 {
     // อ้างอิงถึง PlayerCore ของผู้เล่น
     public PlayerCore playerCore;
 
-    private CollectibleItem currentInteractableItem; // ไอเท็มที่กำลังสามารถปฏิสัมพันธ์ด้วยได้
     private Collider2D playerDetectionCollider; // Collider2D ที่ใช้ตรวจจับไอเท็ม
-    
+
+    private DialogueStarter currentInteractableThing; // Thing ที่สามารถเริ่มบทสนทนาได้
 
     void Start()
     {
@@ -36,20 +36,21 @@ public class ItemDetector : MonoBehaviour
 
     void Update()
     {
-        // --- ส่วนนี้คือการจัดการ UI Prompt และการเก็บไอเท็ม ---
-
-        if (currentInteractableItem != null)
+        // --- ส่วนนี้คือการจัดการ Thing และบทสนทนา ---
+        if (currentInteractableThing != null)
         {
-            currentInteractableItem.ShowPrompt(); // แสดง Prompt ของไอเท็มที่อยู่ในระยะ
+            // แสดง Prompt หรือข้อความ UI สำหรับ Thing
+            currentInteractableThing.ShowPrompt(); // ฟังก์ชัน ShowPrompt ใน DialogueStarter
 
-            // ถ้าผู้เล่นกด 'E' และมีไอเท็มที่กำลังมองอยู่
+            // ถ้าผู้เล่นกด 'E' และมี Thing ที่กำลังมองอยู่
             if (Input.GetKeyDown(KeyCode.E))
             {
-                currentInteractableItem.Collect(); // เรียกฟังก์ชัน Collect ของไอเท็ม
-                currentInteractableItem = null; // ล้างไอเท็มที่กำลังปฏิสัมพันธ์
+                currentInteractableThing.StartDialogue(); // เริ่มบทสนทนา
+                currentInteractableThing.HidePrompt(); // ซ่อน Prompt หลังจากเริ่มบทสนทนา
+                currentInteractableThing = null; // ล้าง Thing ที่กำลังปฏิสัมพันธ์
             }
         }
-        // ถ้า currentInteractableItem เป็น null หมายความว่าไม่มีไอเท็มในระยะ หรือเก็บไปแล้ว
+        
 
         // --- ส่วนนี้คือการอัปเดตท offset ของ ItemDetector collider
         // อัปเดตตำแหน่งของ ItemDetector ให้ตรงกับทิศทางการเคลื่อนที่ของผู้เล่น
@@ -80,29 +81,26 @@ public class ItemDetector : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // ตรวจสอบว่าเป็นไอเท็มที่เก็บได้หรือไม่
-        CollectibleItem item = other.GetComponent<CollectibleItem>();
-        if (item != null)
+        // ตรวจสอบว่ามี Thing ที่สามารถเริ่มบทสนทนาได้หรือไม่
+        DialogueStarter Thing = other.GetComponent<DialogueStarter>();
+        if (Thing != null)
         {
-            // ถ้ามีไอเท็มอยู่แล้ว (หมายถึงผู้เล่นยังไม่ได้เก็บอันก่อนหน้า)
-            // หรือนี่เป็นไอเท็มใหม่
-            if (currentInteractableItem == null)
+            if (currentInteractableThing == null)
             {
-                currentInteractableItem = item;
+                currentInteractableThing = Thing;
                 // ไม่ต้อง ShowPrompt ตรงนี้ เพราะจะถูกเรียกใน Update()
             }
-            // ถ้ามีหลายไอเท็มในพื้นที่เดียวกัน จะเลือกอันแรกที่เข้ามา
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        CollectibleItem item = other.GetComponent<CollectibleItem>();
-        // ตรวจสอบว่าเป็นไอเท็มที่เรากำลังปฏิสัมพันธ์ด้วยหรือไม่
-        if (item != null && item == currentInteractableItem)
+        // ตรวจสอบว่าเป็น Thing ที่เรากำลังปฏิสัมพันธ์ด้วยหรือไม่
+        DialogueStarter Thing = other.GetComponent<DialogueStarter>();
+        if (Thing != null && Thing == currentInteractableThing)
         {
-            item.HidePrompt(); // ซ่อน Prompt
-            currentInteractableItem = null; // ล้าง Reference
+            Thing.HidePrompt(); // ซ่อน Prompt
+            currentInteractableThing = null; // ล้าง Reference
         }
     }
 }
