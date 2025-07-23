@@ -110,11 +110,9 @@ public class PlayerCore : MonoBehaviour
             animator.SetBool("isMovingLeft", isMovingLeft);
             animator.SetBool("isMovingUp", isMovingUp);
             animator.SetBool("isMovingDown", isMovingDown);
-
-            // พารามิเตอร์สำหรับทิศทางสุดท้ายที่หยุด (ใช้สำหรับแอนิเมชัน Idle)
-            // คุณสามารถใช้ lastMoveDirection.x และ lastMoveDirection.y โดยตรง
-            //animator.SetFloat("LastMoveX", lastMoveDirection.x);
-            //animator.SetFloat("LastMoveY", lastMoveDirection.y);
+            // พารามิเตอร์สำหรับทิศทางสุดท้ายที่หัน
+            animator.SetFloat("LastMoveX", lastMoveDirection.x);
+            animator.SetFloat("LastMoveY", lastMoveDirection.y);
         }
     }
 }
