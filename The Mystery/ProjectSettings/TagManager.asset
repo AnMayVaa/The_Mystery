@@ -59,3 +59,9 @@ TagManager:
   - name: FurnitureOntheThing
     uniqueID: 69124623
     locked: 0
+  - name: Interactable
+    uniqueID: 2505629007
+    locked: 0
+  - name: Player
+    uniqueID: 3259925897
+    locked: 0
