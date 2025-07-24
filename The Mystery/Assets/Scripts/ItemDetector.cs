@@ -10,6 +10,15 @@ public class ItemDetector : MonoBehaviour
 
     private DialogueStarter currentInteractableThing; // Thing ที่สามารถเริ่มบทสนทนาได้
 
+    //ปรับ offset ได้ใน Inspector
+    [Header("Collider Offset Settings")]
+    //when player is moving right, left, up, down
+    // กำหนดค่าเริ่มต้นสำหรับ offset ของ Collider2D
+    [SerializeField] private Vector2 rightOffset = new Vector2(1.2f, -0.5f);
+    [SerializeField] private Vector2 leftOffset = new Vector2(-1.2f, -0.5f);
+    [SerializeField] private Vector2 upOffset = new Vector2(0f, 1f);
+    [SerializeField] private Vector2 downOffset = new Vector2(0f, -1.4f);
+
     void Start()
     {
         if (playerCore == null)
@@ -50,7 +59,7 @@ public class ItemDetector : MonoBehaviour
                 currentInteractableThing = null; // ล้าง Thing ที่กำลังปฏิสัมพันธ์
             }
         }
-        
+
 
         // --- ส่วนนี้คือการอัปเดตท offset ของ ItemDetector collider
         // อัปเดตตำแหน่งของ ItemDetector ให้ตรงกับทิศทางการเคลื่อนที่ของผู้เล่น
@@ -60,19 +69,23 @@ public class ItemDetector : MonoBehaviour
             Vector2 offset = Vector2.zero;
             if (playerCore.isMovingRight)
             {
-                playerDetectionCollider.offset = new Vector2(1.2f, -0.5f); // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ไปทางขวา
+                // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ไปทางขวา
+                playerDetectionCollider.offset = rightOffset; // ใช้ค่า offset ที่กำหนดไว้
             }
             else if (playerCore.isMovingLeft)
             {
-                playerDetectionCollider.offset = new Vector2(-1.2f, -0.5f); // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ไปทางซ้าย
+                // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ไปทางซ้าย
+                playerDetectionCollider.offset = leftOffset; // ใช้ค่า offset ที่กำหนดไว้
             }
             else if (playerCore.isMovingUp)
             {
-                playerDetectionCollider.offset = new Vector2(0f, 1.4f); // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ขึ้น
+                // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ขึ้น
+                playerDetectionCollider.offset = upOffset; // ใช้ค่า offset ที่กำหนดไว้
             }
             else if (playerCore.isMovingDown)
             {
-                playerDetectionCollider.offset = new Vector2(0f, -1.4f); // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ลง
+                // ปรับตำแหน่งให้เหมาะสมกับการเคลื่อนที่ลง
+                playerDetectionCollider.offset = downOffset; // ใช้ค่า offset ที่กำหนดไว้
             }
         }
     }

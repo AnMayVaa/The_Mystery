@@ -145,6 +145,8 @@ namespace DialogueEditor
 
         public void StartConversation(NPCConversation conversation)
         {
+            GameStateManager.Instance.playerDuringDialogue = true;
+
             m_conversation = conversation.Deserialize();
             if (OnConversationStarted != null)
                 OnConversationStarted.Invoke();
@@ -156,6 +158,8 @@ namespace DialogueEditor
 
         public void EndConversation()
         {
+            GameStateManager.Instance.playerDuringDialogue = false;
+
             SetState(eState.TransitioningDialogueOff);
 
             if (OnConversationEnded != null)

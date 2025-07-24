@@ -15,6 +15,12 @@ public class GameStateManager : MonoBehaviour
     [Header("UI Panels")]
     // ลาก GameObject ของ Panel ที่ต้องการให้เปิด/ปิดด้วยปุ่ม Escape มาใส่ใน Inspector
     public GameObject pauseMenuPanel; // เช่น Panel สำหรับเมนูหยุดเกม
+    private float _previousTimeScale = 1f; // เก็บค่า Time.timeScale ก่อนที่จะหยุดเวลา
+
+    // ตัวแปรสำหรับเก็บสถานะของผู้เล่น
+    [Header("Player State")]
+    public bool playerDuringDialogue;
+    public bool freezePlayerDuringDialogue = true; // Default to true for backward compatibility
 
     void Awake()
     {
@@ -189,7 +195,7 @@ public class GameStateManager : MonoBehaviour
     public void OpenPanel(GameObject panelObject)
     {
         // time pause when open panel
-        Time.timeScale = 0f; // หยุดเวลาเมื่อเปิด Panel
+        FreezeTime(); // หยุดเวลาเมื่อเปิด Panel
         if (panelObject != null)
         {
             panelObject.SetActive(true);
@@ -208,7 +214,7 @@ public class GameStateManager : MonoBehaviour
     public void ClosePanel(GameObject panelObject)
     {
         // resume time when close panel
-        Time.timeScale = 1f; // เริ่มเวลาใหม่เมื่อปิด Panel
+        UnFreezeTime(); // เริ่มเวลาใหม่เมื่อปิด Panel
         if (panelObject != null)
         {
             panelObject.SetActive(false);
@@ -225,11 +231,11 @@ public class GameStateManager : MonoBehaviour
     /// </summary>
     public void QuitGame()
     {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false; // หยุดเล่นใน Editor
-    #else
+#else
         Application.Quit(); // ออกจากเกมเมื่อ Build
-    #endif
+#endif
         Debug.Log("Quitting Game...");
     }
 
@@ -242,6 +248,17 @@ public class GameStateManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
         Debug.Log("Changing scene to: " + sceneName);
+    }
+    
+    public void FreezeTime()
+    {
+        _previousTimeScale = Time.timeScale;
+        Time.timeScale = 0f;
+    }
+
+    public void UnFreezeTime()
+    {
+        Time.timeScale = _previousTimeScale;
     }
 
 }

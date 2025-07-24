@@ -25,40 +25,48 @@ public class PlayerCore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // เก็บค่า Input ในแต่ละแกน
-        float moveX = 0f;
-        float moveY = 0f;
-
-        // Move the player based on input
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (!GameStateManager.Instance.playerDuringDialogue || !GameStateManager.Instance.freezePlayerDuringDialogue)
         {
-            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-            moveY = 1f; // กำหนดค่า Input สำหรับทิศทาง
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
-            moveY = -1f; // กำหนดค่า Input สำหรับทิศทาง
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-            moveX = -1f; // กำหนดค่า Input สำหรับทิศทาง
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            moveX = 1f; // กำหนดค่า Input สำหรับทิศทาง
+            // เก็บค่า Input ในแต่ละแกน
+            float moveX = 0f;
+            float moveY = 0f;
+
+            // Move the player based on input
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+                moveY = 1f; // กำหนดค่า Input สำหรับทิศทาง
+            }
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
+                moveY = -1f; // กำหนดค่า Input สำหรับทิศทาง
+            }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+                moveX = -1f; // กำหนดค่า Input สำหรับทิศทาง
+            }
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                moveX = 1f; // กำหนดค่า Input สำหรับทิศทาง
+            }
+
+            // รวม Input ทั้งหมดเพื่อหาทิศทางการเคลื่อนที่รวม
+            Vector2 movement = new Vector2(moveX, moveY).normalized;
+
+            // อัปเดตตัวแปรทิศทาง Boolean และ lastMoveDirection
+            UpdateDirectionBooleans(movement);
+
+            // ส่งค่าไปยัง Animator (ถ้ามี Animator Component)
+            UpdateAnimatorParameters();
         }
 
-        // รวม Input ทั้งหมดเพื่อหาทิศทางการเคลื่อนที่รวม
-        Vector2 movement = new Vector2(moveX, moveY).normalized;
-
-        // อัปเดตตัวแปรทิศทาง Boolean และ lastMoveDirection
-        UpdateDirectionBooleans(movement);
-
-        // ส่งค่าไปยัง Animator (ถ้ามี Animator Component)
-        UpdateAnimatorParameters();
+        if (GameStateManager.Instance.playerDuringDialogue && GameStateManager.Instance.freezePlayerDuringDialogue)
+        {
+            //nothing
+        }
     }
 
     /// <summary>
