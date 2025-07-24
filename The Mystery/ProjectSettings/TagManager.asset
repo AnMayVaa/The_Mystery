@@ -50,6 +50,9 @@ TagManager:
   - name: Ground2
     uniqueID: 3786604379
     locked: 0
+  - name: Player
+    uniqueID: 3259925897
+    locked: 0
   - name: Wall
     uniqueID: 4105448301
     locked: 0
@@ -61,7 +64,4 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 2505629007
-    locked: 0
-  - name: Player
-    uniqueID: 3259925897
     locked: 0
