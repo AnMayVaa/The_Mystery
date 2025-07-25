@@ -82,11 +82,11 @@ public class GameStateManager : MonoBehaviour
         playerData.collectedItemIDs.Add(collectedItem.itemID);
 
         // อัปเดตสถานะผู้เล่น
-        playerData.currentStatus1 += collectedItem.status1Change;
-        playerData.currentStatus2 += collectedItem.status2Change;
+        playerData.mental += collectedItem.mental;
+        playerData.case_progress += collectedItem.case_progress;
 
         Debug.Log("Collected: " + collectedItem.itemName);
-        Debug.Log("Status 1: " + playerData.currentStatus1 + ", Status 2: " + playerData.currentStatus2);
+        Debug.Log("mental status: " + playerData.mental + ", case_progress status: " + playerData.case_progress);
 
         // บันทึกเกมทันทีหลังจากเก็บไอเท็ม (หรือจะบันทึกเป็นช่วงๆ ก็ได้)
         SaveGame();
@@ -107,7 +107,7 @@ public class GameStateManager : MonoBehaviour
             playerData = JsonUtility.FromJson<PlayerData>(json);
 
             Debug.Log("Game Loaded! From " + saveFilePath);
-            Debug.Log("Loaded Status 1: " + playerData.currentStatus1 + ", Status 2: " + playerData.currentStatus2);
+            Debug.Log("Loaded mental status: " + playerData.mental + ", case_progress status: " + playerData.case_progress);
             Debug.Log("Collected Items Count: " + playerData.collectedItemIDs.Count);
             // แสดงรายการไอเท็มที่เก็บไปแล้ว (สำหรับการ Debug)
 
@@ -142,8 +142,8 @@ public class GameStateManager : MonoBehaviour
     }
 
     // ฟังก์ชันสำหรับเรียกสถานะปัจจุบัน (Player Controller หรือ UI อาจเรียกใช้)
-    public int GetStatus1() { return playerData.currentStatus1; }
-    public int GetStatus2() { return playerData.currentStatus2; }
+    public int GetStatus1() { return playerData.mental; }
+    public int GetStatus2() { return playerData.case_progress; }
 
     // ฟังก์ชันสำหรับตรวจสอบและลบไอเท็มที่เก็บไปแล้วใน Scene
     // ใช้เมื่อมีการเปลี่ยน Scene หรือรีเฟรชไอเท็มใน Scene

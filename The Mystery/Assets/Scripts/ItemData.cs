@@ -8,8 +8,8 @@ public class ItemData : ScriptableObject
     public Sprite itemIcon; // Icon for the item
 
     [Header("Status Effects")]
-    public int status1Change; // 
-    public int status2Change; //
+    public int mental; // 
+    public int case_progress; //
 
     // [Header("Item Properties")]
     public string itemID; // Unique identifier for the item

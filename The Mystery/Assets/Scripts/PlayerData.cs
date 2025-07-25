@@ -3,8 +3,8 @@ using System.Collections.Generic; // For List<T>
 [System.Serializable]
 public class PlayerData
 {
-    public int currentStatus1; //
-    public int currentStatus2; //
+    public int mental; //
+    public int case_progress; //
 
     // List<string> inventory; // List to hold item IDs
     public List<string> collectedItemIDs;
@@ -12,8 +12,8 @@ public class PlayerData
     public PlayerData()
     {
         // Initialize default values
-        currentStatus1 = 100; // Default value for status1 
-        currentStatus2 = 50; // Default value for status2
+        mental = 100; // Default value for status1 
+        case_progress = 0; // Default value for status2
         
         collectedItemIDs = new List<string>();
     }
