@@ -7,6 +7,8 @@ TagManager:
   - InteractionZone
   - CollectibleItem
   - NPC
+  - changeLayerZone
+  - changeLayerCheck
   layers:
   - Default
   - TransparentFX
@@ -50,8 +52,8 @@ TagManager:
   - name: Ground2
     uniqueID: 3786604379
     locked: 0
-  - name: Player
-    uniqueID: 3259925897
+  - name: Player2
+    uniqueID: 4162330247
     locked: 0
   - name: Wall
     uniqueID: 4105448301
@@ -61,6 +63,9 @@ TagManager:
     locked: 0
   - name: FurnitureOntheThing
     uniqueID: 69124623
+    locked: 0
+  - name: Player
+    uniqueID: 3259925897
     locked: 0
   - name: Interactable
     uniqueID: 2505629007
