@@ -29,7 +29,8 @@ public class CollectibleItem : MonoBehaviour
 
             Debug.Log("Item " + itemData.itemName + " collected via 'E' press.");
 
-            if (dialogueStartert.uiPrompt != null)
+            // Add a null check here before trying to access dialogueStartert.uiPrompt
+            if (dialogueStartert != null && dialogueStartert.uiPrompt != null) // <-- Added null check
             {
                 dialogueStartert.uiPrompt.SetActive(false); // ซ่อนข้อความ UI เมื่อเก็บแล้ว
             }
