@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a27599a43ca71b4d82892007115e1b1, type: 3}
-  m_Name: Family Picture
+  m_Name: "Daughter\u2019s Room (Unlocked)"
   m_EditorClassIdentifier: 
-  itemName: Family Picture
+  itemName: "Daughter\u2019s Room (Unlocked)"
   itemDescription: 
-  itemIcon: {fileID: 21300000, guid: 3ab88a28546e3b14593115574b01032d, type: 3}
-  mental: -10
+  itemIcon: {fileID: 0}
+  mental: 0
   case_progress: 0
-  itemID: Family Picture
+  itemID: "Daughter\u2019s Room (Unlocked)"
