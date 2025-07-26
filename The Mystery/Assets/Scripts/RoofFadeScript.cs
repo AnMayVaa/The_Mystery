@@ -8,7 +8,6 @@ public class RoofFadeScript : MonoBehaviour
 {   
     public float fadeSpeed = 2f;
     private TilemapRenderer tilemapRenderer;
-    private bool isFading = false;
     private float targetAlpha = 1f;
     void Start()
     {
@@ -19,7 +18,6 @@ public class RoofFadeScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isFading = true;
             targetAlpha = 0f;
         }
     }
@@ -28,7 +26,6 @@ public class RoofFadeScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isFading = true;
             targetAlpha = 1f;
         }
     }
