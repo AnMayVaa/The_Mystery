@@ -39,7 +39,7 @@ public class GameStateManager : MonoBehaviour
         saveFilePath = Path.Combine(Application.persistentDataPath, "playerSaveData.json");
     }
 
-    void Start()
+    void OnEnable()
     {
         LoadGame(); // โหลดเกมเมื่อเริ่ม
     }
@@ -241,8 +241,15 @@ public class GameStateManager : MonoBehaviour
     /// <param name="Scenename">String ที่ต้องการเปลี่ยนไปที่ scene อื่นๆ</param>
     public void ChangeSceneByName(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
-        Debug.Log("Changing scene to: " + sceneName);
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+            Debug.Log("Changing scene to: " + sceneName);
+        }
+        else
+        {
+            Debug.LogWarning("Attempted to change to an empty or null scene name.");
+        }
     }
 
     public void FreezeTime()

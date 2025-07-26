@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu_scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/example_House_scene.unity
-    guid: fdbf902e50a54b347a8c4d81eeca1f24
+    path: Assets/Scenes/_House_scene(final).unity
+    guid: daa3f82234bac5849956f2e22cfc2149
   - enabled: 1
-    path: Assets/Scenes/Street_scene.unity
-    guid: b0eaccb66359f244ab44e760f7f604fc
+    path: Assets/Scenes/example_Street_scene 1.unity
+    guid: a00721a84a81c4c4fb097a30c1bb2f0b
   - enabled: 1
-    path: Assets/Scenes/Crime_scene.unity
-    guid: ee369481deddb4245945d41fe12a75b1
+    path: Assets/Scenes/example_Crime_scene 1.unity
+    guid: eb83cb70f1add2e4db49b29c1c1c6512
   m_configObjects: {}

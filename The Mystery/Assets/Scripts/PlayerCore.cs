@@ -112,6 +112,7 @@ public class PlayerCore : MonoBehaviour
         if (animator != null)
         {
             // พารามิเตอร์สำหรับบอกว่ากำลังอยู่กับที่หรือไม่
+            animator.SetBool("isMoving", isMovingRight || isMovingLeft || isMovingUp || isMovingDown);
 
             // พารามิเตอร์สำหรับทิศทางการเคลื่อนที่ (ใช้สำหรับแอนิเมชันเดิน)
             animator.SetBool("isMovingRight", isMovingRight);
