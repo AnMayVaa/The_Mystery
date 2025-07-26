@@ -23,6 +23,9 @@ public class GameStateManager : MonoBehaviour
     public bool playerDuringDialogue;
     public bool freezePlayerDuringDialogue = true; // Default to true for backward compatibility
 
+    // ตัวแปรสำหรับตรวจสอบว่ากำลังโหลดเกมอยู่หรือไม่ เพื่อป้องกันการวนลูป
+    private bool isLoadingGameFromSave = false;
+
     void Awake()
     {
         // Singleton pattern เพื่อให้มี GameStateManager แค่ตัวเดียวในเกม
@@ -37,11 +40,61 @@ public class GameStateManager : MonoBehaviour
         }
 
         saveFilePath = Path.Combine(Application.persistentDataPath, "playerSaveData.json");
+
+        // โหลดข้อมูลเริ่มต้นเมื่อ GameStateManager ถูกสร้างขึ้นครั้งแรก
+        // แต่จะยังไม่เปลี่ยน Scene ที่นี่
+        if (File.Exists(saveFilePath))
+        {
+            // ถ้ามีไฟล์เซฟ ให้โหลดข้อมูล แต่ยังไม่เปลี่ยน Scene
+            // การเปลี่ยน Scene จะทำเมื่อผู้เล่นกด "Continue"
+            string json = File.ReadAllText(saveFilePath);
+            playerData = JsonUtility.FromJson<PlayerData>(json);
+            Debug.Log("Initial player data loaded (not yet applied to scene).");
+        }
+        else
+        {
+            // ถ้าไม่มีไฟล์เซฟ ให้สร้างข้อมูลผู้เล่นใหม่
+            playerData = new PlayerData();
+            Debug.LogWarning("No save file found. Initializing new PlayerData.");
+        }
+    }
+    
+    // เพิ่ม OnEnable และ OnDisable เพื่อจัดการ Event
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnEnable()
+    private void OnDisable()
     {
-        LoadGame(); // โหลดเกมเมื่อเริ่ม
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    // เมธอดนี้จะถูกเรียกเมื่อ Scene โหลดเสร็จ
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ClosePanel(pauseMenuPanel); // ปิด Pause Menu Panel เมื่อ Scene โหลดเสร็จ
+        // ตรวจสอบว่าไม่ใช่ Main Menu และไม่ได้กำลังอยู่ในกระบวนการโหลดเกมจาก Save (เพื่อป้องกันการวนลูป)
+        if (!scene.name.Equals("Mainmenu_scene") && !isLoadingGameFromSave)
+        {
+            Debug.Log($"Scene '{scene.name}' loaded. Attempting to apply game data to current scene.");
+            // โหลดข้อมูลและนำไปใช้กับ Scene ปัจจุบัน
+            // แต่จะไม่เรียก SceneManager.LoadScene() ซ้ำในนี้แล้ว
+            ApplyLoadedGameDataToCurrentScene();
+        }
+        else if (isLoadingGameFromSave)
+        {
+            // ถ้ากำลังโหลดเกมจาก Save และ Scene ถูกโหลดเรียบร้อยแล้ว
+            // ให้ทำการ apply data และรีเซ็ต flag
+            Debug.Log($"Scene '{scene.name}' loaded as part of game loading process. Applying data.");
+            ApplyLoadedGameDataToCurrentScene();
+            isLoadingGameFromSave = false; // รีเซ็ต flag หลังจากโหลดเสร็จ
+        }
+        else if (scene.name.Equals("Mainmenu_scene"))
+        {
+            Debug.Log("Main Menu scene loaded. Not applying game data automatically.");
+            // อาจจะทำอะไรบางอย่างเมื่อ Main Menu โหลดเสร็จ เช่น รีเซ็ตค่าชั่วคราว
+        }
     }
 
     void Update()
@@ -49,8 +102,8 @@ public class GameStateManager : MonoBehaviour
         // ตรวจสอบการกดปุ่ม Escape
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // ถ้ามี Panel สำหรับ Pause Menu ให้สลับสถานะการแสดงผล
-            if (pauseMenuPanel != null)
+            // ถ้ามี Panel สำหรับ Pause Menu ให้สลับสถานะการแสดงผล และต้องไม่ใช้ main menu
+            if (pauseMenuPanel != null && !SceneManager.GetActiveScene().name.Equals("Mainmenu_scene"))
             {
                 TogglePanel(pauseMenuPanel);
                 // อาจจะหยุดเวลาเกมเมื่อเปิดเมนูหยุดเกม
@@ -89,6 +142,10 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("Collected: " + collectedItem.itemName);
         Debug.Log("mental status: " + playerData.mental + ", case_progress status: " + playerData.case_progress);
 
+        // บันทึกตำแหน่งและ Scene ปัจจุบัน
+        playerData.lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        playerData.lastScene = SceneManager.GetActiveScene().name; // ใช้ชื่อ Scene ปัจจุบัน
+
         // บันทึกเกมทันทีหลังจากเก็บไอเท็ม (หรือจะบันทึกเป็นช่วงๆ ก็ได้)
         SaveGame();
     }
@@ -100,31 +157,82 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("Game Saved! At " + saveFilePath);
     }
 
-    public void LoadGame()
+    /// <summary>
+    /// โหลดข้อมูลจากไฟล์ Save แต่จะไม่เปลี่ยน Scene.
+    /// เมธอดนี้ควรถูกเรียกเมื่อผู้เล่นกด "Continue Game" จาก Main Menu.
+    /// </summary>
+    public void LoadGameFromSaveFileAndChangeScene()
     {
         if (File.Exists(saveFilePath))
         {
             string json = File.ReadAllText(saveFilePath);
             playerData = JsonUtility.FromJson<PlayerData>(json);
 
-            Debug.Log("Game Loaded! From " + saveFilePath);
-            Debug.Log("Loaded mental status: " + playerData.mental + ", case_progress status: " + playerData.case_progress);
-            Debug.Log("Collected Items Count: " + playerData.collectedItemIDs.Count);
-            // แสดงรายการไอเท็มที่เก็บไปแล้ว (สำหรับการ Debug)
+            Debug.Log("Game data loaded from save file. Preparing to change scene.");
+            Debug.Log($"Loaded mental status: {playerData.mental}, case_progress status: {playerData.case_progress}");
+            Debug.Log($"Last Scene to load: {playerData.lastScene}");
 
-            foreach (string itemID in playerData.collectedItemIDs)
-            {
-                Debug.Log("- " + itemID);
-            }
+            // ตั้งค่า flag เพื่อบอกว่ากำลังอยู่ในกระบวนการโหลดเกมจาก Save
+            isLoadingGameFromSave = true;
 
-            // ตรวจสอบและลบไอเท็มที่เก็บไปแล้วใน Scene
-            CheckAndRemoveCollectedItemsInScene();
+            // เปลี่ยน Scene ไปยัง Scene ที่บันทึกไว้
+            SceneManager.LoadScene(playerData.lastScene);
         }
         else
         {
-            Debug.LogWarning("Save file not found. Starting new game.");
+            Debug.LogWarning("No save file found. Cannot load game. Starting new game (or returning to main menu).");
             playerData = new PlayerData(); // สร้างข้อมูลผู้เล่นใหม่ถ้าไม่มีไฟล์
+            // อาจจะเปลี่ยนไป Scene เริ่มต้นของเกมใหม่ หรือกลับไป Main Menu
+            // SceneManager.LoadScene("StartingSceneForNewGame");
         }
+    }
+
+    /// <summary>
+    /// ใช้สำหรับ Apply ข้อมูลที่โหลดมาแล้ว (playerData) กับ Scene ปัจจุบัน
+    /// เมธอดนี้จะถูกเรียกโดย OnSceneLoaded หรือเมื่อ Scene โหลดเสร็จ.
+    /// </summary>
+    public void ApplyLoadedGameDataToCurrentScene()
+    {
+        if (playerData == null)
+        {
+            Debug.LogWarning("playerData is null. Cannot apply loaded game data.");
+            return;
+        }
+
+        Debug.Log("Applying loaded game data to current scene.");
+
+        // เปลี่ยนตำแหน่งของผู้เล่นให้ตรงกับที่บันทึกไว้
+        // ต้องแน่ใจว่า Player GameObject อยู่ใน Scene แล้ว
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            // ตรวจสอบว่า Scene ปัจจุบันตรงกับ Scene ที่บันทึกไว้หรือไม่
+            // ถ้าไม่ตรง อาจจะไม่ต้องเซ็ตตำแหน่ง หรือต้องมี Logic พิเศษ
+            if (SceneManager.GetActiveScene().name.Equals(playerData.lastScene))
+            {
+                player.transform.position = playerData.lastPosition;
+                Debug.Log("Player position set to: " + playerData.lastPosition);
+            }
+            else
+            {
+                Debug.LogWarning($"Current scene '{SceneManager.GetActiveScene().name}' does not match saved scene '{playerData.lastScene}'. Player position not set automatically.");
+                // คุณอาจจะต้องมี Logic เพิ่มเติมที่นี่ เช่น หา Spawn Point ใน Scene ใหม่
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Player GameObject with tag 'Player' not found in current scene. Cannot set position.");
+        }
+
+        // แสดงรายการไอเท็มที่เก็บไปแล้ว (สำหรับการ Debug)
+        Debug.Log("Collected Items Count: " + playerData.collectedItemIDs.Count);
+        foreach (string itemID in playerData.collectedItemIDs)
+        {
+            Debug.Log("- " + itemID);
+        }
+
+        // ตรวจสอบและลบไอเท็มที่เก็บไปแล้วใน Scene
+        CheckAndRemoveCollectedItemsInScene();
     }
 
     // ฟังก์ชันสำหรับรีเซ็ตเกม (สำหรับ Debug หรือเริ่มเกมใหม่)
@@ -145,6 +253,8 @@ public class GameStateManager : MonoBehaviour
     // ฟังก์ชันสำหรับเรียกสถานะปัจจุบัน (Player Controller หรือ UI อาจเรียกใช้)
     public int GetStatus1() { return playerData.mental; }
     public int GetStatus2() { return playerData.case_progress; }
+    public Vector3 GetLastPosition() { return playerData.lastPosition; }
+    public string GetLastScene() { return playerData.lastScene; }
 
     // ฟังก์ชันสำหรับตรวจสอบและลบไอเท็มที่เก็บไปแล้วใน Scene
     // ใช้เมื่อมีการเปลี่ยน Scene หรือรีเฟรชไอเท็มใน Scene
