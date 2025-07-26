@@ -33843,6 +33843,8 @@ MonoBehaviour:
     mental: 100
     case_progress: 0
     collectedItemIDs: []
+    lastPosition: {x: 0, y: 0, z: 0}
+    lastScene: MainMenu
   pauseMenuPanel: {fileID: 0}
   playerDuringDialogue: 0
   freezePlayerDuringDialogue: 0
