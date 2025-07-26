@@ -55,6 +55,9 @@ TagManager:
   - name: Player2
     uniqueID: 4162330247
     locked: 0
+  - name: WallCollider
+    uniqueID: 1467216139
+    locked: 0
   - name: Wall
     uniqueID: 4105448301
     locked: 0
@@ -66,6 +69,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3259925897
+    locked: 0
+  - name: Roof
+    uniqueID: 1070602461
     locked: 0
   - name: Interactable
     uniqueID: 2505629007
