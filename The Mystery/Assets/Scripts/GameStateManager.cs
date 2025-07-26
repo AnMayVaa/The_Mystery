@@ -74,6 +74,9 @@ public class GameStateManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         ClosePanel(pauseMenuPanel); // ปิด Pause Menu Panel เมื่อ Scene โหลดเสร็จ
+        playerDuringDialogue = false; // รีเซ็ตสถานะผู้เล่นที่กำลังอยู่ในบทสนทนา
+        freezePlayerDuringDialogue = true; // รีเซ็ตการหยุดผู้เล่นในบทสนทนาเป็นค่าเริ่มต้น
+        
         // ตรวจสอบว่าไม่ใช่ Main Menu และไม่ได้กำลังอยู่ในกระบวนการโหลดเกมจาก Save (เพื่อป้องกันการวนลูป)
         if (!scene.name.Equals("Mainmenu_scene") && !isLoadingGameFromSave)
         {
