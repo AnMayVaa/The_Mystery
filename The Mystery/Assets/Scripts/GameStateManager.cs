@@ -110,7 +110,7 @@ public class GameStateManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // ถ้ามี Panel สำหรับ Pause Menu ให้สลับสถานะการแสดงผล และต้องไม่ใช้ main menu
-            if (pauseMenuPanel != null && !SceneManager.GetActiveScene().name.Equals("Mainmenu_scene"))
+            if (pauseMenuPanel != null && !SceneManager.GetActiveScene().name.Equals("Mainmenu_scene") && !playerDuringDialogue)
             {
                 TogglePanel(pauseMenuPanel);
                 // อาจจะหยุดเวลาเกมเมื่อเปิดเมนูหยุดเกม

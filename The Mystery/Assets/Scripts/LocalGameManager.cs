@@ -59,7 +59,7 @@ public class LocalGameManager : MonoBehaviour
         // Set Bool in DialogueManager
         ConversationManager.Instance.SetBool(boolName, value);
     }
-    
+
     public void SetBoolbyboolName_value(string boolName_value)
     {
         string boolName;
@@ -173,5 +173,20 @@ public class LocalGameManager : MonoBehaviour
             Debug.LogWarning($"String '{inputString}' is not in the expected 'itemID_boolName' format.");
             return false;
         }
+    }
+
+    public void Quitgame()
+    {
+        GameStateManager.Instance.QuitGame();
+    }
+
+    public void Savegame()
+    {
+        GameStateManager.Instance.SaveGame();
+    }
+
+    public void ApplyLoadedgameDatatoCurrentscene()
+    {
+        GameStateManager.Instance.ApplyLoadedGameDataToCurrentScene();
     }
 }
