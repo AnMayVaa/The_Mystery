@@ -17,19 +17,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip streetMusic;
     public AudioClip houseMusic;
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
