@@ -19,7 +19,7 @@ public class LightIntensityChanging : MonoBehaviour
         }
         else
         {
-            Light.intensity = lightIntensitywhenOn; // Set initial intensity
+            Light.intensity = lightIntensitywhenOff; // Set initial intensity
             Debug.Log("Global light initialized with intensity: " + Light.intensity);
         }
     }

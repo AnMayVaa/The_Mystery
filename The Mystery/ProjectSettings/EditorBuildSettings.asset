@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene/example_Street_scene 1.unity
     guid: a00721a84a81c4c4fb097a30c1bb2f0b
+  - enabled: 1
+    path: Assets/Scenes/example_Crime_scene 1.unity
+    guid: eb83cb70f1add2e4db49b29c1c1c6512
   m_configObjects: {}
