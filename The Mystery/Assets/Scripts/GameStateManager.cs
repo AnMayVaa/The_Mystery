@@ -28,18 +28,22 @@ public class GameStateManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern เพื่อให้มี GameStateManager แค่ตัวเดียวในเกม
+        // Singleton Pattern: ถ้า Instance ยังไม่มี ให้สร้างใหม่
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // ให้ GameManager อยู่ตลอดการเปลี่ยน Scene
+            DontDestroyOnLoad(gameObject); // ทำให้ GameStateManager ไม่ถูกทำลายเมื่อเปลี่ยน Scene
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // ถ้ามี Instance อยู่แล้ว ให้ทำลายตัวนี้
+            return;
         }
 
-        saveFilePath = Path.Combine(Application.persistentDataPath, "playerSaveData.json");
+        // กำหนด path สำหรับไฟล์เซฟ
+            // ใช้ Application.persistentDataPath เพื่อให้ไฟล์เซฟอยู่ในที่ที่เหมาะสมสำหรับแพลตฟอร์มต่างๆ
+            // เช่น บน Android จะอยู่ใน Internal Storage, บน PC จะอยู่ใน Documents
+            saveFilePath = Path.Combine(Application.persistentDataPath, "playerSaveData.json");
 
         // โหลดข้อมูลเริ่มต้นเมื่อ GameStateManager ถูกสร้างขึ้นครั้งแรก
         // แต่จะยังไม่เปลี่ยน Scene ที่นี่
@@ -58,7 +62,7 @@ public class GameStateManager : MonoBehaviour
             Debug.LogWarning("No save file found. Initializing new PlayerData.");
         }
     }
-    
+
     // เพิ่ม OnEnable และ OnDisable เพื่อจัดการ Event
     private void OnEnable()
     {
@@ -76,7 +80,7 @@ public class GameStateManager : MonoBehaviour
         ClosePanel(pauseMenuPanel); // ปิด Pause Menu Panel เมื่อ Scene โหลดเสร็จ
         playerDuringDialogue = false; // รีเซ็ตสถานะผู้เล่นที่กำลังอยู่ในบทสนทนา
         freezePlayerDuringDialogue = true; // รีเซ็ตการหยุดผู้เล่นในบทสนทนาเป็นค่าเริ่มต้น
-        
+
         // ตรวจสอบว่าไม่ใช่ Main Menu และไม่ได้กำลังอยู่ในกระบวนการโหลดเกมจาก Save (เพื่อป้องกันการวนลูป)
         if (!scene.name.Equals("Mainmenu_scene") && !isLoadingGameFromSave)
         {
@@ -375,138 +379,14 @@ public class GameStateManager : MonoBehaviour
     {
         Time.timeScale = _previousTimeScale;
     }
-
-    // Function to check if an item has been collected, based on itemID
+    
+    /// <summary>
+    /// ตรวจสอบว่าผู้เล่นได้เก็บไอเท็มที่ระบุหรือไม่
+    /// </summary>
+    /// <param name="itemID">ID ของไอเท็มที่ต้องการตรวจสอบ</param>
+    /// <returns>true ถ้าเก็บแล้ว, false ถ้ายังไม่เก็บ</returns>
     public bool HasCollectedItem(string itemID)
     {
         return playerData.collectedItemIDs.Contains(itemID);
-    }
-
-    // Set Bool in DialogueManager
-    public void SetBool(string boolName, bool value)
-    {
-        // Check if the desired Bool exists
-        if (string.IsNullOrEmpty(boolName))
-        {
-            Debug.LogWarning("Bool name is null or empty. Cannot set value.");
-            return;
-        }
-        // Set Bool in DialogueManager
-        ConversationManager.Instance.SetBool(boolName, value);
-    }
-    
-    public void SetBoolbyboolName_value(string boolName_value)
-    {
-        string boolName;
-        string value;
-        bool TValue; // Default value
-
-        // แยก boolName และ value จาก string ที่ส่งมา
-        // โดยใช้ฟังก์ชัน splitIdBool ที่เราได้สร้างไว้
-        // และตรวจสอบค่า return ของฟังก์ชัน
-        if (splitIdBool(boolName_value, out boolName, out value))
-        {
-            //change string var to bool var for value
-            if (value == "true")
-            {
-                TValue = true; // Set TValue to true if value is "true"
-            }
-            else if (value == "false")
-            {
-                TValue = false; // Set TValue to false if value is "false"
-            }
-            else
-            {
-                Debug.LogWarning("SetBool: Invalid value provided. Must be 'true' or 'false'.");
-                return; // ไม่ทำอะไรต่อถ้าไม่ใช่ true หรือ false
-            }
-
-            ConversationManager.Instance.SetBool(boolName, TValue);
-            Debug.Log("Set " + boolName + " to " + value);
-        }
-        else
-        {
-            // ถ้า splitIdBool คืนค่า false แสดงว่าการแยก String มีปัญหา
-            Debug.LogWarning("SetBool: Failed to parse boolName_value: " + boolName_value);
-            // ไม่ต้องทำอะไรต่อ หรือจะเพิ่มการจัดการ Error อื่นๆ ได้ที่นี่
-        }
-    }
-
-    /// <summary>
-    /// This function checks if a specific item is collected and sets a corresponding
-    /// boolean in the Dialogue Manager. It is designed to be called directly from
-    /// the Dialogue Editor's Event tab, passing itemID and boolName as parameters.
-    /// </summary>
-    // Sum HasCollectedItem and SetBool เพื่อจะได้ตรวจสอบว่าเก็บหรือยังไม่ แล้วตั้งค่า Bool ใน DialogueManager เพื่อใช้ ใน tab Event() บน Dialogue Editor
-    public void CheckAndSetItemCollected(string itemID_boolName)
-    {
-        string itemID;
-        string boolName;
-
-        // แยก itemID และ boolName จาก string ที่ส่งมา
-        // โดยใช้ฟังก์ชัน splitIdBool ที่เราได้สร้างไว้
-        // และตรวจสอบค่า return ของฟังก์ชัน
-        if (splitIdBool(itemID_boolName, out itemID, out boolName))
-        {
-            // ไม่จำเป็นต้องตรวจสอบ string.IsNullOrEmpty(itemID) หรือ boolName ซ้ำอีกครั้ง
-            // เพราะ splitIdBool จะคืนค่า false ถ้ามันว่างเปล่าหรือมีปัญหา
-            // และถ้า splitIdBool คืนค่า true แสดงว่า itemID และ boolName จะมีค่า
-
-            if (HasCollectedItem(itemID))
-            {
-                SetBool(boolName, true);
-                Debug.Log("Set " + boolName + " to true for collected item: " + itemID);
-            }
-            else
-            {
-                SetBool(boolName, false);
-                Debug.Log("Set " + boolName + " to false for uncollected item: " + itemID);
-            }
-        }
-        else
-        {
-            // ถ้า splitIdBool คืนค่า false แสดงว่าการแยก String มีปัญหา
-            Debug.LogWarning("CheckAndSetItemCollected: Failed to parse itemID_boolName: " + itemID_boolName);
-            // ไม่ต้องทำอะไรต่อ หรือจะเพิ่มการจัดการ Error อื่นๆ ได้ที่นี่
-        }
-    }
-    // Debuging function to print Hello World
-    public void PrintHelloWorld()
-    {
-        Debug.Log("Hello World from GameStateManager!");
-    }
-
-    /// <summary>
-    /// แบ่ง String ที่อยู่ในรูปแบบ "itemID_boolName" ออกเป็น itemID และ boolName
-    /// </summary>
-    /// <param name="inputString">String ที่ต้องการแบ่ง (เช่น "sword_isEquipped")</param>
-    /// <param name="itemID">ส่วนของ ID ที่แบ่งได้</param>
-    /// <param name="boolName">ส่วนของชื่อ Boolean ที่แบ่งได้</param>
-    /// <returns>true ถ้าแบ่งได้สำเร็จและมี 2 ส่วน, false ถ้าไม่สำเร็จหรือไม่ถูกต้องตามรูปแบบ</returns>
-    public bool splitIdBool(string inputString, out string itemID, out string boolName)
-    {
-        itemID = string.Empty;
-        boolName = string.Empty;
-
-        if (string.IsNullOrEmpty(inputString))
-        {
-            Debug.LogWarning("Input string cannot be null or empty for splitIdBool.");
-            return false;
-        }
-
-        char delimiter = '_';
-        string[] parts = inputString.Split(delimiter);
-
-        if (parts.Length == 2)
-        {
-            itemID = parts[0];
-            boolName = parts[1];
-            return true;
-        }
-        else
-        {
-            Debug.LogWarning($"String '{inputString}' is not in the expected 'itemID_boolName' format.");
-            return false;
-        }
     }
 }
