@@ -61,6 +61,19 @@ public class LocalGameManager : MonoBehaviour
         ConversationManager.Instance.SetBool(boolName, value);
     }
 
+    // Set Integer in DialogueManager
+    public void SetInt(string IntName, int value)
+    {
+        // Check if the desired Bool exists
+        if (string.IsNullOrEmpty(IntName))
+        {
+            Debug.LogWarning("Int name is null or empty. Cannot set value.");
+            return;
+        }
+        // Set Bool in DialogueManager
+        ConversationManager.Instance.SetInt(IntName, value);
+    }
+
     public void SetBoolbyboolName_value(string boolName_value)
     {
         string boolName;
@@ -70,7 +83,7 @@ public class LocalGameManager : MonoBehaviour
         // แยก boolName และ value จาก string ที่ส่งมา
         // โดยใช้ฟังก์ชัน splitIdBool ที่เราได้สร้างไว้
         // และตรวจสอบค่า return ของฟังก์ชัน
-        if (splitIdBool(boolName_value, out boolName, out value))
+        if (SplitKeyValue(boolName_value, out boolName, out value))
         {
             //change string var to bool var for value
             if (value == "true")
@@ -112,7 +125,7 @@ public class LocalGameManager : MonoBehaviour
         // แยก itemID และ boolName จาก string ที่ส่งมา
         // โดยใช้ฟังก์ชัน splitIdBool ที่เราได้สร้างไว้
         // และตรวจสอบค่า return ของฟังก์ชัน
-        if (splitIdBool(itemID_boolName, out itemID, out boolName))
+        if (SplitKeyValue(itemID_boolName, out itemID, out boolName))
         {
             // ไม่จำเป็นต้องตรวจสอบ string.IsNullOrEmpty(itemID) หรือ boolName ซ้ำอีกครั้ง
             // เพราะ splitIdBool จะคืนค่า false ถ้ามันว่างเปล่าหรือมีปัญหา
@@ -143,35 +156,36 @@ public class LocalGameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// แบ่ง String ที่อยู่ในรูปแบบ "itemID_boolName" ออกเป็น itemID และ boolName
+    /// แบ่ง String ที่อยู่ในรูปแบบ "Key,Value" ออกเป็น 2 ส่วน
     /// </summary>
-    /// <param name="inputString">String ที่ต้องการแบ่ง (เช่น "sword_isEquipped")</param>
-    /// <param name="itemID">ส่วนของ ID ที่แบ่งได้</param>
-    /// <param name="boolName">ส่วนของชื่อ Boolean ที่แบ่งได้</param>
-    /// <returns>true ถ้าแบ่งได้สำเร็จและมี 2 ส่วน, false ถ้าไม่สำเร็จหรือไม่ถูกต้องตามรูปแบบ</returns>
-    public bool splitIdBool(string inputString, out string itemID, out string boolName)
+    /// <param name="input">String ที่ต้องการแบ่ง (เช่น "playerScore,100")</param>
+    /// <param name="key">ส่วนของ Key หรือชื่อตัวแปร</param>
+    /// <param name="value">ส่วนของ Value หรือค่า</param>
+    /// <returns>true ถ้าแบ่งได้สำเร็จ</returns>
+    public bool SplitKeyValue(string input, out string key, out string value)
     {
-        itemID = string.Empty;
-        boolName = string.Empty;
+        key = string.Empty;
+        value = string.Empty;
 
-        if (string.IsNullOrEmpty(inputString))
+        if (string.IsNullOrEmpty(input))
         {
-            Debug.LogWarning("Input string cannot be null or empty for splitIdBool.");
+            Debug.LogWarning("Input string cannot be null or empty.");
             return false;
         }
 
-        char delimiter = '_';
-        string[] parts = inputString.Split(delimiter);
+        // เราจะใช้เครื่องหมาย , (comma) เป็นตัวแบ่ง
+        string[] parts = input.Split(',');
 
         if (parts.Length == 2)
         {
-            itemID = parts[0];
-            boolName = parts[1];
+            // .Trim() ช่วยลบช่องว่างที่อาจติดมาข้างหน้าหรือข้างหลัง
+            key = parts[0].Trim();
+            value = parts[1].Trim();
             return true;
         }
         else
         {
-            Debug.LogWarning($"String '{inputString}' is not in the expected 'itemID_boolName' format.");
+            Debug.LogWarning($"Input string '{input}' is not in the expected 'Key,Value' format.");
             return false;
         }
     }
@@ -190,5 +204,61 @@ public class LocalGameManager : MonoBehaviour
     public void ApplyLoadedgameDatatoCurrentscene()
     {
         GameStateManager.Instance.ApplyLoadedGameDataToCurrentScene();
+    }
+
+    public int GetPlayerCaseProgress(out int caseprogress)
+    {
+        caseprogress = playerData.case_progress;
+        return caseprogress;
+    }
+
+    public int GetPlayerMental(out int mental)
+    {
+        mental = playerData.mental;
+        return mental;
+    }
+
+    /// <summary>
+    /// ตั้งค่าตัวแปร Integer ใน Dialogue Editor ด้วยค่า mental ปัจจุบันของผู้เล่น
+    /// </summary>
+    /// <param name="intName">ชื่อของตัวแปร Integer ใน Dialogue Editor</param>
+    public void SetIntbyIntName_mental(string intName)
+    {
+        if (string.IsNullOrWhiteSpace(intName))
+        {
+            Debug.LogWarning("Dialogue integer name cannot be empty.");
+            return;
+        }
+
+        // 1. ดึงค่า mental ปัจจุบันจาก playerData
+        int currentValue = playerData.mental;
+
+        // 2. ตั้งค่า Integer ใน ConversationManager
+        ConversationManager.Instance.SetInt(intName, currentValue);
+
+        // 3. แสดง Log เพื่อยืนยันการทำงาน
+        Debug.Log($"Set dialogue integer '{intName}' to playerData.mental value: {currentValue}");
+    }
+
+    /// <summary>
+    /// ตั้งค่าตัวแปร Integer ใน Dialogue Editor ด้วยค่า case_progress ปัจจุบันของผู้เล่น
+    /// </summary>
+    /// <param name="intName">ชื่อของตัวแปร Integer ใน Dialogue Editor</param>
+    public void SetIntbyIntName_caseprogress(string intName)
+    {
+        if (string.IsNullOrWhiteSpace(intName))
+        {
+            Debug.LogWarning("Dialogue integer name cannot be empty.");
+            return;
+        }
+
+        // 1. ดึงค่า case_progress ปัจจุบันจาก playerData
+        int currentValue = playerData.case_progress;
+
+        // 2. ตั้งค่า Integer ใน ConversationManager
+        ConversationManager.Instance.SetInt(intName, currentValue);
+
+        // 3. แสดง Log เพื่อยืนยันการทำงาน
+        Debug.Log($"Set dialogue integer '{intName}' to playerData.case_progress value: {currentValue}");
     }
 }
