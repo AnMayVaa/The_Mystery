@@ -34,7 +34,10 @@ public class CollectibleItem : MonoBehaviour
             {
                 dialogueStartert.uiPrompt.SetActive(false); // ซ่อนข้อความ UI เมื่อเก็บแล้ว
             }
-            Destroy(gameObject); // ทำลายไอเท็มหลังจากเก็บ
+            if (itemData.itemName != "Mention Increase") // ถ้าไอเทมไม่ได้ชื่อ Mention increase ให้ทำลายทิ้งหลังเก็บ
+            {
+                Destroy(gameObject);
+            } 
         }
         else
         {
