@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Mention Increase
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: 20
+  mental: 100
   case_progress: 0
   itemID: Add Mention
