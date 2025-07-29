@@ -20,6 +20,7 @@ public class LocalGameManager : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
             Debug.Log("Changing scene to: " + sceneName);
+            Savegame();
         }
         else
         {
@@ -182,6 +183,7 @@ public class LocalGameManager : MonoBehaviour
 
     public void Savegame()
     {
+        Debug.Log("Save from localGameManager");
         GameStateManager.Instance.SaveGame();
     }
 

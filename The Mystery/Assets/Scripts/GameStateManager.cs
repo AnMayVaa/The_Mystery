@@ -149,16 +149,16 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("Collected: " + collectedItem.itemName);
         Debug.Log("mental status: " + playerData.mental + ", case_progress status: " + playerData.case_progress);
 
-        // บันทึกตำแหน่งและ Scene ปัจจุบัน
-        playerData.lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
-        playerData.lastScene = SceneManager.GetActiveScene().name; // ใช้ชื่อ Scene ปัจจุบัน
-
         // บันทึกเกมทันทีหลังจากเก็บไอเท็ม (หรือจะบันทึกเป็นช่วงๆ ก็ได้)
         SaveGame();
     }
 
     public void SaveGame()
     {
+        // บันทึกตำแหน่งและ Scene ปัจจุบัน
+        playerData.lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        playerData.lastScene = SceneManager.GetActiveScene().name; // ใช้ชื่อ Scene ปัจจุบัน
+
         string json = JsonUtility.ToJson(playerData);
         File.WriteAllText(saveFilePath, json);
         Debug.Log("Game Saved! At " + saveFilePath);
