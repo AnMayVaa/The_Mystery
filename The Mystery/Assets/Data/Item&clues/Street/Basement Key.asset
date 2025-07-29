@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Basement Key
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -30
+  mental: -35
   case_progress: 0
   itemID: Basement Key

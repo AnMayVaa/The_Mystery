@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a27599a43ca71b4d82892007115e1b1, type: 3}
-  m_Name: Letter
+  m_Name: corpse
   m_EditorClassIdentifier: 
-  itemName: Letter
+  itemName: 
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -40
+  mental: -15
   case_progress: 0
-  itemID: Letter
+  itemID: corpse
