@@ -1,28 +1,33 @@
-using System.Collections.Generic; // For List<T>
-using UnityEngine; // For Vector3
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+public class ScenePositionData
+{
+    public string sceneName;
+    public Vector3 lastPosition;
+}
 
 [System.Serializable]
 public class PlayerData
 {
-    public int mental; //
-    public int case_progress; //
-
-    // List<string> inventory; // List to hold item IDs
+    public int mental;
+    public int case_progress;
     public List<string> collectedItemIDs;
 
-    // Position and scene that player was last in
     public Vector3 lastPosition;
     public string lastScene;
 
+    public List<ScenePositionData> scenePositions;
+
     public PlayerData()
     {
-        // Initialize default values
-        mental = 100; // Default value for status1 
-        case_progress = 0; // Default value for status2
-
+        mental = 100;
+        case_progress = 0;
         collectedItemIDs = new List<string>();
 
-        lastPosition = Vector3.zero; // Default position
-        lastScene = "MainMenu"; // Default scene
+        lastPosition = Vector3.zero;
+        lastScene = "Mainmenu_scene";
+        scenePositions = new List<ScenePositionData>();
     }
 }
