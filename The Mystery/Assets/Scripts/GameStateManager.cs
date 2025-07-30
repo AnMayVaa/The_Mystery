@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq; // ✨ สำคัญมาก! ต้องมีเพื่อใช้ .FirstOrDefault()
+using System.Linq; //สำคัญ ต้องมีเพื่อใช้ .FirstOrDefault()
 using UnityEngine.SceneManagement;
 using DialogueEditor;
 
@@ -98,7 +98,7 @@ public class GameStateManager : MonoBehaviour
         }
     }
     
-    // ✨ เพิ่มเข้ามา: ฟังก์ชันนี้จะถูกเรียกอัตโนมัติเมื่อผู้เล่นกำลังจะออกจากเกม
+    //เพิ่มเข้ามา: ฟังก์ชันนี้จะถูกเรียกอัตโนมัติเมื่อผู้เล่นกำลังจะออกจากเกม
     private void OnApplicationQuit()
     {
         // ตรวจสอบว่าไม่ได้อยู่ที่ Main Menu ก่อนจะเซฟ
