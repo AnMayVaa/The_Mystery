@@ -354,6 +354,7 @@ MonoBehaviour:
   menuMusic: {fileID: 8300000, guid: c96ec04301ada2545bf3b576ceac23ff, type: 3}
   streetMusic: {fileID: 8300000, guid: b714ad35f33d1444ba21f09bba6ec502, type: 3}
   houseMusic: {fileID: 8300000, guid: 9e4fba44edca5eb4eb7afd25bb24f21e, type: 3}
+  crimeMusic: {fileID: 8300000, guid: ff576eb368b4dba4ab4dfc3fa9435d26, type: 3}
 --- !u!1 &515688391388019565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1077,7 @@ MonoBehaviour:
     collectedItemIDs: []
     lastPosition: {x: 0, y: 0, z: 0}
     lastScene: MainMenu
+    scenePositions: []
   pauseMenuPanel: {fileID: 2643713853631953678}
   playerDuringDialogue: 0
   freezePlayerDuringDialogue: 0

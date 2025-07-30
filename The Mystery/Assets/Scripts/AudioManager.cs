@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip menuMusic;
     public AudioClip streetMusic;
     public AudioClip houseMusic;
+    public AudioClip crimeMusic;
 
     private void OnEnable()
     {
@@ -42,12 +43,15 @@ public class AudioManager : MonoBehaviour
                 PlayMusic(menuMusic);
                 break;
 
-            case "Street_scene":
+            case "Street_scene(final)":
                 PlayMusic(streetMusic);
                 break;
 
             case "House_scene(final)":
                 PlayMusic(houseMusic);
+                break;
+            case "Crime_scene(final)":
+                PlayMusic(crimeMusic); 
                 break;
         }
     }
