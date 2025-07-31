@@ -16,5 +16,5 @@ MonoBehaviour:
   itemDescription: 
   itemIcon: {fileID: 21300000, guid: be943aaca899b9a42b78933c178aecb5, type: 3}
   mental: 0
-  case_progress: 0
+  case_progress: 10
   itemID: Cigarette
