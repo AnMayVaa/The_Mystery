@@ -226,10 +226,10 @@ GameObject:
   - component: {fileID: 34101556}
   - component: {fileID: 34101555}
   - component: {fileID: 34101554}
-  - component: {fileID: 34101553}
   - component: {fileID: 34101552}
+  - component: {fileID: 34101557}
   m_Layer: 0
-  m_Name: SPN (2)
+  m_Name: Villager2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,77 +247,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e576c40ec6655e459de39eba102f4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myConversation: {fileID: 34101553}
+  myConversation: {fileID: 0}
   uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
---- !u!114 &34101553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34101551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 23
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":327.0999,\"yPos\":263.000122},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
-    Into the Fog\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":571.1,\"yPos\":161.400314},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1049.5,\"yPos\":159.800308},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":806.2998,\"yPos\":265.4001},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
-    is murderer.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
-    been missing almost a whole week!\\nDo you know how much trouble you\u2019ve
-    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":327.100037,\"yPos\":139.199692},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
-    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299927,\"yPos\":338.3994},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
-    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.2998,\"yPos\":437.599121},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    know\u2026 but it\u2019s not this case that\u2019s been haunting me.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299866,\"yPos\":540.799255},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":324.699829,\"yPos\":644.799255},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
-    something missing from my head\u2026\\nLike a hole right in the middle of my
-    life.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299866,\"yPos\":749.599548},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
-    voices\u2026 they don\u2019t fit together.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325.499878,\"yPos\":847.1994},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
-    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325.499878,\"yPos\":943.9992},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    don\u2019t need rest.\\nI need to find out who I really am.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322.299927,\"yPos\":1048.80139},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-    what if you don\u2019t like what you find?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.0999,\"yPos\":1153.60559},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
-    I hope I can live with it...\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322.299927,\"yPos\":1258.40491},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[Ending:
-    Walk Into the Fog]\\n\\nHe didn\u2019t solve the case.\\nBut maybe the case was
-    never the point.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.099976,\"yPos\":1361.60437},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"End\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":80}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":807.899658,\"yPos\":144.000351},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you know about this case?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
-  saveVersion: 110
-  DefaultName: Chief
-  DefaultSprite: {fileID: 21300000, guid: 69567009e9f1a2345bacfc3178966671, type: 3}
-  DefaultFont: {fileID: 0}
-  NodeSerializedDataList:
-  - {fileID: 1263663343}
-  - {fileID: 1263663342}
-  - {fileID: 1263663341}
-  - {fileID: 1263663340}
-  - {fileID: 1263663339}
-  - {fileID: 1263663338}
-  - {fileID: 1263663337}
-  - {fileID: 1263663336}
-  - {fileID: 1263663335}
-  - {fileID: 1263663334}
-  - {fileID: 1263663333}
-  - {fileID: 1263663332}
-  - {fileID: 1263663331}
-  - {fileID: 1263663330}
-  - {fileID: 1263663329}
-  - {fileID: 1263663328}
-  - {fileID: 1263663327}
-  - {fileID: 1263663325}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!61 &34101554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -350,7 +284,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.583622}
+  m_Offset: {x: 0, y: 0.07723901}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -361,7 +295,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8327561}
+  m_Size: {x: 1, y: 2.1544778}
   m_EdgeRadius: 0
 --- !u!212 &34101555
 SpriteRenderer:
@@ -432,6 +366,33 @@ Transform:
   - {fileID: 1263663326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34101557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34101551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 1
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":59.7000122,"yPos":85.2},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    you want to sum it up, you should speak to your boss.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Link
+    Kinkraton","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 1263663344}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &66798487
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,16 +536,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait...
-    this belonged to the victim?\nWhy did Lucas have it?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Victim
-    ID card","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 3
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Left
+    way - to the Street","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Sign","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":136,"yPos":149.600021},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nothing","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Sign","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
-  DefaultName: 
+  DefaultName: Sign
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 549965027}
+  - {fileID: 549965029}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -757,7 +718,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66886845}
   m_CullTransparentMesh: 1
---- !u!43 &107361787
+--- !u!43 &130750277
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -768,14 +729,14 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 138
+    indexCount: 342
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 46
+    vertexCount: 116
     localAABB:
-      m_Center: {x: 5.466134, y: 2.916986, z: 0}
-      m_Extent: {x: 6.031787, y: 7.5464387, z: 0}
+      m_Center: {x: 7.9836535, y: 22.900177, z: 0}
+      m_Extent: {x: 8.550211, y: 23.51152, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -792,10 +753,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200000003000100000004000300000005000400000006000500070006000000070008000600080009000a0008000b0009000b00080007000c000d000e000c000f000d000f000c00010003000d000f0010000d000300100011000d0012001100100008001200130012000a0011000a00120008001400040005000400140015000200160000000000170007000100180002000300190001000c001a00010001001b000f0004001c0003000f001d00030003001e00100015001f000400060020000500050021001400080022000600070023000b00130024000800090025000a000b00260009000a00270011000e0028000c000d0029000e0011002a000d0010002b00120012002c00130014002d001500
+  m_IndexBuffer: 000001000200030001000000030004000100040005000600030005000400050003000700080009000a000b00090008000b000c0009000b0000000c000b000d0000000b000e000d000f000e000b000f0010000e000f001100100011000f001200130014000a00150014001300140015001600160002001700180019001a0018001b0019001c001b00180004001c001d001c0006001b0006001c00040019001e001a0019001f001e0020001f00190021001f002000210022001f00230022002100230024002200240025002600230025002400250023002700280029002a0028002b00290028002c002b0028002d002c002e002d0028002e002f002d0030002f002e00240030003100300026002f00260030002400320029002b0032003300290034003300320011003400350012003400110036003400120034003700330037003400360002003800000000003900030000003a000c000d003b00000001003c00020004003d00010016003e00020002003f0017000300400007001d0041000400050042000600070043000500060044001b000a0045000800080046000b00090047000a000c00480009000a004900130014004a000a000b004b000f000e004c000d0010004d000e000f004e00120011004f0010003500500011001200510036001300520015001600530014001500540016001700550016001a0056001800180057001c001b00580019001900590020001e005a001a001c005b001d001f005c001e0022005d001f0020005e00210021005f002300240060002200230061002700310062002400250063002600270064002500260065002f002a0066002800280067002e00290068002a003300690029002c006a002b002b006b0032002d006c002c002f006d002d002e006e00300030006f003100320070003400370071003300340072003500360073003700
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 46
+    m_VertexCount: 116
     m_Channels:
     - stream: 0
       offset: 0
@@ -853,8 +814,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 2024
-    _typelessdata: c26f37419e8793c000000000e6ff7f3f0d69e8ba0000008000000080c26f37419e8793c0c26f37419e8793c000d63741257a174100000000117db739feff7fbf000000800000008004d637413c82174104d637413c821741e3a23741da7c1b4000000000e6ff7f3f8f67e8ba000000800000008004d637413c821741c26f37419e8793c0031b3441db7917410000000019be0f3c7bfd7fbf000000800000008004d637413c82174104d637413c8217419caa2f41e36f174100000000b5ba0fbc7afd7f3f0000008000000080347f27418a5d174104d637413c8217415cc92741608562c000000000ab526cbb92ff7f3f00000080000000805cc92741608562c05cc92741608562c0baa9ae4076ae63c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c05cc92741608562c0d862ae400cd693c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0a0ce10bf7a2494c0c00bdc3e8cd764c000000000deff7f3fe40605bb0000008000000080c00bdc3e8cd764c0c00bdc3e8cd764c0b03d0dbfe6af3a4000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0c0ac09bf306a2741c0ac09bf306a274100000000e3ff7fbf93f3f13a0000008000000080c0ac09bf306a2741c0ac09bf306a2741a0ce10bf7a2494c000000000ce9dd03aebff7fbf0000008000000080a0ce10bf7a2494c0a0ce10bf7a2494c07cf73741287a174100000000fafe7f3f432eb73b00000080000000807cf73741287a17417cf73741287a174118e13741681f27410000000041eac63aecff7f3f000000800000008018e13741681f274118e13741681f27414aec3741c84c1f4100000000fafe7f3f432eb73b000000800000008018e13741681f27417cf73741287a174104d637413c82174100000000e0ff7fbf0d28fd3a000000800000008004d637413c82174104d637413c8217414444bf404b731741000000000a1b9f39feff7fbf00000080000000807cf73741287a17410099e93e6e6c17414c46af40cc4427410000000041eac63aecff7f3f0000008000000080c0ac09bf306a274118e13741681f27410099e93e6e6c174100000000d81f9f39ffff7fbf00000080000000800099e93e6e6c17410099e93e6e6c174160d2e23e166d3c4000000000deff7f3fe40605bb00000080000000800099e93e6e6c1741c00bdc3e8cd764c048a4274164783d4000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c0347f27418a5d1741347f27418a5d174100000000f0ff7fbfc88ab6ba0000000000000080347f27418a5d1741347f27418a5d1741e3a23741da7c1b4000000000e6ff7f3f0d69e8ba000000800000008004d637413c821741c26f37419e8793c0c26f37419e8793c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0c26f37419e8793c000d63741257a174100000000e6ff7f3f8f67e8ba000000800000008004d637413c82174104d637413c821741031b3441db79174100000000f4b19eb9ffff7f3f000000800000008004d637413c82174104d637413c8217417cf73741287a174100000000117db739feff7fbf00000080000000807cf73741287a17417cf73741287a174100d63741257a174100000000e0ff7fbf0d28fd3a000000800000008004d637413c82174104d637413c8217419caa2f41e36f174100000000ddb70fbc7bfd7f3f0000008000000080347f27418a5d174104d637413c82174104d637413c8217410000000019be0f3c7bfd7fbf000000800000008004d637413c82174104d637413c821741031b3441db791741000000000a1b9f39feff7fbf000000800000008004d637413c82174104d637413c821741347f27418a5d174100000000b5ba0fbc7afd7f3f0000008000000080347f27418a5d1741347f27418a5d1741baa9ae4076ae63c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c05cc92741608562c05cc92741608562c000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c05cc92741608562c0c00bdc3e8cd764c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c0c00bdc3e8cd764c0d862ae400cd693c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0a0ce10bf7a2494c060d2e23e166d3c4000000000deff7f3fe40605bb00000080000000800099e93e6e6c1741c00bdc3e8cd764c0b03d0dbfe6af3a4000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0c0ac09bf306a2741a0ce10bf7a2494c000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0a0ce10bf7a2494c0c0ac09bf306a27410000000041eac63aecff7f3f0000008000000080c0ac09bf306a2741c0ac09bf306a27414aec3741c84c1f4100000000fafe7f3f432eb73b000000800000008018e13741681f27417cf73741287a174118e13741681f274100000000fafe7f3f432eb73b000000800000008018e13741681f274118e13741681f27414c46af40cc4427410000000041eac63aecff7f3f0000008000000080c0ac09bf306a274118e13741681f27414444bf404b73174100000000d81f9f39ffff7fbf00000080000000807cf73741287a17410099e93e6e6c17410099e93e6e6c174100000000deff7f3fe40605bb00000080000000800099e93e6e6c17410099e93e6e6c174148a4274164783d4000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c0347f27418a5d1741
+    m_DataSize: 5104
+    _typelessdata: 61c7774116f01d41000000009bff7fbfc587623b0000008000000080f1077841c3e66641f1077841c3e666419c9e2f41adaf6641000000002a9a18bbd3ff7f3f0000008000000080b411af402b7b66412fda83412fe46641e6077841d7da66410000000076b1183bd3ff7fbf0000008000000080f1077841c3e66641f1077841c3e6664182702741e6ce1d4100000000a980d33aeaff7fbf0000008000000080edc0834195f61d4154be8e4037a71d41b411af402b7b664100000000eaf37f3fb14e9dbc0000008000000080b411af402b7b6641b411af402b7b6641ec8c8f4036005241000000000dfe7fbfb892fc3b000000800000008054be8e4037a71d41845b90409a2c8341845b90409a2c8341000000000dfe7fbfbd92fc3b0000008000000080845b90409a2c8341845b90409a2c834154be8e4037a71d41000000000e7fd33aebff7fbf000000800000008054be8e4037a71d4154be8e4037a71d4185e283413bfadc4000000000faff7f3f50ec4d3a00000080000000806dd683414dc266419dee834120811cbf8ecd8341626d424100000000c3ff7fbf1a53313b00000080000000802fda83412fe46641edc0834195f61d4143d78341ec735e4100000000c3ff7f3f164831bb00000080000000802fda83412fe466412fda83412fe466419dee834120811cbf00000000fbff7f3fa7ef4d3a00000080000000809dee834120811cbf9dee834120811cbfedc0834195f61d4100000000d776d3baebff7f3f0000008000000080edc0834195f61d41edc0834195f61d41ccab77411e89fd40000000009bff7fbfd788623b0000008000000080a64f7741d812b53ff1077841c3e66641a64f7741d812b53f00000000ec20e7b9feff7f3f0000008000000080a64f7741d812b53fa64f7741d812b53fd82eff4040bb19bf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf20e60abf60f516bfd22bff40c0a6b43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43fa64f7741d812b53f8085fb3ea83ab43f00000000f8ff7f3fed5482ba00000080000000808085fb3ea83ab43f8085fb3ea83ab43f20e60abf60f516bf00000000f0b1a6baf3ff7fbf000000000000008020e60abf60f516bf20e60abf60f516bf6dd683414dc2664100000000faff7fbfa11c4eba00000000000000806dd683414dc266416dd683414dc266412fda83412fe4664100000000539518bbd2ff7f3f00000080000000802fda83412fe466412fda83412fe4664166da7f4188d4664100000000a52715bc49fd7fbf0000000000000080f1077841c3e666416dd683414dc26641b81a7c4145dd6641000000004e22153c49fd7f3f00000080000000802fda83412fe466412fda83412fe46641f1077841c3e666410000000093ff7fbff3336c3b0000008000000080f1077841c3e66641f1077841c3e666414409304128297641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b7107641d4acaf4099417641b0597741c0418341000000002c4177baf9ff7f3f0000008000000080b0597741c0418341b0597741c04183410f1e8441b710764100000000f0ff7f3f7c7cb3ba00000080000000800f1e8441b71076410f1e8441b7107641b9c31f412d378341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341b0597741c0418341d4acaf4099417641000000005ae28dbaf6ff7fbf0000000000000080d4acaf4099417641d4acaf4099417641445faf40625e6e4100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641b411af402b7b6641b5318441da14b34100000000f0ff7f3f7d7cb3ba00000080000000805b4584415821eb410f1e8441b71076415b4584415821eb4100000000b821f3bae3ff7f3f00000080000000805b4584415821eb415b4584415821eb4138287741fe2ca54100000000bcff7fbf04ae3abb0000000000000080b0597741c0418341c1f676413c18c741c1f676413c18c74100000000bcff7fbf3eaa3abb0000000000000080c1f676413c18c741c1f676413c18c741823e3041610ceb4100000000b521f3bae3ff7f3f00000080000000809ae4af406af7ea415b4584415821eb41371e1f412b03c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c7415a8b8e401aeec6419ae4af406af7ea4100000000f5f17f3f4394a9bc00000080000000809ae4af406af7ea419ae4af406af7ea4155d68e40b419e14100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec64150218f404e45fb4150218f404e45fb4100000000beff7fbf8b5d373b000000800000008050218f404e45fb4150218f404e45fb415a8b8e401aeec64100000000eb90f53ae3ff7fbf00000080000000805a8b8e401aeec6415a8b8e401aeec641befc834154c4f24100000000f2ff7f3ff9f8a63a0000008000000080befc834154c4f241befc834154c4f241d9d283410a9c3942000000009d450f3afeff7f3f0000008000000080d9d283410a9c3942d9d283410a9c3942cce783411a7f194200000000f2ff7f3ff200a73a0000008000000080d9d283410a9c3942befc834154c4f241d12e7741b28d274200000000baff7fbfe5843c3b0000008000000080d12e7741b28d2742d12e7741b28d2742f0f07641e38b124200000000baff7fbff1873c3b00000080000000800eb376412814fb41d12e7741b28d27420eb376412814fb410000000001af0f3bd7ff7f3f00000080000000800eb376412814fb410eb376412814fb416a1f304190c8f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241b08ab040ccccf241db211f41bb2cfb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb410eb376412814fb41b08ab040ccccf241000000005d6cc5b9ffff7fbf0000000000000080b08ab040ccccf241b08ab040ccccf241a537b0401be2ee4100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf2419ae4af406af7ea41b5afff408c7a274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742400e083f666727421395fe40cfa03942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942d9d283410a9c3942400e083f6667274200000000b74d243bcbff7fbf0000008000000080400e083f66672742400e083f6667274280e8023f3b09ad4100000000f8ff7f3fec5482ba0000008000000080400e083f666727428085fb3ea83ab43f08f80dbfbe49b74100000000fdff7fbf70c405ba000000000000008020e60abf60f516bff00911bf94a53942f00911bf94a5394200000000fdff7fbf6fc405ba0000000000000080f00911bf94a53942f00911bf94a53942e6077841d7da6641000000009cff7f3f368462bb0000008000000080f1077841c3e66641f1077841c3e6664161c7774116f01d4100000000a980d33aeaff7fbf0000008000000080f1077841c3e66641f1077841c3e6664161c7774116f01d4100000000d776d3baebff7f3f0000008000000080f1077841c3e66641f1077841c3e66641ccab77411e89fd40000000009bff7fbfc587623b0000008000000080a64f7741d812b53ff1077841c3e666419c9e2f41adaf664100000000a09918bbd2ff7f3f0000008000000080b411af402b7b66412fda83412fe46641b411af402b7b6641000000002a9a18bbd3ff7f3f0000008000000080b411af402b7b6641b411af402b7b6641b81a7c4145dd66410000000076b1183bd3ff7fbf00000080000000802fda83412fe466412fda83412fe46641e6077841d7da66410000000093ff7fbff3336c3b0000008000000080f1077841c3e66641f1077841c3e6664182702741e6ce1d41000000000e7fd33aebff7fbf0000008000000080edc0834195f61d4154be8e4037a71d41445faf40625e6e4100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641b411af402b7b6641ec8c8f4036005241000000000dfe7fbfbd92fc3b000000800000008054be8e4037a71d41845b90409a2c834154be8e4037a71d41000000000dfe7fbfb892fc3b000000800000008054be8e4037a71d4154be8e4037a71d41845b90409a2c8341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341845b90409a2c834143d78341ec735e4100000000faff7f3f50ec4d3a00000080000000802fda83412fe466412fda83412fe4664185e283413bfadc4000000000fbff7f3fa7ef4d3a00000080000000806dd683414dc266419dee834120811cbf8ecd8341626d424100000000c2ff7fbf6b56313b00000080000000802fda83412fe46641edc0834195f61d41edc0834195f61d4100000000c3ff7fbf1a53313b0000008000000080edc0834195f61d41edc0834195f61d4143d78341ec735e4100000000faff7fbfa11c4eba00000000000000802fda83412fe466412fda83412fe466412fda83412fe4664100000000c3ff7f3f164831bb00000080000000802fda83412fe466412fda83412fe466419dee834120811cbf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf9dee834120811cbfa64f7741d812b53f000000009bff7fbfd788623b0000008000000080a64f7741d812b53fa64f7741d812b53fd22bff40c0a6b43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43fa64f7741d812b53fd82eff4040bb19bf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf20e60abf60f516bf8085fb3ea83ab43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43f8085fb3ea83ab43f80e8023f3b09ad4100000000f8ff7f3fed5482ba0000008000000080400e083f666727428085fb3ea83ab43f20e60abf60f516bf00000000fdff7fbf70c405ba000000000000008020e60abf60f516bf20e60abf60f516bf6dd683414dc2664100000000a52715bc49fd7fbf00000000000000806dd683414dc266416dd683414dc26641b81a7c4145dd664100000000539518bbd2ff7f3f00000080000000802fda83412fe466412fda83412fe4664166da7f4188d46641000000004b2d15bc48fd7fbf0000000000000080f1077841c3e666416dd683414dc26641f1077841c3e66641000000004e22153c49fd7f3f0000008000000080f1077841c3e66641f1077841c3e666410f1e8441b7107641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b71076410f1e8441b71076414409304128297641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b7107641d4acaf4099417641b9c31f412d378341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341b0597741c0418341b0597741c041834100000000bcff7fbf04ae3abb0000000000000080b0597741c0418341b0597741c0418341b5318441da14b34100000000f0ff7f3f7c7cb3ba00000080000000805b4584415821eb410f1e8441b7107641d4acaf409941764100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641d4acaf40994176415b4584415821eb4100000000f0ff7f3f7d7cb3ba00000080000000805b4584415821eb415b4584415821eb41823e3041610ceb4100000000b821f3bae3ff7f3f00000080000000809ae4af406af7ea415b4584415821eb4138287741fe2ca54100000000bcff7fbf3eaa3abb0000000000000080b0597741c0418341c1f676413c18c741c1f676413c18c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c741c1f676413c18c7419ae4af406af7ea4100000000b521f3bae3ff7f3f00000080000000809ae4af406af7ea419ae4af406af7ea41371e1f412b03c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c7415a8b8e401aeec641a537b0401be2ee4100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf2419ae4af406af7ea4155d68e40b419e14100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec64150218f404e45fb415a8b8e401aeec64100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec6415a8b8e401aeec64150218f404e45fb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb4150218f404e45fb41cce783411a7f194200000000f2ff7f3ff9f8a63a0000008000000080d9d283410a9c3942befc834154c4f241befc834154c4f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241befc834154c4f241d9d283410a9c394200000000f2ff7f3ff200a73a0000008000000080d9d283410a9c3942d9d283410a9c39421395fe40cfa03942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942d9d283410a9c3942f0f07641e38b124200000000baff7fbfe5843c3b00000080000000800eb376412814fb41d12e7741b28d2742d12e7741b28d274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742d12e7741b28d27420eb376412814fb4100000000baff7fbff1873c3b00000080000000800eb376412814fb410eb376412814fb41db211f41bb2cfb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb410eb376412814fb416a1f304190c8f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241b08ab040ccccf241b08ab040ccccf24100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf241b08ab040ccccf241b5afff408c7a274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742400e083f66672742f00911bf94a53942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942f00911bf94a53942400e083f6667274200000000f8ff7f3fec5482ba0000008000000080400e083f66672742400e083f6667274208f80dbfbe49b74100000000fdff7fbf6fc405ba000000000000008020e60abf60f516bff00911bf94a53942
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -908,8 +869,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 5.466134, y: 2.916986, z: 0}
-    m_Extent: {x: 6.031787, y: 7.5464387, z: 0}
+    m_Center: {x: 7.9836535, y: 22.900177, z: 0}
+    m_Extent: {x: 8.550211, y: 23.51152, z: 0}
   m_MeshUsageFlags: 0
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
@@ -1220,10 +1181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"HasKnife","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"HasKnife","CheckType":0,"RequiredValue":true}],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Parts
+  json: '{"Options":[],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"HasKnife","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"HasKnife","CheckType":0,"RequiredValue":true}],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Parts
     of the body were deliberately destroyed...\nSomeone was trying to cover their
     tracks.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"The
-    Detective","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":158.700073,"yPos":136.7999},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"From
+    Detective","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":134.200073,"yPos":136.7999},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"From
     the stab wounds... the killer knew how to use a knife.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"The
     Detective","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -3370,6 +3331,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &413390700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413390702}
+  - component: {fileID: 413390701}
+  m_Layer: 0
+  m_Name: Oldman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &413390701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413390700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbec715abe966647a8c95c7827a0cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: bd74e21e14ce06c498670eac09a66970, type: 2}
+--- !u!4 &413390702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413390700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819160316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &447147586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,9 +3520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
     kind of weapon\u2026 definitely illegally ordered.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":162.900009,\"yPos\":128},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":138.400009,\"yPos\":128},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     should go back and analyze the body again.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
     Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -3735,6 +3741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549965028}
   - component: {fileID: 549965027}
+  - component: {fileID: 549965029}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -3788,6 +3795,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 66798493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549965029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549965026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &574225726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,7 +3968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &579743936
 Transform:
   m_ObjectHideFlags: 0
@@ -8415,6 +8441,7 @@ GameObject:
   - component: {fileID: 746520856}
   - component: {fileID: 746520855}
   - component: {fileID: 746520853}
+  - component: {fileID: 746520872}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -8814,6 +8841,25 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 69567009e9f1a2345bacfc3178966671, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &746520872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746520852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: ec7a7c7d7d6e57b4e8e8c6fa20cc8136, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &751184251
 GameObject:
@@ -9473,30 +9519,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 15
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-2354,\"yPos\":173},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Well,
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Well,
     look who\u2019s finally out of the TV screen. Thought you retired to Hone-Krasae
     or something.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-2130.49854,\"yPos\":170.000031},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Guess
+    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":359.999268,\"yPos\":19.8000336},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Guess
     I\u2019m more useful with corpses than cameras.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1909.6991,\"yPos\":170.200043},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heh.
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":580.7981,\"yPos\":20.0000458},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heh.
     Just saying\u2014been a while since the last case, huh?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1686.49829,\"yPos\":171.800018},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Smelled
+    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":803.9995,\"yPos\":20.8000183},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Smelled
     like something died twice. The stink came in through my window around 2AM.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1470.49854,\"yPos\":170.200012},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1019.99976,\"yPos\":20.0000153},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     the smoke?\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1252.098,\"yPos\":169.400024},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yeah.
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1238.40015,\"yPos\":19.2000275},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yeah.
     From the top floor. At first I thought someone was burning trash. \",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1029.699,\"yPos\":169.4},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"But
+    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1460.79907,\"yPos\":19.1999969},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"But
     then I saw a figure\u2014moving weird. Like he didn\u2019t want to be seen.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-812.099365,\"yPos\":170.200012},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Did
+    Man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1678.39868,\"yPos\":20.0000153},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Did
     you see the face?\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-593.699951,\"yPos\":170.999969},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pfft.
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1896.79785,\"yPos\":20.7999725},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pfft.
     I\u2019m old, not blind. But from that distance? Nah.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-369.6997,\"yPos\":170.999969},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Didn\u2019t
+    man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":2120.79639,\"yPos\":20.7999725},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Didn\u2019t
     feel right though. You know that gut feeling? Made my hair stand up.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
-    man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-151.2998,\"yPos\":170.999969},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":2339.1958,\"yPos\":20.7999725},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
     so you called the cops.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":67.10034,\"yPos\":170.999969},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Didn\u2019t
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":2556.796,\"yPos\":20.7999725},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Didn\u2019t
     want your fancy city headlines in my backyard, thank you very much.\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Old
     man\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -9587,6 +9633,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 908195521}
+  - {fileID: 413390702}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &819160317
@@ -9716,6 +9763,171 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!43 &906912587
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 138
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 46
+    localAABB:
+      m_Center: {x: 5.466134, y: 2.916986, z: 0}
+      m_Extent: {x: 6.031787, y: 7.5464387, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000003000100000004000300000005000400000006000500070006000000070008000600080009000a0008000b0009000b00080007000c000d000e000c000f000d000f000c00010003000d000f0010000d000300100011000d0012001100100008001200130012000a0011000a00120008001400040005000400140015000200160000000000170007000100180002000300190001000c001a00010001001b000f0004001c0003000f001d00030003001e00100015001f000400060020000500050021001400080022000600070023000b00130024000800090025000a000b00260009000a00270011000e0028000c000d0029000e0011002a000d0010002b00120012002c00130014002d001500
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 46
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2024
+    _typelessdata: c26f37419e8793c000000000e6ff7f3f0d69e8ba0000008000000080c26f37419e8793c0c26f37419e8793c000d63741257a174100000000117db739feff7fbf000000800000008004d637413c82174104d637413c821741e3a23741da7c1b4000000000e6ff7f3f8f67e8ba000000800000008004d637413c821741c26f37419e8793c0031b3441db7917410000000019be0f3c7bfd7fbf000000800000008004d637413c82174104d637413c8217419caa2f41e36f174100000000b5ba0fbc7afd7f3f0000008000000080347f27418a5d174104d637413c8217415cc92741608562c000000000ab526cbb92ff7f3f00000080000000805cc92741608562c05cc92741608562c0baa9ae4076ae63c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c05cc92741608562c0d862ae400cd693c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0a0ce10bf7a2494c0c00bdc3e8cd764c000000000deff7f3fe40605bb0000008000000080c00bdc3e8cd764c0c00bdc3e8cd764c0b03d0dbfe6af3a4000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0c0ac09bf306a2741c0ac09bf306a274100000000e3ff7fbf93f3f13a0000008000000080c0ac09bf306a2741c0ac09bf306a2741a0ce10bf7a2494c000000000ce9dd03aebff7fbf0000008000000080a0ce10bf7a2494c0a0ce10bf7a2494c07cf73741287a174100000000fafe7f3f432eb73b00000080000000807cf73741287a17417cf73741287a174118e13741681f27410000000041eac63aecff7f3f000000800000008018e13741681f274118e13741681f27414aec3741c84c1f4100000000fafe7f3f432eb73b000000800000008018e13741681f27417cf73741287a174104d637413c82174100000000e0ff7fbf0d28fd3a000000800000008004d637413c82174104d637413c8217414444bf404b731741000000000a1b9f39feff7fbf00000080000000807cf73741287a17410099e93e6e6c17414c46af40cc4427410000000041eac63aecff7f3f0000008000000080c0ac09bf306a274118e13741681f27410099e93e6e6c174100000000d81f9f39ffff7fbf00000080000000800099e93e6e6c17410099e93e6e6c174160d2e23e166d3c4000000000deff7f3fe40605bb00000080000000800099e93e6e6c1741c00bdc3e8cd764c048a4274164783d4000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c0347f27418a5d1741347f27418a5d174100000000f0ff7fbfc88ab6ba0000000000000080347f27418a5d1741347f27418a5d1741e3a23741da7c1b4000000000e6ff7f3f0d69e8ba000000800000008004d637413c821741c26f37419e8793c0c26f37419e8793c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0c26f37419e8793c000d63741257a174100000000e6ff7f3f8f67e8ba000000800000008004d637413c82174104d637413c821741031b3441db79174100000000f4b19eb9ffff7f3f000000800000008004d637413c82174104d637413c8217417cf73741287a174100000000117db739feff7fbf00000080000000807cf73741287a17417cf73741287a174100d63741257a174100000000e0ff7fbf0d28fd3a000000800000008004d637413c82174104d637413c8217419caa2f41e36f174100000000ddb70fbc7bfd7f3f0000008000000080347f27418a5d174104d637413c82174104d637413c8217410000000019be0f3c7bfd7fbf000000800000008004d637413c82174104d637413c821741031b3441db791741000000000a1b9f39feff7fbf000000800000008004d637413c82174104d637413c821741347f27418a5d174100000000b5ba0fbc7afd7f3f0000008000000080347f27418a5d1741347f27418a5d1741baa9ae4076ae63c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c05cc92741608562c05cc92741608562c000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c05cc92741608562c0c00bdc3e8cd764c000000000ab526cbb92ff7f3f0000008000000080c00bdc3e8cd764c0c00bdc3e8cd764c0d862ae400cd693c000000000ce9dd03aebff7fbf0000008000000080c26f37419e8793c0a0ce10bf7a2494c060d2e23e166d3c4000000000deff7f3fe40605bb00000080000000800099e93e6e6c1741c00bdc3e8cd764c0b03d0dbfe6af3a4000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0c0ac09bf306a2741a0ce10bf7a2494c000000000e3ff7fbf93f3f13a0000008000000080a0ce10bf7a2494c0a0ce10bf7a2494c0c0ac09bf306a27410000000041eac63aecff7f3f0000008000000080c0ac09bf306a2741c0ac09bf306a27414aec3741c84c1f4100000000fafe7f3f432eb73b000000800000008018e13741681f27417cf73741287a174118e13741681f274100000000fafe7f3f432eb73b000000800000008018e13741681f274118e13741681f27414c46af40cc4427410000000041eac63aecff7f3f0000008000000080c0ac09bf306a274118e13741681f27414444bf404b73174100000000d81f9f39ffff7fbf00000080000000807cf73741287a17410099e93e6e6c17410099e93e6e6c174100000000deff7f3fe40605bb00000080000000800099e93e6e6c17410099e93e6e6c174148a4274164783d4000000000f0ff7fbfc88ab6ba00000000000000805cc92741608562c0347f27418a5d1741
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 5.466134, y: 2.916986, z: 0}
+    m_Extent: {x: 6.031787, y: 7.5464387, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &908195519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9758,10 +9970,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413390701}
+        m_TargetAssemblyTypeName: CollectibleItem, Assembly-CSharp
+        m_MethodName: Collect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 14
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 48f2fc87c89a23b44a45395fe0465a54, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &908195521
 Transform:
@@ -9814,7 +10038,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 14dc9396aa8a17f4baa7a676467de173, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195524
 MonoBehaviour:
@@ -9833,7 +10057,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 11
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 48f2fc87c89a23b44a45395fe0465a54, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195525
 MonoBehaviour:
@@ -9871,7 +10095,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 14dc9396aa8a17f4baa7a676467de173, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195527
 MonoBehaviour:
@@ -9890,7 +10114,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 7
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 5e1abeaa80409644aa4a74105d4a8bbe, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195528
 MonoBehaviour:
@@ -9928,7 +10152,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 772983fca6204c9448b93a73fc946acc, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195530
 MonoBehaviour:
@@ -9947,7 +10171,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 312fe19f160b5544a9fd196fffc20a33, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &908195531
 MonoBehaviour:
@@ -9985,7 +10209,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f6727a8689e8ea544897b8281ed911cf, type: 3}
+  Icon: {fileID: 21300000, guid: 48f2fc87c89a23b44a45395fe0465a54, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &929625210
 GameObject:
@@ -10150,7 +10374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 6
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Don\u2019t
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Don\u2019t
     take this the wrong way, but you look like hell. You sleeping at all?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Police\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Police
@@ -10241,7 +10465,6 @@ GameObject:
   m_Component:
   - component: {fileID: 957558959}
   - component: {fileID: 957558961}
-  - component: {fileID: 957558960}
   m_Layer: 0
   m_Name: Eyesight
   m_TagString: Untagged
@@ -10264,19 +10487,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380548473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &957558960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957558958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cec684636c2aada49ac1ad9fd4c748ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCore: {fileID: 751184254}
 --- !u!114 &957558961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10692,7 +10902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Looks
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Looks
     like an office key.\nCould someone have dropped it... on purpose?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"The
     Detective","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -10705,19 +10915,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1106609008}
-        m_TargetAssemblyTypeName: CollectibleItem, Assembly-CSharp
-        m_MethodName: Collect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1106609011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10935,7 +11133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1192554407
 Transform:
   m_ObjectHideFlags: 0
@@ -12980,6 +13178,7 @@ GameObject:
   - component: {fileID: 1263663328}
   - component: {fileID: 1263663327}
   - component: {fileID: 1263663325}
+  - component: {fileID: 1263663344}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -13379,6 +13578,25 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 69567009e9f1a2345bacfc3178966671, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1263663344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263663324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 312fe19f160b5544a9fd196fffc20a33, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1284581810
 GameObject:
@@ -14047,11 +14265,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 5
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92.70004,\"yPos\":-44.3999939},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ask
-    about Lucus's ring\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":376.6999,\"yPos\":-43.59999},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasLucusRing\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasLucusRing\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasLucusRing\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":218,\"yPos\":-155},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":11.2000427,\"yPos\":132.6},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ask
+    about Lucus's ring\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":295.1999,\"yPos\":133.400009},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasLucusRing\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasLucusRing\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
     still remember how to work a case, right? Or are you just here to pose for the
-    press?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lucus\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":91.89998,\"yPos\":40.6000061},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
-    forgot? Haha, I\u2019m married, remember?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lucas\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92.70001,\"yPos\":146.200256},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
+    press?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lucus\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":10.3999786,\"yPos\":217.6},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    forgot? Haha, I\u2019m married, remember?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lucas\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":11.2000122,\"yPos\":323.200134},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
     when are you going to find someone, huh?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lucas\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Lucas
@@ -14147,8 +14365,8 @@ MonoBehaviour:
   - {x: 16.4797, y: 14.422437, z: 0}
   - {x: 16.49151, y: -0.6113453, z: 0}
   m_ShapePathHash: -319613439
-  m_Mesh: {fileID: 1996361974}
-  m_InstanceId: 128350
+  m_Mesh: {fileID: 130750277}
+  m_InstanceId: 82372
   m_LocalBounds:
     m_Center: {x: 7.983653, y: 22.900175, z: 0}
     m_Extent: {x: 8.550211, y: 23.51152, z: 0}
@@ -14184,8 +14402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":56.5,"yPos":125.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
-    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":300.5,"yPos":124.600006},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Back
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":32,"yPos":125.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
+    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":276,"yPos":124.600006},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Back
     to street?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Street","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -14341,8 +14559,8 @@ MonoBehaviour:
   - {x: 11.48975, y: 9.4692955, z: 0.00000026077032}
   - {x: 11.464785, y: -4.610305, z: 0}
   m_ShapePathHash: 827782567
-  m_Mesh: {fileID: 107361787}
-  m_InstanceId: 128366
+  m_Mesh: {fileID: 906912587}
+  m_InstanceId: 82388
   m_LocalBounds:
     m_Center: {x: 5.466134, y: 2.916986, z: 0}
     m_Extent: {x: 6.031787, y: 7.5464387, z: 0}
@@ -14588,11 +14806,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
     place gives me the creeps. Lucky for us, we\u2019ve got the legend himself now.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Police\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Police
-  DefaultSprite: {fileID: 21300000, guid: e1ab25e629fbd804fbb576dc48792987, type: 3}
+  DefaultSprite: {fileID: 21300000, guid: ec7a7c7d7d6e57b4e8e8c6fa20cc8136, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 1975922501}
@@ -14718,7 +14936,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: ff8865063726ae84690d536820aec5f3, type: 3}
+  Icon: {fileID: 21300000, guid: 48f2fc87c89a23b44a45395fe0465a54, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1591178339
 GameObject:
@@ -24901,10 +25119,10 @@ GameObject:
   - component: {fileID: 1820261530}
   - component: {fileID: 1820261529}
   - component: {fileID: 1820261528}
-  - component: {fileID: 1820261527}
   - component: {fileID: 1820261526}
+  - component: {fileID: 1820261531}
   m_Layer: 0
-  m_Name: SPN (1)
+  m_Name: Villager1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24922,77 +25140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e576c40ec6655e459de39eba102f4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myConversation: {fileID: 1820261527}
+  myConversation: {fileID: 0}
   uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
---- !u!114 &1820261527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820261525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 23
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":162.099915,\"yPos\":263.000122},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
-    Into the Fog\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":406.099976,\"yPos\":161.400314},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":884.5,\"yPos\":159.800308},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":641.2998,\"yPos\":265.4001},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
-    is murderer.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
-    been missing almost a whole week!\\nDo you know how much trouble you\u2019ve
-    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":162.100037,\"yPos\":139.199692},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
-    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.299927,\"yPos\":338.3994},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
-    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.2998,\"yPos\":437.599121},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    know\u2026 but it\u2019s not this case that\u2019s been haunting me.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.299866,\"yPos\":540.799255},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":159.699829,\"yPos\":644.799255},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
-    something missing from my head\u2026\\nLike a hole right in the middle of my
-    life.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.299866,\"yPos\":749.599548},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
-    voices\u2026 they don\u2019t fit together.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":160.499878,\"yPos\":847.1994},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
-    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":160.499878,\"yPos\":943.9992},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    don\u2019t need rest.\\nI need to find out who I really am.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157.299927,\"yPos\":1048.80139},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-    what if you don\u2019t like what you find?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":158.099915,\"yPos\":1153.60559},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
-    I hope I can live with it...\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157.299927,\"yPos\":1258.40491},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[Ending:
-    Walk Into the Fog]\\n\\nHe didn\u2019t solve the case.\\nBut maybe the case was
-    never the point.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":158.099976,\"yPos\":1361.60437},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"End\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":80}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642.899658,\"yPos\":144.000351},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you know about this case?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
-  saveVersion: 110
-  DefaultName: Chief
-  DefaultSprite: {fileID: 21300000, guid: 69567009e9f1a2345bacfc3178966671, type: 3}
-  DefaultFont: {fileID: 0}
-  NodeSerializedDataList:
-  - {fileID: 746520871}
-  - {fileID: 746520870}
-  - {fileID: 746520869}
-  - {fileID: 746520868}
-  - {fileID: 746520867}
-  - {fileID: 746520866}
-  - {fileID: 746520865}
-  - {fileID: 746520864}
-  - {fileID: 746520863}
-  - {fileID: 746520862}
-  - {fileID: 746520861}
-  - {fileID: 746520860}
-  - {fileID: 746520859}
-  - {fileID: 746520858}
-  - {fileID: 746520857}
-  - {fileID: 746520856}
-  - {fileID: 746520855}
-  - {fileID: 746520853}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!61 &1820261528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25025,7 +25177,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.66123134}
+  m_Offset: {x: 0, y: 0.022018492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -25036,7 +25188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.6775373}
+  m_Size: {x: 1, y: 2.0988398}
   m_EdgeRadius: 0
 --- !u!212 &1820261529
 SpriteRenderer:
@@ -25107,6 +25259,32 @@ Transform:
   - {fileID: 746520854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820261531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820261525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 1
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Robert
+    Downsyndrome","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 746520872}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1855850419
 GameObject:
   m_ObjectHideFlags: 0
@@ -27018,7 +27196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Imported
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Imported
     cigarettes?\nOnly a handful of people I know smoke these...\nPretty rare among
     smokers.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"The
     Detective","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -27032,19 +27210,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1884308428}
-        m_TargetAssemblyTypeName: CollectibleItem, Assembly-CSharp
-        m_MethodName: Collect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1884308431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27119,6 +27285,7 @@ MonoBehaviour:
   freezePlayerDuringDialogue: 0
   barValue: {fileID: 0}
   barImage: {fileID: 0}
+  dialoguesMentalMax: {fileID: 0}
 --- !u!4 &1889923055
 Transform:
   m_ObjectHideFlags: 0
@@ -27153,7 +27320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1893407839
 Transform:
   m_ObjectHideFlags: 0
@@ -27422,7 +27589,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: e1ab25e629fbd804fbb576dc48792987, type: 3}
+  Icon: {fileID: 21300000, guid: ec7a7c7d7d6e57b4e8e8c6fa20cc8136, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1975922502
 Transform:
@@ -27713,171 +27880,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!43 &1996361974
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 342
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 116
-    localAABB:
-      m_Center: {x: 7.9836535, y: 22.900177, z: 0}
-      m_Extent: {x: 8.550211, y: 23.51152, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200030001000000030004000100040005000600030005000400050003000700080009000a000b00090008000b000c0009000b0000000c000b000d0000000b000e000d000f000e000b000f0010000e000f001100100011000f001200130014000a00150014001300140015001600160002001700180019001a0018001b0019001c001b00180004001c001d001c0006001b0006001c00040019001e001a0019001f001e0020001f00190021001f002000210022001f00230022002100230024002200240025002600230025002400250023002700280029002a0028002b00290028002c002b0028002d002c002e002d0028002e002f002d0030002f002e00240030003100300026002f00260030002400320029002b0032003300290034003300320011003400350012003400110036003400120034003700330037003400360002003800000000003900030000003a000c000d003b00000001003c00020004003d00010016003e00020002003f0017000300400007001d0041000400050042000600070043000500060044001b000a0045000800080046000b00090047000a000c00480009000a004900130014004a000a000b004b000f000e004c000d0010004d000e000f004e00120011004f0010003500500011001200510036001300520015001600530014001500540016001700550016001a0056001800180057001c001b00580019001900590020001e005a001a001c005b001d001f005c001e0022005d001f0020005e00210021005f002300240060002200230061002700310062002400250063002600270064002500260065002f002a0066002800280067002e00290068002a003300690029002c006a002b002b006b0032002d006c002c002f006d002d002e006e00300030006f003100320070003400370071003300340072003500360073003700
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 116
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 5104
-    _typelessdata: 61c7774116f01d41000000009bff7fbfc587623b0000008000000080f1077841c3e66641f1077841c3e666419c9e2f41adaf6641000000002a9a18bbd3ff7f3f0000008000000080b411af402b7b66412fda83412fe46641e6077841d7da66410000000076b1183bd3ff7fbf0000008000000080f1077841c3e66641f1077841c3e6664182702741e6ce1d4100000000a980d33aeaff7fbf0000008000000080edc0834195f61d4154be8e4037a71d41b411af402b7b664100000000eaf37f3fb14e9dbc0000008000000080b411af402b7b6641b411af402b7b6641ec8c8f4036005241000000000dfe7fbfb892fc3b000000800000008054be8e4037a71d41845b90409a2c8341845b90409a2c8341000000000dfe7fbfbd92fc3b0000008000000080845b90409a2c8341845b90409a2c834154be8e4037a71d41000000000e7fd33aebff7fbf000000800000008054be8e4037a71d4154be8e4037a71d4185e283413bfadc4000000000faff7f3f50ec4d3a00000080000000806dd683414dc266419dee834120811cbf8ecd8341626d424100000000c3ff7fbf1a53313b00000080000000802fda83412fe46641edc0834195f61d4143d78341ec735e4100000000c3ff7f3f164831bb00000080000000802fda83412fe466412fda83412fe466419dee834120811cbf00000000fbff7f3fa7ef4d3a00000080000000809dee834120811cbf9dee834120811cbfedc0834195f61d4100000000d776d3baebff7f3f0000008000000080edc0834195f61d41edc0834195f61d41ccab77411e89fd40000000009bff7fbfd788623b0000008000000080a64f7741d812b53ff1077841c3e66641a64f7741d812b53f00000000ec20e7b9feff7f3f0000008000000080a64f7741d812b53fa64f7741d812b53fd82eff4040bb19bf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf20e60abf60f516bfd22bff40c0a6b43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43fa64f7741d812b53f8085fb3ea83ab43f00000000f8ff7f3fed5482ba00000080000000808085fb3ea83ab43f8085fb3ea83ab43f20e60abf60f516bf00000000f0b1a6baf3ff7fbf000000000000008020e60abf60f516bf20e60abf60f516bf6dd683414dc2664100000000faff7fbfa11c4eba00000000000000806dd683414dc266416dd683414dc266412fda83412fe4664100000000539518bbd2ff7f3f00000080000000802fda83412fe466412fda83412fe4664166da7f4188d4664100000000a52715bc49fd7fbf0000000000000080f1077841c3e666416dd683414dc26641b81a7c4145dd6641000000004e22153c49fd7f3f00000080000000802fda83412fe466412fda83412fe46641f1077841c3e666410000000093ff7fbff3336c3b0000008000000080f1077841c3e66641f1077841c3e666414409304128297641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b7107641d4acaf4099417641b0597741c0418341000000002c4177baf9ff7f3f0000008000000080b0597741c0418341b0597741c04183410f1e8441b710764100000000f0ff7f3f7c7cb3ba00000080000000800f1e8441b71076410f1e8441b7107641b9c31f412d378341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341b0597741c0418341d4acaf4099417641000000005ae28dbaf6ff7fbf0000000000000080d4acaf4099417641d4acaf4099417641445faf40625e6e4100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641b411af402b7b6641b5318441da14b34100000000f0ff7f3f7d7cb3ba00000080000000805b4584415821eb410f1e8441b71076415b4584415821eb4100000000b821f3bae3ff7f3f00000080000000805b4584415821eb415b4584415821eb4138287741fe2ca54100000000bcff7fbf04ae3abb0000000000000080b0597741c0418341c1f676413c18c741c1f676413c18c74100000000bcff7fbf3eaa3abb0000000000000080c1f676413c18c741c1f676413c18c741823e3041610ceb4100000000b521f3bae3ff7f3f00000080000000809ae4af406af7ea415b4584415821eb41371e1f412b03c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c7415a8b8e401aeec6419ae4af406af7ea4100000000f5f17f3f4394a9bc00000080000000809ae4af406af7ea419ae4af406af7ea4155d68e40b419e14100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec64150218f404e45fb4150218f404e45fb4100000000beff7fbf8b5d373b000000800000008050218f404e45fb4150218f404e45fb415a8b8e401aeec64100000000eb90f53ae3ff7fbf00000080000000805a8b8e401aeec6415a8b8e401aeec641befc834154c4f24100000000f2ff7f3ff9f8a63a0000008000000080befc834154c4f241befc834154c4f241d9d283410a9c3942000000009d450f3afeff7f3f0000008000000080d9d283410a9c3942d9d283410a9c3942cce783411a7f194200000000f2ff7f3ff200a73a0000008000000080d9d283410a9c3942befc834154c4f241d12e7741b28d274200000000baff7fbfe5843c3b0000008000000080d12e7741b28d2742d12e7741b28d2742f0f07641e38b124200000000baff7fbff1873c3b00000080000000800eb376412814fb41d12e7741b28d27420eb376412814fb410000000001af0f3bd7ff7f3f00000080000000800eb376412814fb410eb376412814fb416a1f304190c8f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241b08ab040ccccf241db211f41bb2cfb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb410eb376412814fb41b08ab040ccccf241000000005d6cc5b9ffff7fbf0000000000000080b08ab040ccccf241b08ab040ccccf241a537b0401be2ee4100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf2419ae4af406af7ea41b5afff408c7a274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742400e083f666727421395fe40cfa03942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942d9d283410a9c3942400e083f6667274200000000b74d243bcbff7fbf0000008000000080400e083f66672742400e083f6667274280e8023f3b09ad4100000000f8ff7f3fec5482ba0000008000000080400e083f666727428085fb3ea83ab43f08f80dbfbe49b74100000000fdff7fbf70c405ba000000000000008020e60abf60f516bff00911bf94a53942f00911bf94a5394200000000fdff7fbf6fc405ba0000000000000080f00911bf94a53942f00911bf94a53942e6077841d7da6641000000009cff7f3f368462bb0000008000000080f1077841c3e66641f1077841c3e6664161c7774116f01d4100000000a980d33aeaff7fbf0000008000000080f1077841c3e66641f1077841c3e6664161c7774116f01d4100000000d776d3baebff7f3f0000008000000080f1077841c3e66641f1077841c3e66641ccab77411e89fd40000000009bff7fbfc587623b0000008000000080a64f7741d812b53ff1077841c3e666419c9e2f41adaf664100000000a09918bbd2ff7f3f0000008000000080b411af402b7b66412fda83412fe46641b411af402b7b6641000000002a9a18bbd3ff7f3f0000008000000080b411af402b7b6641b411af402b7b6641b81a7c4145dd66410000000076b1183bd3ff7fbf00000080000000802fda83412fe466412fda83412fe46641e6077841d7da66410000000093ff7fbff3336c3b0000008000000080f1077841c3e66641f1077841c3e6664182702741e6ce1d41000000000e7fd33aebff7fbf0000008000000080edc0834195f61d4154be8e4037a71d41445faf40625e6e4100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641b411af402b7b6641ec8c8f4036005241000000000dfe7fbfbd92fc3b000000800000008054be8e4037a71d41845b90409a2c834154be8e4037a71d41000000000dfe7fbfb892fc3b000000800000008054be8e4037a71d4154be8e4037a71d41845b90409a2c8341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341845b90409a2c834143d78341ec735e4100000000faff7f3f50ec4d3a00000080000000802fda83412fe466412fda83412fe4664185e283413bfadc4000000000fbff7f3fa7ef4d3a00000080000000806dd683414dc266419dee834120811cbf8ecd8341626d424100000000c2ff7fbf6b56313b00000080000000802fda83412fe46641edc0834195f61d41edc0834195f61d4100000000c3ff7fbf1a53313b0000008000000080edc0834195f61d41edc0834195f61d4143d78341ec735e4100000000faff7fbfa11c4eba00000000000000802fda83412fe466412fda83412fe466412fda83412fe4664100000000c3ff7f3f164831bb00000080000000802fda83412fe466412fda83412fe466419dee834120811cbf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf9dee834120811cbfa64f7741d812b53f000000009bff7fbfd788623b0000008000000080a64f7741d812b53fa64f7741d812b53fd22bff40c0a6b43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43fa64f7741d812b53fd82eff4040bb19bf00000000f0b1a6baf3ff7fbf00000000000000809dee834120811cbf20e60abf60f516bf8085fb3ea83ab43f00000000ec20e7b9feff7f3f00000080000000808085fb3ea83ab43f8085fb3ea83ab43f80e8023f3b09ad4100000000f8ff7f3fed5482ba0000008000000080400e083f666727428085fb3ea83ab43f20e60abf60f516bf00000000fdff7fbf70c405ba000000000000008020e60abf60f516bf20e60abf60f516bf6dd683414dc2664100000000a52715bc49fd7fbf00000000000000806dd683414dc266416dd683414dc26641b81a7c4145dd664100000000539518bbd2ff7f3f00000080000000802fda83412fe466412fda83412fe4664166da7f4188d46641000000004b2d15bc48fd7fbf0000000000000080f1077841c3e666416dd683414dc26641f1077841c3e66641000000004e22153c49fd7f3f0000008000000080f1077841c3e66641f1077841c3e666410f1e8441b7107641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b71076410f1e8441b71076414409304128297641000000005ae28dbaf6ff7fbf00000000000000800f1e8441b7107641d4acaf4099417641b9c31f412d378341000000002c4177baf9ff7f3f0000008000000080845b90409a2c8341b0597741c0418341b0597741c041834100000000bcff7fbf04ae3abb0000000000000080b0597741c0418341b0597741c0418341b5318441da14b34100000000f0ff7f3f7c7cb3ba00000080000000805b4584415821eb410f1e8441b7107641d4acaf409941764100000000eaf37f3fb14e9dbc0000008000000080d4acaf4099417641d4acaf40994176415b4584415821eb4100000000f0ff7f3f7d7cb3ba00000080000000805b4584415821eb415b4584415821eb41823e3041610ceb4100000000b821f3bae3ff7f3f00000080000000809ae4af406af7ea415b4584415821eb4138287741fe2ca54100000000bcff7fbf3eaa3abb0000000000000080b0597741c0418341c1f676413c18c741c1f676413c18c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c741c1f676413c18c7419ae4af406af7ea4100000000b521f3bae3ff7f3f00000080000000809ae4af406af7ea419ae4af406af7ea41371e1f412b03c74100000000eb90f53ae3ff7fbf0000008000000080c1f676413c18c7415a8b8e401aeec641a537b0401be2ee4100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf2419ae4af406af7ea4155d68e40b419e14100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec64150218f404e45fb415a8b8e401aeec64100000000beff7fbf8b5d373b00000080000000805a8b8e401aeec6415a8b8e401aeec64150218f404e45fb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb4150218f404e45fb41cce783411a7f194200000000f2ff7f3ff9f8a63a0000008000000080d9d283410a9c3942befc834154c4f241befc834154c4f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241befc834154c4f241d9d283410a9c394200000000f2ff7f3ff200a73a0000008000000080d9d283410a9c3942d9d283410a9c39421395fe40cfa03942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942d9d283410a9c3942f0f07641e38b124200000000baff7fbfe5843c3b00000080000000800eb376412814fb41d12e7741b28d2742d12e7741b28d274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742d12e7741b28d27420eb376412814fb4100000000baff7fbff1873c3b00000080000000800eb376412814fb410eb376412814fb41db211f41bb2cfb410000000001af0f3bd7ff7f3f000000800000008050218f404e45fb410eb376412814fb416a1f304190c8f241000000005d6cc5b9ffff7fbf0000000000000080befc834154c4f241b08ab040ccccf241b08ab040ccccf24100000000f5f17f3f4394a9bc0000008000000080b08ab040ccccf241b08ab040ccccf241b5afff408c7a274200000000b74d243bcbff7fbf0000008000000080d12e7741b28d2742400e083f66672742f00911bf94a53942000000009d450f3afeff7f3f0000008000000080f00911bf94a53942f00911bf94a53942400e083f6667274200000000f8ff7f3fec5482ba0000008000000080400e083f66672742400e083f6667274208f80dbfbe49b74100000000fdff7fbf6fc405ba000000000000008020e60abf60f516bff00911bf94a53942
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 7.9836535, y: 22.900177, z: 0}
-    m_Extent: {x: 8.550211, y: 23.51152, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &2011079629
 GameObject:
   m_ObjectHideFlags: 0
