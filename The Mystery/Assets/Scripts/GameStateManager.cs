@@ -26,6 +26,7 @@ public class GameStateManager : MonoBehaviour
     [Header("Mental")]
     [SerializeField] private Image barValue;
     [SerializeField] private Image barImage;
+    public DialoguesMentalMax dialoguesMentalMax;
 
     void Awake()
     {
@@ -71,7 +72,13 @@ public class GameStateManager : MonoBehaviour
         playerDuringDialogue = false;
         freezePlayerDuringDialogue = true;
 
-        if (!scene.name.Equals("Mainmenu_scene") && !isLoadingGameFromSave)
+        if (scene.name.Equals("Mainmenu_scene") || scene.name.Equals("EndCredit"))
+        {
+            Debug.Log("Main Menu scene loaded. Not applying game data automatically.");
+            barImage.enabled = false;
+            barValue.enabled = false;
+        }
+        else if (!scene.name.Equals("Mainmenu_scene") && !isLoadingGameFromSave)
         {
             Debug.Log($"Scene '{scene.name}' loaded. Attempting to apply game data to current scene.");
             ApplyLoadedGameDataToCurrentScene();
@@ -85,12 +92,6 @@ public class GameStateManager : MonoBehaviour
             isLoadingGameFromSave = false;
             barImage.enabled = true;
             barValue.enabled = true;
-        }
-        else if (scene.name.Equals("Mainmenu_scene"))
-        {
-            Debug.Log("Main Menu scene loaded. Not applying game data automatically.");
-            barImage.enabled = false;
-            barValue.enabled = false;
         }
     }
 
@@ -113,6 +114,12 @@ public class GameStateManager : MonoBehaviour
         {
             playerData.mental = 100;
             SaveGame();
+        }
+
+        if (playerData.mental <= 0)
+        {
+            dialoguesMentalMax.StartDialogue();
+            playerData.mental = 1; //when <= 0 will bug (loop error)
         }
     }
 
