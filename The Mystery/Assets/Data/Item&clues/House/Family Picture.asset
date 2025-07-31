@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Family Picture
   itemDescription: 
   itemIcon: {fileID: 21300000, guid: 3ab88a28546e3b14593115574b01032d, type: 3}
-  mental: -10
+  mental: -35
   case_progress: 0
   itemID: Family Picture

@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: "Daughter\u2019s Room Key"
   itemDescription: 
   itemIcon: {fileID: 21300000, guid: 67d88315166b8ab43a454c3dcdf8eb97, type: 3}
-  mental: -25
+  mental: -35
   case_progress: 0
   itemID: "Daughter\u2019s Room Key"

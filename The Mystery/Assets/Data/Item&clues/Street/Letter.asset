@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Letter
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -40
+  mental: -45
   case_progress: 0
   itemID: Letter

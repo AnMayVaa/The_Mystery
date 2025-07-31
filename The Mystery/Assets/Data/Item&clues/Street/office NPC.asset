@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: 
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -20
+  mental: 0
   case_progress: 0
   itemID: office NPC

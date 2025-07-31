@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: ID card
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -10
+  mental: -30
   case_progress: 5
   itemID: ID card

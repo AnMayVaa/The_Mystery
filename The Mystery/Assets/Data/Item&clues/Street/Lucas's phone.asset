@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Lucas's phone
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: 0
+  mental: -10
   case_progress: 10
   itemID: Lucas's phone
