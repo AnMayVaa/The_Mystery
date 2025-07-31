@@ -1137,7 +1137,6 @@ GameObject:
   - component: {fileID: 7333268099027925829}
   - component: {fileID: 6677355769316323343}
   - component: {fileID: 6956437499008642315}
-  - component: {fileID: 28246633845698251}
   m_Layer: 5
   m_Name: MentalValueBar
   m_TagString: Untagged
@@ -1202,22 +1201,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &28246633845698251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7292878858046231281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2777d9edb1d24ed4baab62728e0b4248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barValue: {fileID: 6956437499008642315}
-  barImage: {fileID: 535908175341814913}
-  mental: 100
-  amount: -50
 --- !u!1 &7796637347128762344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1260,8 @@ MonoBehaviour:
   pauseMenuPanel: {fileID: 2643713853631953678}
   playerDuringDialogue: 0
   freezePlayerDuringDialogue: 0
+  barValue: {fileID: 6956437499008642315}
+  barImage: {fileID: 535908175341814913}
 --- !u!1 &8104895713711090870
 GameObject:
   m_ObjectHideFlags: 0
