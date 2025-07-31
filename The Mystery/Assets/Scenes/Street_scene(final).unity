@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 511e7bd5f722d3047aa75b9405681e1e, type: 2}
---- !u!1 &70686140
+--- !u!1 &74135278
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,9 +175,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 70686141}
-  - component: {fileID: 70686143}
-  - component: {fileID: 70686142}
+  - component: {fileID: 74135279}
+  - component: {fileID: 74135281}
+  - component: {fileID: 74135280}
   m_Layer: 5
   m_Name: CanInteract_text
   m_TagString: Untagged
@@ -185,32 +185,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &70686141
+--- !u!224 &74135279
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70686140}
+  m_GameObject: {fileID: 74135278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1398848495}
+  m_Father: {fileID: 362621527}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 713.68, y: 50}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &70686142
+--- !u!114 &74135280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70686140}
+  m_GameObject: {fileID: 74135278}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -224,10 +224,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press 'E' to Interact
+  m_text: '''E''Interact'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -251,13 +251,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -293,13 +293,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &70686143
+--- !u!222 &74135281
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70686140}
+  m_GameObject: {fileID: 74135278}
   m_CullTransparentMesh: 1
 --- !u!1 &111870730
 GameObject:
@@ -7556,7 +7556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 287625261}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -7573,9 +7573,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202.300018,\"yPos\":119.8},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ask
-    about the detective's wife\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":472.7,\"yPos\":119},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey,
-    look who\u2019s here \u2014 Mr. Detective!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Officer\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":203.1,\"yPos\":191.2},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":37.30002,\"yPos\":119.8},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ask
+    about the detective's wife\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":307.7,\"yPos\":119},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey,
+    look who\u2019s here \u2014 Mr. Detective!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Officer\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":38.1000061,\"yPos\":191.2},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
     wife? I never knew you had a family.\\nYou should tell me about them sometime.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Officer\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -8038,14 +8038,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":27,\"yPos\":312},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
-    ???\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":240.1001,\"yPos\":312.400024},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019ve
-    returned to my house. I won\u2019t let you get away with what you did to us.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452.900146,\"yPos\":312.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    will stop you. I will take my child back.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":666.50116,\"yPos\":314},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever
-    it takes, you will never harm us again.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":885.7012,\"yPos\":310.8},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mom
-    said I have the right to raise her.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1104.09985,\"yPos\":312.4},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
-    never see us again.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1326.49976,\"yPos\":311.599976},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    know I made mistakes... but this time, I\u2019ll protect my daughter.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1543.9,\"yPos\":311.599976},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u2014Rachael\\\"\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1766.49976,\"yPos\":310},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What...
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-1522,\"yPos\":111},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
+    ???\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1308.8999,\"yPos\":111.400024},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I\u2019ve
+    returned to my house. I won\u2019t let you get away with what you did to us.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-1096.09985,\"yPos\":111.400024},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    will stop you. I will take my child back.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-882.49884,\"yPos\":113},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever
+    it takes, you will never harm us again.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-663.2988,\"yPos\":109.799988},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mom
+    said I have the right to raise her.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-444.900146,\"yPos\":111.399994},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ll
+    never see us again.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-222.500244,\"yPos\":110.599976},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    know I made mistakes... but this time, I\u2019ll protect my daughter.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-5.09997559,\"yPos\":110.599976},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u2014Rachael\\\"\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Letter\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":217.499756,\"yPos\":109},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What...
     really happened back then?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
     Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -8080,7 +8080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 336814825}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -13254,6 +13254,109 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &362621523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362621527}
+  - component: {fileID: 362621526}
+  - component: {fileID: 362621525}
+  - component: {fileID: 362621524}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &362621524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362621523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &362621525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362621523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &362621526
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362621523}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!224 &362621527
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362621523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 74135279}
+  - {fileID: 2044856496}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &407772994
 GameObject:
   m_ObjectHideFlags: 0
@@ -13382,6 +13485,171 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!43 &549473754
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 390
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 130
+    localAABB:
+      m_Center: {x: -3.349742, y: 10.462904, z: 0}
+      m_Extent: {x: 14.013461, y: 20.147346, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200030004000500030006000400070006000300060007000800050009000a000400090005000b000900040009000b0000000c000d000e000d000f0010000d0011000f000c0011000d000c00120011000c00130012000c00140013000c00150014000c0016001500170016000c00170018001600170019001800190007001a0007001b00080007001c001b0007001d001c0019001d00070019001e001d0019001f001e001f0019001700110020000f0011002100200021002200230021002400220021002500240011002500210026002500110026002700250026002800270028002600090029001300140029002a0013002b002a0029002c002a002b002a002c002d0021002e002f002e002100230030002700280002002700300001002700020031002700010027003100320033003400350036003400330036003700340036003800370039003800360039003a0038001c003a0039003a001c001d003b003c003d003e003c003b003e003f003c0035003f003e003f00350034000000400001000200410000000000420009000b0043000000010044003100300045000200050046000300030047000700060048000400040049000b000a004a00050008004b00060007004c001a001b004d00080009004e000a0026004f0009000900500028000e0051000c000c00520017000d0053000e00100054000d000f0055001000200056000f001200570011001100580026001300590012002a005a00130015005b00140014005c00290016005d00150018005e00160017005f001f001900600018001a00610019001c0062001b00390063001c001e0064001d001d0065003a001f0066001e002100670020002f006800210022006900230024006a00220023006b002e0025006c00240027006d00250032006e00270028006f003000290070002b002d0071002a002b0072002c002c0073002d002e0074002f00310075003200350076003300330077003600370078003400340079003f003e007a00350036007b00390038007c0037003a007d0038003d007e003b003b007f003e003c0080003d003f0081003c00
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 130
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 5720
+    _typelessdata: c82dd8c00048604100000000ffff7fbfeb7aacb9000000000000008072e71a4122466041623125c168486041623125c16848604100000000e11ee9b7000080bf0000000000000080623125c168486041623125c168486041da2dd8c0faad604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041da2dd8c0faad60411a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0ea08d8c04089ad3e00000000559595380000803f0000008000000080ea08d8c04089ad3eea08d8c04089ad3e6841ccc0c8822ac000000000f5ff7f3f8ee59dba00000080000000806841ccc0c8822ac06841ccc0c8822ac0060839c140b6ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3ec0f682c138ca28c000000000e77130bbc3ff7fbf0000000000000080c0f682c138ca28c0c0f682c138ca28c0cc0583c140e3ad3e00000000adff7f3f5e0e4f3b0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec89ccbc0f5476041000000005c0fe9b7000080bf0000000000000080869ccbc0e4b26041869ccbc0e4b26041f7eecbc03212b64000000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0621bd8c0441ae64000000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041989e2a4179f31ac100000000b6ff7f3feeb0423b0000008000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000caff7f3fa129263b000000800000008050222a41e074073f50222a41e074073f74602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1208529413ea37a4100000000a97b05bbddff7f3f0000008000000080208529413ea37a41208529413ea37a41b8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f72e71a412246604100000000ceff7fbf79b81f3b000000800000008072e71a412246604172e71a41224660414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a4122466041225f1a410061b93e0000000090d2793b87ff7f3f0000008000000080225f1a410061b93e225f1a410061b93e3e4f1a4130232cc00000000054ff7fbf9337943b00000080000000803e4f1a4130232cc03e4f1a4130232cc01c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc0fae0194132420ac10000000020ea30bafcff7f3f0000008000000080fae0194132420ac1fae0194132420ac12c6256c0f0c21ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac108c182c1f6890ac10000000061ff7f3fb0bd8e3b000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac1ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3e0e5e83c15aac5f41000000006d1aa73b26ff7fbf00000080000000800e5e83c15aac5f410e5e83c15aac5f4132c18ac1aed87a4100000000fbff7fbf2432433a000000800000008032c18ac1aed87a4132c18ac1aed87a4184d48ac18c8c404000000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac132c18ac1aed87a41d7e78ac168921ac100000000daa45dbafaff7fbf0000000000000080d7e78ac168921ac1d7e78ac168921ac1da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a41e8b26a4072697a4100000000f1ff7f3f19f6b1ba0000008000000080e8b26a4072697a41e8b26a4072697a41c8502c406fcff44100000000b5ff7fbff785443b0000008000000080c8502c406fcff441c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf4413cc12a408cc0b34100000000b5ff7fbffa85443b0000008000000080b031294054636541c8502c406fcff441b031294054636541000000000769253afcff7f3f0000008000000080b031294054636541b031294054636541009fa4be4547604100000000bebae8b7000080bf000000000000008072e71a4122466041623125c168486041eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541869ccbc0e4b2604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93ec042aebe70362bc000000000a7b0bdbaeeff7fbf0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e407ab8bec0e9cc3e000000009efe7fbfde9bd4bb0000000000000080407ab8bec0e9cc3e407ab8bec0e9cc3e70ff6b402bcbf44100000000472e093bdbff7f3f000000800000008070ff6b402bcbf44170ff6b402bcbf4412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a4130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b26041a23625c1a1e6624100000000fdfd7fbfe35500bc0000000000000080623125c168486041e13b25c1da846541e13b25c1da84654100000000fffd7fbf723d00bc0000000000000080e13b25c1da846541e13b25c1da84654100a225c13c80ad4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea41c43b25c1a42b60418a0436c179cef44100000000feff7fbfc74e133a00000080000000808a0436c179cef4418a0436c179cef4413b0826c1a7eaea4100000000878697bb4dff7fbf00000000000000803b0826c1a7eaea413b0826c1a7eaea41c43b25c1a42b604100000000a7ff7f3f4e12553b0000008000000080c43b25c1a42b6041c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef441f82636c102477a4100000000ff88c33bd5fe7f3f0000008000000080f82636c102477a41f82636c102477a41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41a8ae2b40f96eea41000000000000803ffb91ae380000008000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f4410000000048e82fbafdff7f3f0000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f441c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea4152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441c82dd8c00048604100000000e11ee9b7000080bf000000000000008072e71a4122466041623125c168486041da2dd8c0faad604100000000ffff7f3f56bfb4390000008000000080da2dd8c0faad6041da2dd8c0faad6041c82dd8c00048604100000000eb16e0370000803f000000800000008072e71a4122466041623125c168486041621bd8c0441ae64000000000ffff7fbfeb7aacb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041623125c16848604100000000fdfd7fbfe35500bc0000000000000080623125c168486041623125c16848604130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b260416841ccc0c8822ac000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac06841ccc0c8822ac01a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0060839c140b6ad3e00000000559595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3eea08d8c04089ad3e00000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eea08d8c04089ad3ef7eecbc03212b64000000000f5ff7f3f8ee59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0cc0583c140e3ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec0f682c138ca28c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c0c0f682c138ca28c0ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3ec89ccbc0f547604100000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b26041869ccbc0e4b26041009fa4be45476041000000005c0fe9b7000080bf000000000000008072e71a4122466041623125c168486041c89ccbc0f547604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604174602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1989e2a4179f31ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000b6ff7f3feeb0423b000000800000008050222a41e074073f50222a41e074073fb8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f208529413ea37a4100000000caff7f3fa129263b0000008000000080208529413ea37a41208529413ea37a41da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a412246604172e71a412246604100000000bebae8b7000080bf000000000000008072e71a412246604172e71a4122466041225f1a410061b93e00000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e225f1a410061b93e509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93e1c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc03e4f1a4130232cc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc03e4f1a4130232cc0fae0194132420ac10000000054ff7fbf9337943b0000008000000080fae0194132420ac1fae0194132420ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac12c6256c0f0c21ac100000000daa45dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac108c182c1f6890ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac10e5e83c15aac5f4100000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f410e5e83c15aac5f41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f4184d48ac18c8c404000000000fbff7fbf2432433a0000008000000080d7e78ac168921ac132c18ac1aed87a4132c18ac1aed87a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a4132c18ac1aed87a41d7e78ac168921ac100000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac1d7e78ac168921ac1e8b26a4072697a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41e8b26a4072697a412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a41c8502c406fcff44100000000472e093bdbff7f3f0000008000000080c8502c406fcff441c8502c406fcff4413cc12a408cc0b34100000000b5ff7fbff785443b0000008000000080b031294054636541c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf441b03129405463654100000000b5ff7fbffa85443b0000008000000080b031294054636541b031294054636541eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541e13b25c1da846541000000000769253afcff7f3f0000008000000080e13b25c1da846541e13b25c1da846541869ccbc0e4b2604100000000ec31483bb2ff7fbf0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0407ab8bec0e9cc3e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e407ab8bec0e9cc3ec042aebe70362bc0000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e70ff6b402bcbf44100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf44170ff6b402bcbf441a23625c1a1e6624100000000fffd7fbf723d00bc0000000000000080623125c168486041e13b25c1da8465413b0826c1a7eaea4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea413b0826c1a7eaea4100a225c13c80ad4100000000a7ff7f3f4e12553b00000080000000803b0826c1a7eaea41c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef4418a0436c179cef4410000000048e82fbafdff7f3f00000080000000808a0436c179cef4418a0436c179cef441223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea41c43b25c1a42b6041000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b6041c43b25c1a42b6041f82636c102477a4100000000feff7fbfc74e133a0000008000000080f82636c102477a41f82636c102477a41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41a8ae2b40f96eea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f441000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f44152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -3.349742, y: 10.462904, z: 0}
+    m_Extent: {x: 14.013461, y: 20.147346, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &553177415
 GameObject:
   m_ObjectHideFlags: 0
@@ -13546,8 +13814,8 @@ MonoBehaviour:
   - {x: 9.489323, y: 0.48824215, z: 0}
   - {x: 8.715376, y: -0.43237686, z: 0}
   m_ShapePathHash: -1888864041
-  m_Mesh: {fileID: 1095275599}
-  m_InstanceId: 80342
+  m_Mesh: {fileID: 1973861047}
+  m_InstanceId: 100456
   m_LocalBounds:
     m_Center: {x: 9.518038, y: 8.503063, z: 0}
     m_Extent: {x: 10.026869, y: 8.980278, z: 0}
@@ -13921,7 +14189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait...
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait...
     this belonged to the victim?\\nWhy did Lucas have it?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Daughter\u2019s
     Room Key\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -13934,19 +14202,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 680667904}
-        m_TargetAssemblyTypeName: CollectibleItem, Assembly-CSharp
-        m_MethodName: Collect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &680667907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13960,7 +14216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 680667906}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -14398,8 +14654,8 @@ MonoBehaviour:
   - {x: 9.617426, y: -8.641161, z: 0}
   - {x: 9.644346, y: -2.6896477, z: 0}
   m_ShapePathHash: 1358637918
-  m_Mesh: {fileID: 1642654596}
-  m_InstanceId: 80408
+  m_Mesh: {fileID: 549473754}
+  m_InstanceId: 100522
   m_LocalBounds:
     m_Center: {x: -3.349742, y: 10.462905, z: 0}
     m_Extent: {x: 14.013461, y: 20.147346, z: 0}
@@ -14741,8 +14997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":213.3,"yPos":213.400024},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
-    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":456.5,"yPos":212.6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":317,"yPos":110},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Back
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":54.3000031,"yPos":177.400024},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
+    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":297.5,"yPos":176.6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":158,"yPos":74},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Back
     to home?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Home","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -14756,19 +15012,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 812382159}
-        m_TargetAssemblyTypeName: LocalGameManager, Assembly-CSharp
-        m_MethodName: ChangeSceneByName
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: House_scene(final)
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &880306086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14782,7 +15026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 880306085}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -26459,9 +26703,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
     was Lucas jotting down here?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":136.800034,\"yPos\":137.6},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Quit
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.300034,\"yPos\":137.6},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Quit
     Smoking \u2013 Day 1\\\"\\nStill craving... but I won\u2019t give in.\\nDeep
     breath. Keep going.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Post
     It\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -26508,7 +26752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 990504654}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -27099,7 +27343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1077675308}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -27116,30 +27360,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 23
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":327.0999,\"yPos\":263.000122},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
-    Into the Fog\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":571.1,\"yPos\":161.400314},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1049.5,\"yPos\":159.800308},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":806.2998,\"yPos\":265.4001},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
-    is murderer.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":147.099915,\"yPos\":-960.9999},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
+    Into the Fog\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":391.099976,\"yPos\":-1062.59961},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":869.5,\"yPos\":-1064.19971},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":626.2998,\"yPos\":-958.599854},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
+    is murderer.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":146,\"yPos\":-1202},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
     been missing almost a whole week!\\nDo you know how much trouble you\u2019ve
-    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":327.100037,\"yPos\":139.199692},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
-    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299927,\"yPos\":338.3994},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
-    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.2998,\"yPos\":437.599121},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":147.100037,\"yPos\":-1084.80029},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":146.299927,\"yPos\":-886.6006},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
+    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":146.2998,\"yPos\":-786.4009},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     know\u2026 but it\u2019s not this case that\u2019s been haunting me.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299866,\"yPos\":540.799255},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":324.699829,\"yPos\":644.799255},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":146.299866,\"yPos\":-683.200745},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":144.699829,\"yPos\":-579.200745},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
     something missing from my head\u2026\\nLike a hole right in the middle of my
     life.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326.299866,\"yPos\":749.599548},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":146.299866,\"yPos\":-474.400452},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
     voices\u2026 they don\u2019t fit together.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325.499878,\"yPos\":847.1994},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
-    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325.499878,\"yPos\":943.9992},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":145.499878,\"yPos\":-376.8006},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":144.499878,\"yPos\":-279.000732},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     don\u2019t need rest.\\nI need to find out who I really am.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322.299927,\"yPos\":1048.80139},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-    what if you don\u2019t like what you find?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.0999,\"yPos\":1153.60559},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.299927,\"yPos\":-175.198608},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    what if you don\u2019t like what you find?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":143.099915,\"yPos\":-70.39441},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
     I hope I can live with it...\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322.299927,\"yPos\":1258.40491},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[Ending:
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.299927,\"yPos\":34.4049072},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[Ending:
     Walk Into the Fog]\\n\\nHe didn\u2019t solve the case.\\nBut maybe the case was
-    never the point.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":323.099976,\"yPos\":1361.60437},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"End\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":80}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":807.899658,\"yPos\":144.000351},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    never the point.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":143.099976,\"yPos\":137.60437},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"End\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":80}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":627.899658,\"yPos\":-1079.99963},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
     do you know about this case?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Chief
@@ -27365,171 +27609,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1095275599
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 138
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 48
-    localAABB:
-      m_Center: {x: 9.518038, y: 8.503063, z: 0}
-      m_Extent: {x: 10.026869, y: 8.980278, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000100020000000300010004000300000004000500030005000400060007000800090007000a0008000b000a0007000c000a000b000a000c000d0008000e00090008000f000e0010000f00080011000f001000110012000f0013001200110014001200130005001400150006001400050016001400060014001700120017001400160002001800000000001900040001001a00020003001b00010005001c00030004001d00060015001e00050006001f001600090020000700070021000b000a00220008000800230010000e00240009000d0025000a000b0026000c000c0027000d000f0028000e00120029000f0010002a00110011002b00130017002c00120013002d00140014002e00150016002f001700
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 48
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 2112
-    _typelessdata: 2e720b418060ddbe0000000069f4433f42bc24bf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e00000000266d303afcff7f3f000000800000008044d41741e0faf93e44d41741e0faf93e39a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4be40c4dd3ec019fd3e000000003aff7f3f3d669fbb000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e000000bf8055f4be00000000c86e9f3b3aff7fbf0000008000000080000000bf8055f4be000000bf8055f4beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe08d89341b05b013f00000000d30d053bddff7f3f000000800000008008d89341b05b013f08d89341b05b013f2d159c41e08286be00000000dfff7f3fcf1800bb00000080000000802d159c41e08286be2d159c41e08286be163070413829033f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013ffa164541602e9ebe000000004b9fd23ba5fe7fbf0000008000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043f1bb03841c0f6043f00000000ccec3abf16ea2ebf00000000000000801bb03841c0f6043f1bb03841c0f6043f92389c416c44094100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b412d159c41e08286bef85b9c41785e8b4100000000b3504b3bafff7f3f0000008000000080f85b9c41785e8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000feff7fbf607c01ba0000000000000080d8ca9341e5a95841d8ca9341e5a95841e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf7584100000000b31a8abaf7ff7fbf0000000000000080404ffe3e7bf75841404ffe3e7bf75841c009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41c04202bfe2dd8b4100000000feff7fbfbfe400ba0000000000000080c04202bfe2dd8b41c04202bfe2dd8b4139a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe2e720b418060ddbe00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e0000000069f4433f42bc24bf000000800000008044d41741e0faf93e44d41741e0faf93e66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e40c4dd3ec019fd3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4bec009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e000000bf8055f4be00000000feff7fbfbfe400ba0000000000000080000000bf8055f4be000000bf8055f4be2d159c41e08286be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286be2d159c41e08286beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe163070413829033f00000000d30d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013f08d89341b05b013f00000000feff7fbf607c01ba000000000000008008d89341b05b013f08d89341b05b013f92389c416c44094100000000dfff7f3fcf1800bb0000008000000080f85b9c41785e8b412d159c41e08286be1bb03841c0f6043f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f1bb03841c0f6043ffa164541602e9ebe00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000ccec3abf16ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043ff85b9c41785e8b4100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b41f85b9c41785e8b41e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841d8ca9341e5a95841c04202bfe2dd8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41c04202bfe2dd8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf75841000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf75841404ffe3e7bf75841602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 9.518038, y: 8.503063, z: 0}
-    m_Extent: {x: 10.026869, y: 8.980278, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1121880950
 GameObject:
   m_ObjectHideFlags: 0
@@ -27572,7 +27651,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: 142c7a6d71e979141949a6c360491f48, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1121880952
 Transform:
@@ -27785,8 +27864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":222.3,"yPos":125.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
-    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":465.5,"yPos":124.600006},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":326,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":57.3000031,"yPos":125.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Of
+    course","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":300.5,"yPos":124.600006},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
     to Deadlight Street?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Deadlight
     Street","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -27815,7 +27894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1199424779}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -27949,7 +28028,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 142c7a6d71e979141949a6c360491f48, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1207657015
 GameObject:
@@ -28224,7 +28303,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 15
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: 46ca151bd5595a74a97c47efc4ca088d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1223275729
 MonoBehaviour:
@@ -28262,7 +28341,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: ced9fe2d610d97a40a7a64431d997613, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1223275731
 MonoBehaviour:
@@ -28300,7 +28379,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 10
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: 9e4545fa51fb83f4694b36747f98a35e, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1223275733
 MonoBehaviour:
@@ -28319,7 +28398,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 9
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: 46ca151bd5595a74a97c47efc4ca088d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1223275734
 MonoBehaviour:
@@ -28357,7 +28436,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 7
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 569ae67b713494042a417c1140f219f2, type: 3}
+  Icon: {fileID: 21300000, guid: 46ca151bd5595a74a97c47efc4ca088d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1223275736
 MonoBehaviour:
@@ -28523,164 +28602,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!1001 &1225327638
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1398848495}
-    m_Modifications:
-    - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_textAlignment
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_Name
-      value: ConversationManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: OptionImageSliced
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: AllowMouseInteraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: BackgroundImageSliced
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 620
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 188
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_textAlignment
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
---- !u!224 &1225327639 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
-  m_PrefabInstance: {fileID: 1225327638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1250257884
 GameObject:
   m_ObjectHideFlags: 0
@@ -28949,7 +28870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1278936167}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -29011,10 +28932,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":12,"yPos":135.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Unlock
-    it","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":312.000031,"yPos":136.6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"HasPartnerKey","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"HasPartnerKey","CheckType":0,"RequiredValue":true}],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Locked...?
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":36.5,"yPos":135.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Unlock
+    it","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":336.500031,"yPos":136.6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Nevermind","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"HasPartnerKey","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"HasPartnerKey","CheckType":0,"RequiredValue":true}],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Locked...?
     Strange.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lucas''s
-    office door","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":12,"yPos":223.199966},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"**Door''s
+    office door","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":36.5,"yPos":223.199966},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"**Door''s
     unlocked**","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lucas''s
     office door","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -29140,7 +29061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":136.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait...
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":161,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait...
     this belonged to the victim?\nWhy did Lucas have it?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Victim
     ID card","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -29167,7 +29088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1294746674}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -29411,7 +29332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1327129665}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -29473,10 +29394,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Presumed
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":161,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Presumed
     time of death was sometime last weekend in the evening.\\nIt\u2019s been a week,
     and...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Helper
-    (report)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":328.300049,\"yPos\":137.400024},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"we
+    (report)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":163.300049,\"yPos\":137.400024},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"we
     still don\u2019t have enough evidence to identify the killer.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Helper
     (report)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -29586,109 +29507,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1398848491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1398848495}
-  - component: {fileID: 1398848494}
-  - component: {fileID: 1398848493}
-  - component: {fileID: 1398848492}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1398848492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398848491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1398848493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398848491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1398848494
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398848491}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_TargetDisplay: 0
---- !u!224 &1398848495
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398848491}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 70686141}
-  - {fileID: 1225327639}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1492774032
 GameObject:
   m_ObjectHideFlags: 0
@@ -30401,171 +30219,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!43 &1642654596
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 390
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 130
-    localAABB:
-      m_Center: {x: -3.349742, y: 10.462904, z: 0}
-      m_Extent: {x: 14.013461, y: 20.147346, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200030004000500030006000400070006000300060007000800050009000a000400090005000b000900040009000b0000000c000d000e000d000f0010000d0011000f000c0011000d000c00120011000c00130012000c00140013000c00150014000c0016001500170016000c00170018001600170019001800190007001a0007001b00080007001c001b0007001d001c0019001d00070019001e001d0019001f001e001f0019001700110020000f0011002100200021002200230021002400220021002500240011002500210026002500110026002700250026002800270028002600090029001300140029002a0013002b002a0029002c002a002b002a002c002d0021002e002f002e002100230030002700280002002700300001002700020031002700010027003100320033003400350036003400330036003700340036003800370039003800360039003a0038001c003a0039003a001c001d003b003c003d003e003c003b003e003f003c0035003f003e003f00350034000000400001000200410000000000420009000b0043000000010044003100300045000200050046000300030047000700060048000400040049000b000a004a00050008004b00060007004c001a001b004d00080009004e000a0026004f0009000900500028000e0051000c000c00520017000d0053000e00100054000d000f0055001000200056000f001200570011001100580026001300590012002a005a00130015005b00140014005c00290016005d00150018005e00160017005f001f001900600018001a00610019001c0062001b00390063001c001e0064001d001d0065003a001f0066001e002100670020002f006800210022006900230024006a00220023006b002e0025006c00240027006d00250032006e00270028006f003000290070002b002d0071002a002b0072002c002c0073002d002e0074002f00310075003200350076003300330077003600370078003400340079003f003e007a00350036007b00390038007c0037003a007d0038003d007e003b003b007f003e003c0080003d003f0081003c00
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 130
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 5720
-    _typelessdata: c82dd8c00048604100000000ffff7fbfeb7aacb9000000000000008072e71a4122466041623125c168486041623125c16848604100000000e11ee9b7000080bf0000000000000080623125c168486041623125c168486041da2dd8c0faad604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041da2dd8c0faad60411a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0ea08d8c04089ad3e00000000559595380000803f0000008000000080ea08d8c04089ad3eea08d8c04089ad3e6841ccc0c8822ac000000000f5ff7f3f8ee59dba00000080000000806841ccc0c8822ac06841ccc0c8822ac0060839c140b6ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3ec0f682c138ca28c000000000e77130bbc3ff7fbf0000000000000080c0f682c138ca28c0c0f682c138ca28c0cc0583c140e3ad3e00000000adff7f3f5e0e4f3b0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec89ccbc0f5476041000000005c0fe9b7000080bf0000000000000080869ccbc0e4b26041869ccbc0e4b26041f7eecbc03212b64000000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0621bd8c0441ae64000000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041989e2a4179f31ac100000000b6ff7f3feeb0423b0000008000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000caff7f3fa129263b000000800000008050222a41e074073f50222a41e074073f74602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1208529413ea37a4100000000a97b05bbddff7f3f0000008000000080208529413ea37a41208529413ea37a41b8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f72e71a412246604100000000ceff7fbf79b81f3b000000800000008072e71a412246604172e71a41224660414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a4122466041225f1a410061b93e0000000090d2793b87ff7f3f0000008000000080225f1a410061b93e225f1a410061b93e3e4f1a4130232cc00000000054ff7fbf9337943b00000080000000803e4f1a4130232cc03e4f1a4130232cc01c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc0fae0194132420ac10000000020ea30bafcff7f3f0000008000000080fae0194132420ac1fae0194132420ac12c6256c0f0c21ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac108c182c1f6890ac10000000061ff7f3fb0bd8e3b000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac1ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3e0e5e83c15aac5f41000000006d1aa73b26ff7fbf00000080000000800e5e83c15aac5f410e5e83c15aac5f4132c18ac1aed87a4100000000fbff7fbf2432433a000000800000008032c18ac1aed87a4132c18ac1aed87a4184d48ac18c8c404000000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac132c18ac1aed87a41d7e78ac168921ac100000000daa45dbafaff7fbf0000000000000080d7e78ac168921ac1d7e78ac168921ac1da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a41e8b26a4072697a4100000000f1ff7f3f19f6b1ba0000008000000080e8b26a4072697a41e8b26a4072697a41c8502c406fcff44100000000b5ff7fbff785443b0000008000000080c8502c406fcff441c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf4413cc12a408cc0b34100000000b5ff7fbffa85443b0000008000000080b031294054636541c8502c406fcff441b031294054636541000000000769253afcff7f3f0000008000000080b031294054636541b031294054636541009fa4be4547604100000000bebae8b7000080bf000000000000008072e71a4122466041623125c168486041eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541869ccbc0e4b2604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93ec042aebe70362bc000000000a7b0bdbaeeff7fbf0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e407ab8bec0e9cc3e000000009efe7fbfde9bd4bb0000000000000080407ab8bec0e9cc3e407ab8bec0e9cc3e70ff6b402bcbf44100000000472e093bdbff7f3f000000800000008070ff6b402bcbf44170ff6b402bcbf4412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a4130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b26041a23625c1a1e6624100000000fdfd7fbfe35500bc0000000000000080623125c168486041e13b25c1da846541e13b25c1da84654100000000fffd7fbf723d00bc0000000000000080e13b25c1da846541e13b25c1da84654100a225c13c80ad4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea41c43b25c1a42b60418a0436c179cef44100000000feff7fbfc74e133a00000080000000808a0436c179cef4418a0436c179cef4413b0826c1a7eaea4100000000878697bb4dff7fbf00000000000000803b0826c1a7eaea413b0826c1a7eaea41c43b25c1a42b604100000000a7ff7f3f4e12553b0000008000000080c43b25c1a42b6041c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef441f82636c102477a4100000000ff88c33bd5fe7f3f0000008000000080f82636c102477a41f82636c102477a41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41a8ae2b40f96eea41000000000000803ffb91ae380000008000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f4410000000048e82fbafdff7f3f0000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f441c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea4152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441c82dd8c00048604100000000e11ee9b7000080bf000000000000008072e71a4122466041623125c168486041da2dd8c0faad604100000000ffff7f3f56bfb4390000008000000080da2dd8c0faad6041da2dd8c0faad6041c82dd8c00048604100000000eb16e0370000803f000000800000008072e71a4122466041623125c168486041621bd8c0441ae64000000000ffff7fbfeb7aacb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041623125c16848604100000000fdfd7fbfe35500bc0000000000000080623125c168486041623125c16848604130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b260416841ccc0c8822ac000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac06841ccc0c8822ac01a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0060839c140b6ad3e00000000559595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3eea08d8c04089ad3e00000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eea08d8c04089ad3ef7eecbc03212b64000000000f5ff7f3f8ee59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0cc0583c140e3ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec0f682c138ca28c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c0c0f682c138ca28c0ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3ec89ccbc0f547604100000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b26041869ccbc0e4b26041009fa4be45476041000000005c0fe9b7000080bf000000000000008072e71a4122466041623125c168486041c89ccbc0f547604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604174602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1989e2a4179f31ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000b6ff7f3feeb0423b000000800000008050222a41e074073f50222a41e074073fb8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f208529413ea37a4100000000caff7f3fa129263b0000008000000080208529413ea37a41208529413ea37a41da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a412246604172e71a412246604100000000bebae8b7000080bf000000000000008072e71a412246604172e71a4122466041225f1a410061b93e00000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e225f1a410061b93e509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93e1c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc03e4f1a4130232cc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc03e4f1a4130232cc0fae0194132420ac10000000054ff7fbf9337943b0000008000000080fae0194132420ac1fae0194132420ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac12c6256c0f0c21ac100000000daa45dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac108c182c1f6890ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac10e5e83c15aac5f4100000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f410e5e83c15aac5f41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f4184d48ac18c8c404000000000fbff7fbf2432433a0000008000000080d7e78ac168921ac132c18ac1aed87a4132c18ac1aed87a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a4132c18ac1aed87a41d7e78ac168921ac100000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac1d7e78ac168921ac1e8b26a4072697a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41e8b26a4072697a412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a41c8502c406fcff44100000000472e093bdbff7f3f0000008000000080c8502c406fcff441c8502c406fcff4413cc12a408cc0b34100000000b5ff7fbff785443b0000008000000080b031294054636541c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf441b03129405463654100000000b5ff7fbffa85443b0000008000000080b031294054636541b031294054636541eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541e13b25c1da846541000000000769253afcff7f3f0000008000000080e13b25c1da846541e13b25c1da846541869ccbc0e4b2604100000000ec31483bb2ff7fbf0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0407ab8bec0e9cc3e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e407ab8bec0e9cc3ec042aebe70362bc0000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e70ff6b402bcbf44100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf44170ff6b402bcbf441a23625c1a1e6624100000000fffd7fbf723d00bc0000000000000080623125c168486041e13b25c1da8465413b0826c1a7eaea4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea413b0826c1a7eaea4100a225c13c80ad4100000000a7ff7f3f4e12553b00000080000000803b0826c1a7eaea41c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef4418a0436c179cef4410000000048e82fbafdff7f3f00000080000000808a0436c179cef4418a0436c179cef441223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea41c43b25c1a42b6041000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b6041c43b25c1a42b6041f82636c102477a4100000000feff7fbfc74e133a0000008000000080f82636c102477a41f82636c102477a41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41a8ae2b40f96eea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f441000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f44152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -3.349742, y: 10.462904, z: 0}
-    m_Extent: {x: 14.013461, y: 20.147346, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1647928777
 GameObject:
   m_ObjectHideFlags: 0
@@ -48871,17 +48524,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 14
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-44.2999878,\"yPos\":576.4},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Take
-    it\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":230.300049,\"yPos\":598.600037},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Refuse
-    it\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142,\"yPos\":159},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Talk
-    to bartender.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":495,\"yPos\":155},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Drink
-    some beer.\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":326,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you want?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":71.70001,\"yPos\":480.800049},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anyway,
-    here it is.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-88.8999939,\"yPos\":665.2001},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-163.299988,\"yPos\":482.400024},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Take
+    it\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":111.300049,\"yPos\":504.600037},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Refuse
+    it\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":23,\"yPos\":65},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Talk
+    to bartender.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":376,\"yPos\":61},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Drink
+    some beer.\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":207,\"yPos\":-72},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    do you want?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-47.2999878,\"yPos\":386.800049},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anyway,
+    here it is.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-207.9,\"yPos\":571.2001},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
     key... looks familiar. I feel like I should remember... but I don\u2019t.\\\"\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":90,\"yPos\":234},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
-    right, last Saturday you left something with me.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":78,\"yPos\":350},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
-    you rushed off somewhere. I don\u2019t really remember much else.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":522,\"yPos\":245},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-29,\"yPos\":140},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
+    right, last Saturday you left something with me.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-41,\"yPos\":256},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
+    you rushed off somewhere. I don\u2019t really remember much else.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":403,\"yPos\":151},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
     choice.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Bartender\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -48902,19 +48555,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1697627854}
-        m_TargetAssemblyTypeName: CollectibleItem, Assembly-CSharp
-        m_MethodName: Collect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1714299160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48928,7 +48569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myConversation: {fileID: 1714299159}
-  uiPrompt: {fileID: 70686140}
+  uiPrompt: {fileID: 0}
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
@@ -56228,6 +55869,171 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1973861047
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 138
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 48
+    localAABB:
+      m_Center: {x: 9.518038, y: 8.503063, z: 0}
+      m_Extent: {x: 10.026869, y: 8.980278, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030005000400060007000800090007000a0008000b000a0007000c000a000b000a000c000d0008000e00090008000f000e0010000f00080011000f001000110012000f0013001200110014001200130005001400150006001400050016001400060014001700120017001400160002001800000000001900040001001a00020003001b00010005001c00030004001d00060015001e00050006001f001600090020000700070021000b000a00220008000800230010000e00240009000d0025000a000b0026000c000c0027000d000f0028000e00120029000f0010002a00110011002b00130017002c00120013002d00140014002e00150016002f001700
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 48
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2112
+    _typelessdata: 2e720b418060ddbe0000000069f4433f42bc24bf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e00000000266d303afcff7f3f000000800000008044d41741e0faf93e44d41741e0faf93e39a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4be40c4dd3ec019fd3e000000003aff7f3f3d669fbb000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e000000bf8055f4be00000000c86e9f3b3aff7fbf0000008000000080000000bf8055f4be000000bf8055f4beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe08d89341b05b013f00000000d30d053bddff7f3f000000800000008008d89341b05b013f08d89341b05b013f2d159c41e08286be00000000dfff7f3fcf1800bb00000080000000802d159c41e08286be2d159c41e08286be163070413829033f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013ffa164541602e9ebe000000004b9fd23ba5fe7fbf0000008000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043f1bb03841c0f6043f00000000ccec3abf16ea2ebf00000000000000801bb03841c0f6043f1bb03841c0f6043f92389c416c44094100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b412d159c41e08286bef85b9c41785e8b4100000000b3504b3bafff7f3f0000008000000080f85b9c41785e8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000feff7fbf607c01ba0000000000000080d8ca9341e5a95841d8ca9341e5a95841e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf7584100000000b31a8abaf7ff7fbf0000000000000080404ffe3e7bf75841404ffe3e7bf75841c009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41c04202bfe2dd8b4100000000feff7fbfbfe400ba0000000000000080c04202bfe2dd8b41c04202bfe2dd8b4139a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe2e720b418060ddbe00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e0000000069f4433f42bc24bf000000800000008044d41741e0faf93e44d41741e0faf93e66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e40c4dd3ec019fd3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4bec009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e000000bf8055f4be00000000feff7fbfbfe400ba0000000000000080000000bf8055f4be000000bf8055f4be2d159c41e08286be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286be2d159c41e08286beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe163070413829033f00000000d30d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013f08d89341b05b013f00000000feff7fbf607c01ba000000000000008008d89341b05b013f08d89341b05b013f92389c416c44094100000000dfff7f3fcf1800bb0000008000000080f85b9c41785e8b412d159c41e08286be1bb03841c0f6043f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f1bb03841c0f6043ffa164541602e9ebe00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000ccec3abf16ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043ff85b9c41785e8b4100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b41f85b9c41785e8b41e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841d8ca9341e5a95841c04202bfe2dd8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41c04202bfe2dd8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf75841000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf75841404ffe3e7bf75841602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 9.518038, y: 8.503063, z: 0}
+    m_Extent: {x: 10.026869, y: 8.980278, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1983567078
 GameObject:
   m_ObjectHideFlags: 0
@@ -56382,6 +56188,196 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &2044856495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 362621527}
+    m_Modifications:
+    - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -73.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Name
+      value: ConversationManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: OptionImageSliced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: AllowMouseInteraction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: BackgroundImageSliced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 188
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 155.3486
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150.7545
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 517
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 508.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+--- !u!224 &2044856496 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+  m_PrefabInstance: {fileID: 2044856495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056819854
 GameObject:
   m_ObjectHideFlags: 0
@@ -56630,7 +56626,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1398848495}
   - {fileID: 306718164}
   - {fileID: 812382160}
   - {fileID: 1081616278}
@@ -56640,6 +56635,7 @@ SceneRoots:
   - {fileID: 775823745}
   - {fileID: 297679236}
   - {fileID: 1731616211}
+  - {fileID: 362621527}
   - {fileID: 1278936168}
   - {fileID: 990504655}
   - {fileID: 1294746676}
