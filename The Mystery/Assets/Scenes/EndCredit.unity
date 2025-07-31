@@ -533,9 +533,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "===============================\r\nE M P T Y        \r\nA Mystery Pixel
     Art Story\r\n===============================\r\n\r\nDeveloped by:\r\nNakharin
-    Boonkorkua  \r\nThanakhorn Tabong  \r\nPitak Patumwan  \r\n\r\n-------------------------------------------------\r\n\r\nRoles:\r\n\r\nGame
-    Manager  \r\nNakharin Boonkorkua\n\r\nMain Artist  \r\nThanakhorn Tabong  \r\n\r\nMain
-    Programmer  \r\nPitak Patumwan  \r\n\r\n-------------------------------------------------\r\n\r\nSpecial
+    Boonkorkua  \r\nThanakhorn Tabong  \r\nPitak Patumwan  \r\n\r\n-------------------------------------------------\r\n\n\r\nSpecial
     Thanks:\r\n\r\nTo every player who stepped into this mystery \u2014  \r\nthank
     you for sharing your time with us.  \r\nWe hope the silence spoke to you in some
     way.\r\n\r\n-------------------------------------------------\r\n\r\nCreated
@@ -545,9 +543,9 @@ MonoBehaviour:
     storytelling.  \r\nIt may be pixelated, small, and simple...  \r\nBut every pixel
     holds a piece of our heart.  \r\n\r\n-------------------------------------------------\r\n\r\nFollow
     our journey:  \r\n(itch.io link here)\r\n\r\n-------------------------------------------------\r\n\r\n\"Sometimes,
-    the only way to find yourself  \r\nis to lose everything first.\"\r\n\r\n-------------------------------------------------\r\n\r\n\xA9
-    2025 by the Empty Dev Team  \r\nThis game is shared for learning and inspiration. 
-    \r\nLicense will be provided upon public release"
+    the only way to find yourself  \r\nis to lose everything first.\"\r\n\r\n-------------------------------------------------\r\n\r\nBy
+    the Empty Dev Team  \r\nThis game is shared for learning and inspiration.  \r\nLicense
+    will be provided upon public release"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

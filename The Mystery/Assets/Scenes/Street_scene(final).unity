@@ -8730,19 +8730,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 812382159}
-        m_TargetAssemblyTypeName: LocalGameManager, Assembly-CSharp
-        m_MethodName: CheckAndSetItemCollected
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Family Picture_HasFamilyPicture
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!61 &287625262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15110,8 +15098,8 @@ MonoBehaviour:
   - {x: 9.489323, y: 0.48824215, z: 0}
   - {x: 8.715376, y: -0.43237686, z: 0}
   m_ShapePathHash: -1888864041
-  m_Mesh: {fileID: 2080994857}
-  m_InstanceId: 108788
+  m_Mesh: {fileID: 995797929}
+  m_InstanceId: 77168
   m_LocalBounds:
     m_Center: {x: 9.518038, y: 8.503063, z: 0}
     m_Extent: {x: 10.026869, y: 8.980278, z: 0}
@@ -16568,8 +16556,8 @@ MonoBehaviour:
   - {x: 9.617426, y: -8.641161, z: 0}
   - {x: 9.644346, y: -2.6896477, z: 0}
   m_ShapePathHash: 1358637918
-  m_Mesh: {fileID: 2094095020}
-  m_InstanceId: 108908
+  m_Mesh: {fileID: 992833025}
+  m_InstanceId: 77288
   m_LocalBounds:
     m_Center: {x: -3.349742, y: 10.462905, z: 0}
     m_Extent: {x: 14.013461, y: 20.147346, z: 0}
@@ -29092,6 +29080,336 @@ MonoBehaviour:
   freezePlayerDuringDialogue: 1
   isCutscene: 0
   playwhenscenestart: 0
+--- !u!43 &992833025
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 390
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 130
+    localAABB:
+      m_Center: {x: -3.349742, y: 10.462904, z: 0}
+      m_Extent: {x: 14.013461, y: 20.147346, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200030004000500030006000400070006000300060007000800050009000a000400090005000b000900040009000b0000000c000d000e000d000f0010000d0011000f000c0011000d000c00120011000c00130012000c00140013000c00150014000c0016001500170016000c00170018001600170019001800190007001a0007001b00080007001c001b0007001d001c0019001d00070019001e001d0019001f001e001f0019001700110020000f0011002100200021002200230021002400220021002500240011002500210026002500110026002700250026002800270028002600090029001300140029002a0013002b002a0029002c002a002b002a002c002d0021002e002f002e002100230030002700280002002700300001002700020031002700010027003100320033003400350036003400330036003700340036003800370039003800360039003a0038001c003a0039003a001c001d003b003c003d003e003c003b003e003f003c0035003f003e003f00350034000000400001000200410000000000420009000b0043000000010044003100300045000200050046000300030047000700060048000400040049000b000a004a00050008004b00060007004c001a001b004d00080009004e000a0026004f0009000900500028000e0051000c000c00520017000d0053000e00100054000d000f0055001000200056000f001200570011001100580026001300590012002a005a00130015005b00140014005c00290016005d00150018005e00160017005f001f001900600018001a00610019001c0062001b00390063001c001e0064001d001d0065003a001f0066001e002100670020002f006800210022006900230024006a00220023006b002e0025006c00240027006d00250032006e00270028006f003000290070002b002d0071002a002b0072002c002c0073002d002e0074002f00310075003200350076003300330077003600370078003400340079003f003e007a00350036007b00390038007c0037003a007d0038003d007e003b003b007f003e003c0080003d003f0081003c00
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 130
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 5720
+    _typelessdata: c82dd8c00048604100000000ffff7fbfeb7aacb9000000000000008072e71a4122466041623125c168486041623125c16848604100000000e11ee9b7000080bf0000000000000080623125c168486041623125c168486041da2dd8c0faad604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041da2dd8c0faad60411a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0ea08d8c04089ad3e00000000559595380000803f0000008000000080ea08d8c04089ad3eea08d8c04089ad3e6841ccc0c8822ac000000000f5ff7f3f8ee59dba00000080000000806841ccc0c8822ac06841ccc0c8822ac0060839c140b6ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3ec0f682c138ca28c000000000e77130bbc3ff7fbf0000000000000080c0f682c138ca28c0c0f682c138ca28c0cc0583c140e3ad3e00000000adff7f3f5e0e4f3b0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec89ccbc0f5476041000000005c0fe9b7000080bf0000000000000080869ccbc0e4b26041869ccbc0e4b26041f7eecbc03212b64000000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0621bd8c0441ae64000000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041989e2a4179f31ac100000000b6ff7f3feeb0423b0000008000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000caff7f3fa129263b000000800000008050222a41e074073f50222a41e074073f74602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1208529413ea37a4100000000a97b05bbddff7f3f0000008000000080208529413ea37a41208529413ea37a41b8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f72e71a412246604100000000ceff7fbf79b81f3b000000800000008072e71a412246604172e71a41224660414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a4122466041225f1a410061b93e0000000090d2793b87ff7f3f0000008000000080225f1a410061b93e225f1a410061b93e3e4f1a4130232cc00000000054ff7fbf9337943b00000080000000803e4f1a4130232cc03e4f1a4130232cc01c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc0fae0194132420ac10000000020ea30bafcff7f3f0000008000000080fae0194132420ac1fae0194132420ac12c6256c0f0c21ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac108c182c1f6890ac10000000061ff7f3fb0bd8e3b000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac1ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3e0e5e83c15aac5f41000000006d1aa73b26ff7fbf00000080000000800e5e83c15aac5f410e5e83c15aac5f4132c18ac1aed87a4100000000fbff7fbf2432433a000000800000008032c18ac1aed87a4132c18ac1aed87a4184d48ac18c8c404000000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac132c18ac1aed87a41d7e78ac168921ac100000000daa45dbafaff7fbf0000000000000080d7e78ac168921ac1d7e78ac168921ac1da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a41e8b26a4072697a4100000000f1ff7f3f19f6b1ba0000008000000080e8b26a4072697a41e8b26a4072697a41c8502c406fcff44100000000b5ff7fbff785443b0000008000000080c8502c406fcff441c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf4413cc12a408cc0b34100000000b5ff7fbffa85443b0000008000000080b031294054636541c8502c406fcff441b031294054636541000000000769253afcff7f3f0000008000000080b031294054636541b031294054636541009fa4be4547604100000000bebae8b7000080bf000000000000008072e71a4122466041623125c168486041eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541869ccbc0e4b2604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93ec042aebe70362bc000000000a7b0bdbaeeff7fbf0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e407ab8bec0e9cc3e000000009efe7fbfde9bd4bb0000000000000080407ab8bec0e9cc3e407ab8bec0e9cc3e70ff6b402bcbf44100000000472e093bdbff7f3f000000800000008070ff6b402bcbf44170ff6b402bcbf4412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a4130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b26041a23625c1a1e6624100000000fdfd7fbfe35500bc0000000000000080623125c168486041e13b25c1da846541e13b25c1da84654100000000fffd7fbf723d00bc0000000000000080e13b25c1da846541e13b25c1da84654100a225c13c80ad4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea41c43b25c1a42b60418a0436c179cef44100000000feff7fbfc74e133a00000080000000808a0436c179cef4418a0436c179cef4413b0826c1a7eaea4100000000878697bb4dff7fbf00000000000000803b0826c1a7eaea413b0826c1a7eaea41c43b25c1a42b604100000000a7ff7f3f4e12553b0000008000000080c43b25c1a42b6041c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef441f82636c102477a4100000000ff88c33bd5fe7f3f0000008000000080f82636c102477a41f82636c102477a41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41a8ae2b40f96eea41000000000000803ffb91ae380000008000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f4410000000048e82fbafdff7f3f0000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f441c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea4152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441c82dd8c00048604100000000e11ee9b7000080bf000000000000008072e71a4122466041623125c168486041da2dd8c0faad604100000000ffff7f3f56bfb4390000008000000080da2dd8c0faad6041da2dd8c0faad6041c82dd8c00048604100000000eb16e0370000803f000000800000008072e71a4122466041623125c168486041621bd8c0441ae64000000000ffff7fbfeb7aacb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041623125c16848604100000000fdfd7fbfe35500bc0000000000000080623125c168486041623125c16848604130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b260416841ccc0c8822ac000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac06841ccc0c8822ac01a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0060839c140b6ad3e00000000559595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3eea08d8c04089ad3e00000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eea08d8c04089ad3ef7eecbc03212b64000000000f5ff7f3f8ee59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0cc0583c140e3ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec0f682c138ca28c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c0c0f682c138ca28c0ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3ec89ccbc0f547604100000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b26041869ccbc0e4b26041009fa4be45476041000000005c0fe9b7000080bf000000000000008072e71a4122466041623125c168486041c89ccbc0f547604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604174602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1989e2a4179f31ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000b6ff7f3feeb0423b000000800000008050222a41e074073f50222a41e074073fb8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f208529413ea37a4100000000caff7f3fa129263b0000008000000080208529413ea37a41208529413ea37a41da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a412246604172e71a412246604100000000bebae8b7000080bf000000000000008072e71a412246604172e71a4122466041225f1a410061b93e00000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e225f1a410061b93e509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93e1c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc03e4f1a4130232cc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc03e4f1a4130232cc0fae0194132420ac10000000054ff7fbf9337943b0000008000000080fae0194132420ac1fae0194132420ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac12c6256c0f0c21ac100000000daa45dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac108c182c1f6890ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac10e5e83c15aac5f4100000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f410e5e83c15aac5f41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f4184d48ac18c8c404000000000fbff7fbf2432433a0000008000000080d7e78ac168921ac132c18ac1aed87a4132c18ac1aed87a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a4132c18ac1aed87a41d7e78ac168921ac100000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac1d7e78ac168921ac1e8b26a4072697a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41e8b26a4072697a412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a41c8502c406fcff44100000000472e093bdbff7f3f0000008000000080c8502c406fcff441c8502c406fcff4413cc12a408cc0b34100000000b5ff7fbff785443b0000008000000080b031294054636541c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf441b03129405463654100000000b5ff7fbffa85443b0000008000000080b031294054636541b031294054636541eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541e13b25c1da846541000000000769253afcff7f3f0000008000000080e13b25c1da846541e13b25c1da846541869ccbc0e4b2604100000000ec31483bb2ff7fbf0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0407ab8bec0e9cc3e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e407ab8bec0e9cc3ec042aebe70362bc0000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e70ff6b402bcbf44100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf44170ff6b402bcbf441a23625c1a1e6624100000000fffd7fbf723d00bc0000000000000080623125c168486041e13b25c1da8465413b0826c1a7eaea4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea413b0826c1a7eaea4100a225c13c80ad4100000000a7ff7f3f4e12553b00000080000000803b0826c1a7eaea41c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef4418a0436c179cef4410000000048e82fbafdff7f3f00000080000000808a0436c179cef4418a0436c179cef441223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea41c43b25c1a42b6041000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b6041c43b25c1a42b6041f82636c102477a4100000000feff7fbfc74e133a0000008000000080f82636c102477a41f82636c102477a41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41a8ae2b40f96eea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f441000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f44152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -3.349742, y: 10.462904, z: 0}
+    m_Extent: {x: 14.013461, y: 20.147346, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!43 &995797929
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 138
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 48
+    localAABB:
+      m_Center: {x: 9.518038, y: 8.503063, z: 0}
+      m_Extent: {x: 10.026869, y: 8.980278, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030005000400060007000800090007000a0008000b000a0007000c000a000b000a000c000d0008000e00090008000f000e0010000f00080011000f001000110012000f0013001200110014001200130005001400150006001400050016001400060014001700120017001400160002001800000000001900040001001a00020003001b00010005001c00030004001d00060015001e00050006001f001600090020000700070021000b000a00220008000800230010000e00240009000d0025000a000b0026000c000c0027000d000f0028000e00120029000f0010002a00110011002b00130017002c00120013002d00140014002e00150016002f001700
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 48
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2112
+    _typelessdata: 2e720b418060ddbe0000000069f4433f42bc24bf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e00000000266d303afcff7f3f000000800000008044d41741e0faf93e44d41741e0faf93e39a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4be40c4dd3ec019fd3e000000003aff7f3f3d669fbb000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e000000bf8055f4be00000000c86e9f3b3aff7fbf0000008000000080000000bf8055f4be000000bf8055f4beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe08d89341b05b013f00000000d30d053bddff7f3f000000800000008008d89341b05b013f08d89341b05b013f2d159c41e08286be00000000dfff7f3fcf1800bb00000080000000802d159c41e08286be2d159c41e08286be163070413829033f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013ffa164541602e9ebe000000004b9fd23ba5fe7fbf0000008000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043f1bb03841c0f6043f00000000ccec3abf16ea2ebf00000000000000801bb03841c0f6043f1bb03841c0f6043f92389c416c44094100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b412d159c41e08286bef85b9c41785e8b4100000000b3504b3bafff7f3f0000008000000080f85b9c41785e8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000feff7fbf607c01ba0000000000000080d8ca9341e5a95841d8ca9341e5a95841e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf7584100000000b31a8abaf7ff7fbf0000000000000080404ffe3e7bf75841404ffe3e7bf75841c009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41c04202bfe2dd8b4100000000feff7fbfbfe400ba0000000000000080c04202bfe2dd8b41c04202bfe2dd8b4139a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe2e720b418060ddbe00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e0000000069f4433f42bc24bf000000800000008044d41741e0faf93e44d41741e0faf93e66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e40c4dd3ec019fd3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4bec009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e000000bf8055f4be00000000feff7fbfbfe400ba0000000000000080000000bf8055f4be000000bf8055f4be2d159c41e08286be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286be2d159c41e08286beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe163070413829033f00000000d30d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013f08d89341b05b013f00000000feff7fbf607c01ba000000000000008008d89341b05b013f08d89341b05b013f92389c416c44094100000000dfff7f3fcf1800bb0000008000000080f85b9c41785e8b412d159c41e08286be1bb03841c0f6043f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f1bb03841c0f6043ffa164541602e9ebe00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000ccec3abf16ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043ff85b9c41785e8b4100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b41f85b9c41785e8b41e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841d8ca9341e5a95841c04202bfe2dd8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41c04202bfe2dd8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf75841000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf75841404ffe3e7bf75841602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 9.518038, y: 8.503063, z: 0}
+    m_Extent: {x: 10.026869, y: 8.980278, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1006930845
 GameObject:
   m_ObjectHideFlags: 0
@@ -29862,9 +30180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 25
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":136.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What\u2019s
-    your problem, huh? You looking for trouble?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gangster\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.799911,\"yPos\":172.799789},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    don\u2019t give a damn about your detective\u2019s case, alright?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gangster\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":133.1999,\"yPos\":334.39975},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":297.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What\u2019s
+    your problem, huh? You looking for trouble?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gangster\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":303.799927,\"yPos\":172.799789},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    don\u2019t give a damn about your detective\u2019s case, alright?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gangster\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":294.1999,\"yPos\":334.39975},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That
     damn detective, always acting all high and mighty\u2014ain\u2019t none of my
     business.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Gangster\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -30254,65 +30572,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 46
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.599854,\"yPos\":263.800049},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-288.400146,\"yPos\":272.800049},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Walk
     Into the Fog\\n[You'll leave behind all your troubles\u2026 and the truth about
-    your life.]\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":534.5998,\"yPos\":162.201172},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1012.99988,\"yPos\":160.601318},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":769.8,\"yPos\":265.399536},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
-    signs point to Lucas.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":297.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
+    your life.]\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-44.4002075,\"yPos\":171.201172},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    think, I know somethings.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":433.999878,\"yPos\":169.601318},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nevermind\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.799988,\"yPos\":274.399536},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"All
+    signs point to Lucas.\",\"parentUIDs\":[20],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-281.5,\"yPos\":31},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
     been missing almost a whole week!\\nDo you know how much trouble you\u2019ve
-    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":291.3999,\"yPos\":140.000488},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
-    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":289.800049,\"yPos\":339.998047},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
-    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":293.800049,\"yPos\":439.19812},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    caused?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-287.6001,\"yPos\":149.000488},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    you\u2019re going to vanish again, at least submit a leave request!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-289.199951,\"yPos\":348.998047},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
+    leaving? Now? The case isn\u2019t even closed.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-285.199951,\"yPos\":448.19812},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     know\u2026 but it\u2019s not this case that\u2019s been haunting me.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":289.799927,\"yPos\":541.5984},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.200073,\"yPos\":645.598145},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-289.200073,\"yPos\":550.5984},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    are you talking about?\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-290.799927,\"yPos\":654.598145},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
     something missing from my head\u2026\\nLike a hole right in the middle of my
     life.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":289.799927,\"yPos\":750.401245},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-289.200073,\"yPos\":759.401245},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Images,
     voices\u2026 they don\u2019t fit together.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":291.3999,\"yPos\":847.202637},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
-    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":291.3999,\"yPos\":945.6008},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-287.6001,\"yPos\":856.202637},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Is
+    this really the time to overthink? You just need rest.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-287.6001,\"yPos\":954.6008},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
     tired of all the things that happens.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288.199951,\"yPos\":1061.60962},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-290.800049,\"yPos\":1070.60962},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
     walked away into the fog, fading slowly from sight.\\nLeaving behind his identity,
     his struggle, and every truth he once sought.\\nAnd in the end\u2026 he left
     everyone behind.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"#Ending1
-    - THE LOSER\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":80}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":772.1999,\"yPos\":144.80127},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    do you know about this case?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":767.4003,\"yPos\":344.799683},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait\u2026
-    you're saying Lucas did this?\\nYour partner? That\u2019s a big thing to say.\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":769.0002,\"yPos\":444.800171},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
+    - THE LOSER\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"CaseProgress\",\"CheckType\":2,\"RequiredValue\":70}],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.19989,\"yPos\":153.80127},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    do you know about this case?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.40033,\"yPos\":353.799683},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wait\u2026
+    you're saying Lucas did this?\\nYour partner? That\u2019s a big thing to say.\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.000183,\"yPos\":453.800171},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes,
     I know it sounds crazy.\\nBut I followed the clues. And everything points to
     him.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":767.4001,\"yPos\":547.2002},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tell
-    me.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":771.4001,\"yPos\":650.401855},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.400085,\"yPos\":556.2002},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tell
+    me.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.400085,\"yPos\":659.401855},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
     found a cigarette at the crime scene. Same brand Lucas always smoked.\\nBut he
     stopped smoking.\\nThe murder happened the same day.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":773.8,\"yPos\":749.6041},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Still\u2026
-    that doesn\u2019t prove it\u2019s him.\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":770.8,\"yPos\":842.605469},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.799988,\"yPos\":758.6041},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Still\u2026
+    that doesn\u2019t prove it\u2019s him.\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.799988,\"yPos\":851.605469},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
     more.\\nThe victim was stabbed very clean \u2014 like a professional. Lucas was
     trained in knives when he worked in the special team.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":772.200134,\"yPos\":948.6039},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"After
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.200134,\"yPos\":957.6039},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"After
     that, he burned the body.\\nHe always carries his lighter with him \u2014 the
     one he loves.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":767.4001,\"yPos\":1059.20435},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-    the motive?\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":766.600037,\"yPos\":1157.60339},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.400085,\"yPos\":1068.20435},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    the motive?\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.600037,\"yPos\":1166.60339},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     victim was his secret girlfriend.\\nShe sent angry messages to Lucas, saying
     she would tell his wife.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":765.800232,\"yPos\":1258.402},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.800232,\"yPos\":1267.402},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"We
     found those messages on his phone.\\nHe probably panicked\u2026 stabbed her\u2026
     then tried to hide it.\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":766.6003,\"yPos\":1359.20178},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u2026Lucas\u2026\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":766.600159,\"yPos\":1457.80139},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.600281,\"yPos\":1368.20178},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u2026Lucas\u2026\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chief\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.600159,\"yPos\":1466.80139},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
     was my partner.\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":768.200134,\"yPos\":1551.20154},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"My
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.200134,\"yPos\":1560.20154},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"My
     friend.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":768.200134,\"yPos\":1648.80212},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.200134,\"yPos\":1657.80212},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     didn\u2019t want to believe it. But\u2026 the truth is right in front of us.\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"The
-    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":765.800232,\"yPos\":1755.20276},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
+    Detective\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.800232,\"yPos\":1764.20276},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
     was arrested.\\nIn court, he said he didn\u2019t do it.\\nHe yelled at me. Said
     I was a traitor.\\nBut the truth was clear.\\nThe cigarette. The knife. The phone.
-    The motive.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":765.800232,\"yPos\":1855.20227},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    jury found him guilty.\\n25 years in prison.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":767.4001,\"yPos\":1956.80286},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    still remember the look in his eyes.\\nNot hate.\\nNot fear.\\nJust\u2026 sadness.\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":766.6003,\"yPos\":2055.203},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-    me?\\nI didn\u2019t feel like a hero.\\nJust a detective\u2026 who lost a friend.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":769.800354,\"yPos\":2154.39941},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
+    The motive.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.800232,\"yPos\":1864.20227},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    jury found him guilty.\\n25 years in prison.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.400085,\"yPos\":1965.80286},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    still remember the look in his eyes.\\nNot hate.\\nNot fear.\\nJust\u2026 sadness.\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.600281,\"yPos\":2064.203},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+    me?\\nI didn\u2019t feel like a hero.\\nJust a detective\u2026 who lost a friend.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"...\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.800354,\"yPos\":2163.39941},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lucas
     was arrested.\\nThe evidence was clear. The motive believable. The case\u2014closed.\\nBut
     something didn\u2019t feel right.\\nThe truth was too neat. Too easy.\\nAnd sometimes\u2026
     the real monster knows how to hide.\",\"parentUIDs\":[44],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"#Ending2
@@ -64592,336 +64910,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!43 &2080994857
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 138
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 48
-    localAABB:
-      m_Center: {x: 9.518038, y: 8.503063, z: 0}
-      m_Extent: {x: 10.026869, y: 8.980278, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000100020000000300010004000300000004000500030005000400060007000800090007000a0008000b000a0007000c000a000b000a000c000d0008000e00090008000f000e0010000f00080011000f001000110012000f0013001200110014001200130005001400150006001400050016001400060014001700120017001400160002001800000000001900040001001a00020003001b00010005001c00030004001d00060015001e00050006001f001600090020000700070021000b000a00220008000800230010000e00240009000d0025000a000b0026000c000c0027000d000f0028000e00120029000f0010002a00110011002b00130017002c00120013002d00140014002e00150016002f001700
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 48
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 2112
-    _typelessdata: 2e720b418060ddbe0000000069f4433f42bc24bf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e00000000266d303afcff7f3f000000800000008044d41741e0faf93e44d41741e0faf93e39a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4be40c4dd3ec019fd3e000000003aff7f3f3d669fbb000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e000000bf8055f4be00000000c86e9f3b3aff7fbf0000008000000080000000bf8055f4be000000bf8055f4beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe08d89341b05b013f00000000d30d053bddff7f3f000000800000008008d89341b05b013f08d89341b05b013f2d159c41e08286be00000000dfff7f3fcf1800bb00000080000000802d159c41e08286be2d159c41e08286be163070413829033f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013ffa164541602e9ebe000000004b9fd23ba5fe7fbf0000008000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043f1bb03841c0f6043f00000000ccec3abf16ea2ebf00000000000000801bb03841c0f6043f1bb03841c0f6043f92389c416c44094100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b412d159c41e08286bef85b9c41785e8b4100000000b3504b3bafff7f3f0000008000000080f85b9c41785e8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000feff7fbf607c01ba0000000000000080d8ca9341e5a95841d8ca9341e5a95841e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf7584100000000b31a8abaf7ff7fbf0000000000000080404ffe3e7bf75841404ffe3e7bf75841c009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41c04202bfe2dd8b4100000000feff7fbfbfe400ba0000000000000080c04202bfe2dd8b41c04202bfe2dd8b4139a3114100d3e43c0000000069f4433f42bc24bf000000800000008044d41741e0faf93e2e720b418060ddbe2e720b418060ddbe00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe2e720b418060ddbe44d41741e0faf93e0000000069f4433f42bc24bf000000800000008044d41741e0faf93e44d41741e0faf93e66c29e40508afb3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e44d41741e0faf93e40c4dd3ec019fd3e00000000266d303afcff7f3f000000800000008040c4dd3ec019fd3e40c4dd3ec019fd3e2e72834000dbe8be00000000c86e9f3b3aff7fbf00000080000000802e720b418060ddbe000000bf8055f4bec009ee3e49e0e040000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf7584140c4dd3ec019fd3e000000bf8055f4be00000000feff7fbfbfe400ba0000000000000080000000bf8055f4be000000bf8055f4be2d159c41e08286be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286be2d159c41e08286beaaa07e41a05892be000000004b9fd23ba5fe7fbf00000080000000802d159c41e08286befa164541602e9ebe163070413829033f00000000d30d053bddff7f3f00000080000000801bb03841c0f6043f08d89341b05b013f08d89341b05b013f00000000feff7fbf607c01ba000000000000008008d89341b05b013f08d89341b05b013f92389c416c44094100000000dfff7f3fcf1800bb0000008000000080f85b9c41785e8b412d159c41e08286be1bb03841c0f6043f00000000d00d053bddff7f3f00000080000000801bb03841c0f6043f1bb03841c0f6043ffa164541602e9ebe00000000beec3abf25ea2ebf0000000000000080fa164541602e9ebefa164541602e9ebe8ae33e41407ed73d00000000ccec3abf16ea2ebf0000000000000080fa164541602e9ebe1bb03841c0f6043ff85b9c41785e8b4100000000dfff7f3f6c1c00bb0000008000000080f85b9c41785e8b41f85b9c41785e8b41e24918412d9e8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41f85b9c41785e8b4170d19341a0bfe04000000000feff7fbf607c01ba000000000000008008d89341b05b013fd8ca9341e5a95841d8ca9341e5a9584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841d8ca9341e5a95841c04202bfe2dd8b4100000000b3504b3bafff7f3f0000008000000080c04202bfe2dd8b41c04202bfe2dd8b4115c41741b0d0584100000000b31a8abaf7ff7fbf0000000000000080d8ca9341e5a95841404ffe3e7bf75841404ffe3e7bf75841000000003aff7f3f3d669fbb0000008000000080404ffe3e7bf75841404ffe3e7bf75841602101bf8c0c084100000000feff7fbfbfe400ba0000000000000080000000bf8055f4bec04202bfe2dd8b41
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 9.518038, y: 8.503063, z: 0}
-    m_Extent: {x: 10.026869, y: 8.980278, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!43 &2094095020
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 390
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 130
-    localAABB:
-      m_Center: {x: -3.349742, y: 10.462904, z: 0}
-      m_Extent: {x: 14.013461, y: 20.147346, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200030004000500030006000400070006000300060007000800050009000a000400090005000b000900040009000b0000000c000d000e000d000f0010000d0011000f000c0011000d000c00120011000c00130012000c00140013000c00150014000c0016001500170016000c00170018001600170019001800190007001a0007001b00080007001c001b0007001d001c0019001d00070019001e001d0019001f001e001f0019001700110020000f0011002100200021002200230021002400220021002500240011002500210026002500110026002700250026002800270028002600090029001300140029002a0013002b002a0029002c002a002b002a002c002d0021002e002f002e002100230030002700280002002700300001002700020031002700010027003100320033003400350036003400330036003700340036003800370039003800360039003a0038001c003a0039003a001c001d003b003c003d003e003c003b003e003f003c0035003f003e003f00350034000000400001000200410000000000420009000b0043000000010044003100300045000200050046000300030047000700060048000400040049000b000a004a00050008004b00060007004c001a001b004d00080009004e000a0026004f0009000900500028000e0051000c000c00520017000d0053000e00100054000d000f0055001000200056000f001200570011001100580026001300590012002a005a00130015005b00140014005c00290016005d00150018005e00160017005f001f001900600018001a00610019001c0062001b00390063001c001e0064001d001d0065003a001f0066001e002100670020002f006800210022006900230024006a00220023006b002e0025006c00240027006d00250032006e00270028006f003000290070002b002d0071002a002b0072002c002c0073002d002e0074002f00310075003200350076003300330077003600370078003400340079003f003e007a00350036007b00390038007c0037003a007d0038003d007e003b003b007f003e003c0080003d003f0081003c00
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 130
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 5720
-    _typelessdata: c82dd8c00048604100000000ffff7fbfeb7aacb9000000000000008072e71a4122466041623125c168486041623125c16848604100000000e11ee9b7000080bf0000000000000080623125c168486041623125c168486041da2dd8c0faad604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041da2dd8c0faad60411a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0ea08d8c04089ad3e00000000559595380000803f0000008000000080ea08d8c04089ad3eea08d8c04089ad3e6841ccc0c8822ac000000000f5ff7f3f8ee59dba00000080000000806841ccc0c8822ac06841ccc0c8822ac0060839c140b6ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3ec0f682c138ca28c000000000e77130bbc3ff7fbf0000000000000080c0f682c138ca28c0c0f682c138ca28c0cc0583c140e3ad3e00000000adff7f3f5e0e4f3b0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec89ccbc0f5476041000000005c0fe9b7000080bf0000000000000080869ccbc0e4b26041869ccbc0e4b26041f7eecbc03212b64000000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0621bd8c0441ae64000000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041989e2a4179f31ac100000000b6ff7f3feeb0423b0000008000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000caff7f3fa129263b000000800000008050222a41e074073f50222a41e074073f74602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1208529413ea37a4100000000a97b05bbddff7f3f0000008000000080208529413ea37a41208529413ea37a41b8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f72e71a412246604100000000ceff7fbf79b81f3b000000800000008072e71a412246604172e71a41224660414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a4122466041225f1a410061b93e0000000090d2793b87ff7f3f0000008000000080225f1a410061b93e225f1a410061b93e3e4f1a4130232cc00000000054ff7fbf9337943b00000080000000803e4f1a4130232cc03e4f1a4130232cc01c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc0fae0194132420ac10000000020ea30bafcff7f3f0000008000000080fae0194132420ac1fae0194132420ac12c6256c0f0c21ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac108c182c1f6890ac10000000061ff7f3fb0bd8e3b000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac1ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3e0e5e83c15aac5f41000000006d1aa73b26ff7fbf00000080000000800e5e83c15aac5f410e5e83c15aac5f4132c18ac1aed87a4100000000fbff7fbf2432433a000000800000008032c18ac1aed87a4132c18ac1aed87a4184d48ac18c8c404000000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac132c18ac1aed87a41d7e78ac168921ac100000000daa45dbafaff7fbf0000000000000080d7e78ac168921ac1d7e78ac168921ac1da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a41e8b26a4072697a4100000000f1ff7f3f19f6b1ba0000008000000080e8b26a4072697a41e8b26a4072697a41c8502c406fcff44100000000b5ff7fbff785443b0000008000000080c8502c406fcff441c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf4413cc12a408cc0b34100000000b5ff7fbffa85443b0000008000000080b031294054636541c8502c406fcff441b031294054636541000000000769253afcff7f3f0000008000000080b031294054636541b031294054636541009fa4be4547604100000000bebae8b7000080bf000000000000008072e71a4122466041623125c168486041eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541869ccbc0e4b2604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93ec042aebe70362bc000000000a7b0bdbaeeff7fbf0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e407ab8bec0e9cc3e000000009efe7fbfde9bd4bb0000000000000080407ab8bec0e9cc3e407ab8bec0e9cc3e70ff6b402bcbf44100000000472e093bdbff7f3f000000800000008070ff6b402bcbf44170ff6b402bcbf4412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a4130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b26041a23625c1a1e6624100000000fdfd7fbfe35500bc0000000000000080623125c168486041e13b25c1da846541e13b25c1da84654100000000fffd7fbf723d00bc0000000000000080e13b25c1da846541e13b25c1da84654100a225c13c80ad4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea41c43b25c1a42b60418a0436c179cef44100000000feff7fbfc74e133a00000080000000808a0436c179cef4418a0436c179cef4413b0826c1a7eaea4100000000878697bb4dff7fbf00000000000000803b0826c1a7eaea413b0826c1a7eaea41c43b25c1a42b604100000000a7ff7f3f4e12553b0000008000000080c43b25c1a42b6041c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef441f82636c102477a4100000000ff88c33bd5fe7f3f0000008000000080f82636c102477a41f82636c102477a41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41a8ae2b40f96eea41000000000000803ffb91ae380000008000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f4410000000048e82fbafdff7f3f0000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f441c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea4152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441c82dd8c00048604100000000e11ee9b7000080bf000000000000008072e71a4122466041623125c168486041da2dd8c0faad604100000000ffff7f3f56bfb4390000008000000080da2dd8c0faad6041da2dd8c0faad6041c82dd8c00048604100000000eb16e0370000803f000000800000008072e71a4122466041623125c168486041621bd8c0441ae64000000000ffff7fbfeb7aacb90000000000000080ea08d8c04089ad3eda2dd8c0faad6041623125c16848604100000000fdfd7fbfe35500bc0000000000000080623125c168486041623125c16848604130e5d1c06fb0604100000000ec31483bb2ff7fbf0000008000000080da2dd8c0faad6041869ccbc0e4b260416841ccc0c8822ac000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac06841ccc0c8822ac01a0736c180a629c000000000e77130bbc3ff7fbf00000000000000806841ccc0c8822ac0c0f682c138ca28c0060839c140b6ad3e00000000559595380000803f0000008000000080cc0583c140e3ad3eea08d8c04089ad3eea08d8c04089ad3e00000000ffff7fbf9c82acb90000000000000080ea08d8c04089ad3eea08d8c04089ad3ef7eecbc03212b64000000000f5ff7f3f8ee59dba0000008000000080869ccbc0e4b260416841ccc0c8822ac0cc0583c140e3ad3e00000000539595380000803f0000008000000080cc0583c140e3ad3ecc0583c140e3ad3ec0f682c138ca28c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c0c0f682c138ca28c0ed3183c1741be54000000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f41cc0583c140e3ad3ec89ccbc0f547604100000000f4ff7f3f77e59dba0000008000000080869ccbc0e4b26041869ccbc0e4b26041009fa4be45476041000000005c0fe9b7000080bf000000000000008072e71a4122466041623125c168486041c89ccbc0f547604100000000f4ff7fbf26019e3a0000008000000080869ccbc0e4b26041869ccbc0e4b2604174602a412b7c92c000000000b6ff7f3feeb0423b000000800000008050222a41e074073f989e2a4179f31ac1989e2a4179f31ac1000000006ba95dbafaff7fbf0000000000000080989e2a4179f31ac1989e2a4179f31ac150222a41e074073f00000000b6ff7f3feeb0423b000000800000008050222a41e074073f50222a41e074073fb8d32941468d014100000000caff7f3fa129263b0000008000000080208529413ea37a4150222a41e074073f208529413ea37a4100000000caff7f3fa129263b0000008000000080208529413ea37a41208529413ea37a41da31e44058867a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41208529413ea37a414aa31a412a11e64000000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e72e71a412246604172e71a412246604100000000bebae8b7000080bf000000000000008072e71a412246604172e71a4122466041225f1a410061b93e00000000ceff7fbf79b81f3b0000008000000080225f1a410061b93e225f1a410061b93e509b94406025c33e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e225f1a410061b93e1c181a41fe4ab5c00000000054ff7fbf9337943b0000008000000080fae0194132420ac13e4f1a4130232cc03e4f1a4130232cc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc03e4f1a4130232cc0fae0194132420ac10000000054ff7fbf9337943b0000008000000080fae0194132420ac1fae0194132420ac12c4257c014660ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac1fae0194132420ac12c6256c0f0c21ac100000000daa45dbafaff7fbf0000000000000080989e2a4179f31ac1d7e78ac168921ac108c182c1f6890ac10000000020ea30bafcff7f3f000000800000008008c182c1f6890ac108c182c1f6890ac1e4db82c184bcb4c00000000061ff7f3fb0bd8e3b0000008000000080c0f682c138ca28c008c182c1f6890ac10e5e83c15aac5f4100000000adff7f3f5e0e4f3b00000080000000800e5e83c15aac5f410e5e83c15aac5f41f0fb55c1ffeb5f41000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b60410e5e83c15aac5f4184d48ac18c8c404000000000fbff7fbf2432433a0000008000000080d7e78ac168921ac132c18ac1aed87a4132c18ac1aed87a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a4132c18ac1aed87a41d7e78ac168921ac100000000fbff7fbf3f3c433a0000008000000080d7e78ac168921ac1d7e78ac168921ac1e8b26a4072697a4100000000a97b05bbddff7f3f0000008000000080e8b26a4072697a41e8b26a4072697a412c596b40f2ffb84100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf441e8b26a4072697a41c8502c406fcff44100000000472e093bdbff7f3f0000008000000080c8502c406fcff441c8502c406fcff4413cc12a408cc0b34100000000b5ff7fbff785443b0000008000000080b031294054636541c8502c406fcff4411c284c404dcdf44100000000472e093bdbff7f3f0000008000000080c8502c406fcff44170ff6b402bcbf441b03129405463654100000000b5ff7fbffa85443b0000008000000080b031294054636541b031294054636541eade75c017746541000000000769253afcff7f3f0000008000000080e13b25c1da846541b031294054636541e13b25c1da846541000000000769253afcff7f3f0000008000000080e13b25c1da846541e13b25c1da846541869ccbc0e4b2604100000000ec31483bb2ff7fbf0000008000000080869ccbc0e4b26041869ccbc0e4b2604128dd9440d0ac2bc000000000a7b0bdbaeeff7fbf00000000000000803e4f1a4130232cc0c042aebe70362bc0407ab8bec0e9cc3e0000000090d2793b87ff7f3f0000008000000080407ab8bec0e9cc3e407ab8bec0e9cc3ec042aebe70362bc0000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0c042aebe70362bc0805eb3be389991bf000000009efe7fbfde9bd4bb0000000000000080c042aebe70362bc0407ab8bec0e9cc3e70ff6b402bcbf44100000000f1ff7f3f19f6b1ba000000800000008070ff6b402bcbf44170ff6b402bcbf441a23625c1a1e6624100000000fffd7fbf723d00bc0000000000000080623125c168486041e13b25c1da8465413b0826c1a7eaea4100000000a7ff7f3f3510553b00000080000000803b0826c1a7eaea413b0826c1a7eaea4100a225c13c80ad4100000000a7ff7f3f4e12553b00000080000000803b0826c1a7eaea41c43b25c1a42b6041c11536c1fdf8b84100000000feff7fbfc74e133a0000008000000080f82636c102477a418a0436c179cef4418a0436c179cef4410000000048e82fbafdff7f3f00000080000000808a0436c179cef4418a0436c179cef441223976c0d0acea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea413b0826c1a7eaea41c43b25c1a42b6041000000006d1aa73b26ff7fbf0000008000000080c43b25c1a42b6041c43b25c1a42b6041f82636c102477a4100000000feff7fbfc74e133a0000008000000080f82636c102477a41f82636c102477a41aed465c1d88f7a4100000000ff88c33bd5fe7f3f000000800000008032c18ac1aed87a41f82636c102477a41c4ad2b4062a8ef41000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441a8ae2b40f96eea41a8ae2b40f96eea4100000000878697bb4dff7fbf0000000000000080a8ae2b40f96eea41a8ae2b40f96eea41e0ac2b40cbe1f441000000000000803ffb91ae380000008000000080e0ac2b40cbe1f441e0ac2b40cbe1f44152198bc022d8f4410000000048e82fbafdff7f3f00000080000000808a0436c179cef441e0ac2b40cbe1f441
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -3.349742, y: 10.462904, z: 0}
-    m_Extent: {x: 14.013461, y: 20.147346, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &2118631267
 GameObject:
   m_ObjectHideFlags: 0
