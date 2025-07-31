@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - changeLayerZone
   - changeLayerCheck
+  - changeLayerNPC
   layers:
   - Default
   - TransparentFX
@@ -75,4 +76,7 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 2505629007
+    locked: 0
+  - name: Player3
+    uniqueID: 3601480995
     locked: 0
