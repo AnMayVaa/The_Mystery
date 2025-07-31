@@ -110,7 +110,7 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        if (playerData.mental >= 100)
+        if (playerData.mental >= 101)
         {
             playerData.mental = 100;
             SaveGame();
