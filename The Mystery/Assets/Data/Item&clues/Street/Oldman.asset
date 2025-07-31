@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a27599a43ca71b4d82892007115e1b1, type: 3}
-  m_Name: Knife
+  m_Name: Oldman
   m_EditorClassIdentifier: 
-  itemName: Knife
+  itemName: Oldman
   itemDescription: 
-  itemIcon: {fileID: 21300000, guid: 3c7b069a9b283774890ac7e9814aa443, type: 3}
+  itemIcon: {fileID: 0}
   mental: 0
-  case_progress: 25
-  itemID: Knife
+  case_progress: 20
+  itemID: Oldman
