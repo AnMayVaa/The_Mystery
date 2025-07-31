@@ -7,6 +7,7 @@ public class VHSNoiseController : MonoBehaviour
     
     [Range(0, 100)]
     public float disturbanceLevel = 100f;
+    public PlayerData playerData;
     
 
     private Material materialInstance;
@@ -16,11 +17,13 @@ public class VHSNoiseController : MonoBehaviour
         // สร้าง instance ของ material เพื่อไม่ให้กระทบ global
         materialInstance = Instantiate(noiseOverlay.material);
         noiseOverlay.material = materialInstance;
+        playerData = GameStateManager.Instance.playerData;
     }
 
     void Update()
-    {
+    {   
         float alpha = 0f;
+        disturbanceLevel = playerData.mental;
 
         if (disturbanceLevel <= 30f)
             alpha = 0.8f;
