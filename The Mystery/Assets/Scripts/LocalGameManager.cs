@@ -173,8 +173,8 @@ public class LocalGameManager : MonoBehaviour
             return false;
         }
 
-        // เราจะใช้เครื่องหมาย , (comma) เป็นตัวแบ่ง
-        string[] parts = input.Split(',');
+        // เราจะใช้เครื่องหมาย _ (underscore) เป็นตัวแบ่ง
+        string[] parts = input.Split('_');
 
         if (parts.Length == 2)
         {

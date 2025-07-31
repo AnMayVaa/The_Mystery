@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Toothbrushes (3 of them)
   itemDescription: 
   itemIcon: {fileID: 21300000, guid: 05ebcfb7431f46c48927e4c26bd4382a, type: 3}
-  mental: -15
+  mental: -35
   case_progress: 0
   itemID: Toothbrushes (3 of them)

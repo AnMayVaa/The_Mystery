@@ -110,7 +110,7 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        if (playerData.mental >= 100)
+        if (playerData.mental >= 101)
         {
             playerData.mental = 100;
             SaveGame();
@@ -142,7 +142,7 @@ public class GameStateManager : MonoBehaviour
             return;
         }
 
-        if (playerData.collectedItemIDs.Contains(collectedItem.itemID))
+        if (playerData.collectedItemIDs.Contains(collectedItem.itemID) && collectedItem.itemID != "Add Mention")
         {
             Debug.Log("Item '" + collectedItem.itemName + "' (ID: " + collectedItem.itemID + ") already collected.");
             return;
@@ -292,7 +292,7 @@ public class GameStateManager : MonoBehaviour
         CollectibleItem[] allItemsInScene = FindObjectsOfType<CollectibleItem>();
         foreach (CollectibleItem item in allItemsInScene)
         {
-            if (item.itemData != null && playerData.collectedItemIDs.Contains(item.itemData.itemID))
+            if (item.itemData != null && playerData.collectedItemIDs.Contains(item.itemData.itemID) && !(item.itemData.itemID == "Add Mention"))
             {
                 Destroy(item.gameObject);
                 Debug.Log("Removed/Hid already collected item: " + item.itemData.itemName);

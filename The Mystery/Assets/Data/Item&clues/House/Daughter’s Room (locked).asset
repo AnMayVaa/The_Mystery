@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: "Daughter\u2019s Room (locked)"
   itemDescription: 
   itemIcon: {fileID: 0}
-  mental: -10
+  mental: -30
   case_progress: 0
   itemID: "Daughter\u2019s Room (locked)"

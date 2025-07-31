@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: House Blueprint
   itemDescription: 
   itemIcon: {fileID: 21300000, guid: 1eccb53cefa4e0b4d979a4531b6ceb4e, type: 3}
-  mental: -35
+  mental: -45
   case_progress: 0
   itemID: House Blueprint
