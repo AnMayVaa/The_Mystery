@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq; // ✨ สำคัญมาก! ต้องมีเพื่อใช้ .FirstOrDefault()
 using UnityEngine.SceneManagement;
 using DialogueEditor;
+using System.Threading;
+using UnityEngine.UI;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -20,6 +22,10 @@ public class GameStateManager : MonoBehaviour
     public bool freezePlayerDuringDialogue = true;
 
     private bool isLoadingGameFromSave = false;
+
+    [Header("Mental")]
+    [SerializeField] private Image barValue;
+    [SerializeField] private Image barImage;
 
     void Awake()
     {
@@ -69,16 +75,22 @@ public class GameStateManager : MonoBehaviour
         {
             Debug.Log($"Scene '{scene.name}' loaded. Attempting to apply game data to current scene.");
             ApplyLoadedGameDataToCurrentScene();
+            barImage.enabled = true;
+            barValue.enabled = true;
         }
         else if (isLoadingGameFromSave)
         {
             Debug.Log($"Scene '{scene.name}' loaded as part of game loading process. Applying data.");
             ApplyLoadedGameDataToCurrentScene();
             isLoadingGameFromSave = false;
+            barImage.enabled = true;
+            barValue.enabled = true;
         }
         else if (scene.name.Equals("Mainmenu_scene"))
         {
             Debug.Log("Main Menu scene loaded. Not applying game data automatically.");
+            barImage.enabled = false;
+            barValue.enabled = false;
         }
     }
 
@@ -96,8 +108,14 @@ public class GameStateManager : MonoBehaviour
                 Debug.LogWarning("Pause Menu Panel is not assigned in GameStateManager Inspector.");
             }
         }
+
+        if (playerData.mental >= 100)
+        {
+            playerData.mental = 100;
+            SaveGame();
+        }
     }
-    
+
     // ✨ เพิ่มเข้ามา: ฟังก์ชันนี้จะถูกเรียกอัตโนมัติเมื่อผู้เล่นกำลังจะออกจากเกม
     private void OnApplicationQuit()
     {
@@ -173,6 +191,8 @@ public class GameStateManager : MonoBehaviour
         {
             Debug.LogWarning("Player not found in scene. Cannot save position.");
         }
+
+        UpdateBar();
     }
 
     public void LoadGameFromSaveFileAndChangeScene()
@@ -194,6 +214,8 @@ public class GameStateManager : MonoBehaviour
             Debug.LogWarning("No save file found. Cannot load game.");
             playerData = new PlayerData();
         }
+
+        SaveGame();
     }
 
     /// <summary>
@@ -235,6 +257,8 @@ public class GameStateManager : MonoBehaviour
 
         // ลบไอเท็มที่เก็บไปแล้วออกจากซีน (เหมือนเดิม)
         CheckAndRemoveCollectedItemsInScene();
+        
+        UpdateBar();
     }
 
     public void ResetGameData()
@@ -298,7 +322,7 @@ public class GameStateManager : MonoBehaviour
     public void QuitGame()
     {
         // ✨ แนะนำ: ควรจะเซฟเกมก่อนออกจากเกมผ่านปุ่มในเมนูด้วย
-        SaveGame(); 
+        SaveGame();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -321,7 +345,7 @@ public class GameStateManager : MonoBehaviour
             {
                 SaveGame();
             }
-            
+
             SceneManager.LoadScene(sceneName);
             Debug.Log("Changing scene to: " + sceneName);
         }
@@ -341,9 +365,15 @@ public class GameStateManager : MonoBehaviour
     {
         Time.timeScale = _previousTimeScale;
     }
-    
+
     public bool HasCollectedItem(string itemID)
     {
         return playerData.collectedItemIDs.Contains(itemID);
+    }
+    
+    public void UpdateBar()
+    {
+        Debug.Log("mental:" + playerData.mental);
+        barValue.fillAmount = (float)playerData.mental / 100f; //fill amount max 1.0
     }
 }

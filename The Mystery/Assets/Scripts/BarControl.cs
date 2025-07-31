@@ -6,8 +6,8 @@ public class StatBar : MonoBehaviour
 {
     [SerializeField] private Image barValue;
     [SerializeField] private Image barImage;
+    public PlayerData playerData;
     public int mental = 100;
-    public int amount = -50;//ตัวอย่างค่าที่รับเข้ามา adjust mental 
 
     void OnEnable()
     {
@@ -25,18 +25,13 @@ public class StatBar : MonoBehaviour
         if (mental < 0) mental = 0;
         else if (mental > 100) mental = 100;
         UpdateBar();
-    }
+        GameStateManager.Instance.SaveGame();
+   }
 
-    private void UpdateBar()
+    public void UpdateBar()
     {
-        barValue.fillAmount = (float)mental / 100f; //fill amount max 1.0
-    }
-
-    private void Start()
-    {
-        AdjustAmount(amount);
-
-
+        Debug.Log("mental:" + mental);
+        barValue.fillAmount = (float)playerData.mental / 100f; //fill amount max 1.0
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -49,8 +44,7 @@ public class StatBar : MonoBehaviour
         else
         {
             barImage.enabled = true;
-            barValue.enabled = true;    
+            barValue.enabled = true;
         }
     }
-
 }
