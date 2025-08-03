@@ -39,8 +39,8 @@ Forced to return to duty, the detective must now uncover the truth behind the ca
 
 ## Platforms & Availability
 
-We plan to publish the game publicly on **[itch.io](https://your-itch-link-here.com)**  
-(Link will be updated once the game is released.)
+publish the game publicly on **[[itch.io](https://your-itch-link-here.com)](https://9000ms.itch.io/the-empty)**  
+
 
 ---
 
