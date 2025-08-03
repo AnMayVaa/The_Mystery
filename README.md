@@ -13,6 +13,7 @@
 - พิทักษ์ ปทุมวัน  
 
 This project was developed over approximately 10 days, totaling around 70 hours of work. It serves both as a technical learning experience and a creative exploration of storytelling in game design.
+It may not be perfect, but it was built with passion and teamwork.
 
 ---
 
