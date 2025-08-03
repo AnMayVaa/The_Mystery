@@ -61,6 +61,5 @@ This project represents our first step into indie game development — and a fou
 ## License
 
 This project is shared publicly as a learning and portfolio piece.  
-License information will be added upon release.
 
 ---
